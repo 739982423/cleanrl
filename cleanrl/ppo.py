@@ -36,24 +36,31 @@ def parse_args():
         help="whether to capture videos of the agent performances (check out `videos` folder)")
 
     # Algorithm specific arguments
-    parser.add_argument("--env-id", type=str, default="CartPole-v1",
+    parser.add_argument("--env-id", type=str, default="GPUcluster-v0",
         help="the id of the environment")
     parser.add_argument("--total-timesteps", type=int, default=500000,
         help="total timesteps of the experiments")
     parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
+    #num_envs
     parser.add_argument("--num-envs", type=int, default=4,
         help="the number of parallel game environments")
+    #num_steps
     parser.add_argument("--num-steps", type=int, default=128,
         help="the number of steps to run in each environment per policy rollout")
+    #anneal_lr
     parser.add_argument("--anneal-lr", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
         help="Toggle learning rate annealing for policy and value networks")
+    #gamma
     parser.add_argument("--gamma", type=float, default=0.99,
         help="the discount factor gamma")
+    #gae_lambda
     parser.add_argument("--gae-lambda", type=float, default=0.95,
         help="the lambda for the general advantage estimation")
+    #num_minibatches
     parser.add_argument("--num-minibatches", type=int, default=4,
         help="the number of mini-batches")
+    #update_epochs
     parser.add_argument("--update-epochs", type=int, default=4,
         help="the K epochs to update the policy")
     parser.add_argument("--norm-adv", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
@@ -80,6 +87,7 @@ def parse_args():
 def make_env(env_id, seed, idx, capture_video, run_name):
     def thunk():
         env = gym.make(env_id)
+        print(env_id)
         env = gym.wrappers.RecordEpisodeStatistics(env)
         if capture_video:
             if idx == 0:
@@ -142,7 +150,9 @@ if __name__ == "__main__":
             monitor_gym=True,
             save_code=True,
         )
+    #创建tensorboard存储对象
     writer = SummaryWriter(f"runs/{run_name}")
+    #tensorboard中添加文本字符串，这里是将所有超参数存成了个表格
     writer.add_text(
         "hyperparameters",
         "|param|value|\n|-|-|\n%s" % ("\n".join([f"|{key}|{value}|" for key, value in vars(args).items()])),
@@ -152,6 +162,7 @@ if __name__ == "__main__":
     random.seed(args.seed)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
+    # 使用GPU训练时，需要固定随机源以保证结果可复现
     torch.backends.cudnn.deterministic = args.torch_deterministic
 
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
@@ -167,6 +178,9 @@ if __name__ == "__main__":
 
     # ALGO Logic: Storage setup
     obs = torch.zeros((args.num_steps, args.num_envs) + envs.single_observation_space.shape).to(device)
+    # print('envs.single_action_space', envs.single_action_space, envs.single_action_space.shape)
+    # print('envs.single_observation_space', envs.single_observation_space, envs.single_observation_space.shape)
+
     actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
     logprobs = torch.zeros((args.num_steps, args.num_envs)).to(device)
     rewards = torch.zeros((args.num_steps, args.num_envs)).to(device)
@@ -195,15 +209,32 @@ if __name__ == "__main__":
             # ALGO LOGIC: action logic
             with torch.no_grad():
                 action, logprob, _, value = agent.get_action_and_value(next_obs)
-                values[step] = value.flatten()
+                # print("action:", action)
+                # print("logprob:", logprob)
+                # print("value:", value)
+                # action: tensor([0, 0, 0, 1])
+                # logprob: tensor([-0.6934, -0.6928, -0.6933, -0.6929])
+                # value: tensor([[ 0.0906],
+                #                [-0.2004],
+                #                [ 0.0810],
+                #                [ 0.1793]])
+            # values是4行1列，所以需要flatten，具体有多少行由子环境数量决定，但都是一列，flatten后与action和logprob的形状就一致了，均为1行x列
+            # 在这里，将玩一步游戏返回的各个参数存入了预置好的变量中，并用step索引，step最大值是args.num_steps，在这里就是玩args.num_steps步之后，才更新一次网络参数
+            # 玩args.num_steps步的过程中，收集所有的参数轨迹，组成长度为args.num_steps的list（182-186行定义的参数），以供后续更新参数使用
+            values[step] = value.flatten()
             actions[step] = action
             logprobs[step] = logprob
 
             # TRY NOT TO MODIFY: execute the game and log data.
+            # 上面是根据当前的状态让网络做决策，得到a和v，并存入容器
+            # 接下来还要根据a获取下一个时刻的s以及r等变量
             next_obs, reward, done, info = envs.step(action.cpu().numpy())
+            # 获取到r后也存入容器，供后续更新使用
             rewards[step] = torch.tensor(reward).to(device).view(-1)
+            # 将变量转换为tensor并放置到GPU上
             next_obs, next_done = torch.Tensor(next_obs).to(device), torch.Tensor(done).to(device)
 
+            # 如果游戏结束了（done=true），则记录输出episodie的return，并用tensorboard记录当前episodie的return和走过的长度（这部分有待验证）
             for item in info:
                 if "episode" in item.keys():
                     print(f"global_step={global_step}, episodic_return={item['episode']['r']}")
@@ -211,11 +242,15 @@ if __name__ == "__main__":
                     writer.add_scalar("charts/episodic_length", item["episode"]["l"], global_step)
                     break
 
+        # args.num_steps的循环结束了，代表游戏已经玩了args.num_steps步了，先不继续玩了，需要更新网络参数了
         # bootstrap value if not done
         with torch.no_grad():
+            # 为了更新参数，还需要获取下一时刻的v（critic的输出）
             next_value = agent.get_value(next_obs).reshape(1, -1)
+            # 用于更新actor的一部分参数是advantage，首先建立一个advantage的容器
             advantages = torch.zeros_like(rewards).to(device)
             lastgaelam = 0
+            #
             for t in reversed(range(args.num_steps)):
                 if t == args.num_steps - 1:
                     nextnonterminal = 1.0 - next_done
@@ -223,6 +258,8 @@ if __name__ == "__main__":
                 else:
                     nextnonterminal = 1.0 - dones[t + 1]
                     nextvalues = values[t + 1]
+                # 这里delta就是优势函数的各步估计，t=127时上面的if走分支1，得到nextvalues=next_value，即t=128时刻的V，则此时的优势函数为1步估计，A_delta=r127 + gamma*V128 - V127(td(1) target)
+                # 同理，t为其他值时，nextvalues=values[t + 1]，即128个时刻内，每个时刻得到的V（此时用的V是循环内t的下一个时刻t+1的V），此时的优势函数就是多步估计，
                 delta = rewards[t] + args.gamma * nextvalues * nextnonterminal - values[t]
                 advantages[t] = lastgaelam = delta + args.gamma * args.gae_lambda * nextnonterminal * lastgaelam
             returns = advantages + values
@@ -234,17 +271,41 @@ if __name__ == "__main__":
         b_advantages = advantages.reshape(-1)
         b_returns = returns.reshape(-1)
         b_values = values.reshape(-1)
+        # 这里reshape之后，所有容器中的数据都是以一维形式排列，[1,2,3,4]，obs和action因为在一个时刻可能是一个向量，所以它们对应的容器是二维的，将每个时刻的obs和action看作一个数字的话，那么每个容器内
+        # 的数据都是[t1_data, t2_data, ... tn_data]这样排列的
+        # print("b_obs", b_obs)
+        # print("b_logprobs", b_logprobs)
+        # print("b_actions", b_actions)
+        # print("b_advantages", b_advantages)
+        # print("b_returns", b_returns)
+        # print("b_values", b_values)
 
         # Optimizing the policy and value network
         b_inds = np.arange(args.batch_size)
+        # b_inds=[1,2,3,...,512]
         clipfracs = []
         for epoch in range(args.update_epochs):
+            # 对b_inds进行随机打乱
             np.random.shuffle(b_inds)
             for start in range(0, args.batch_size, args.minibatch_size):
+                # start从0开始，到batchsize=512结束，步长为minibatch_size，128
                 end = start + args.minibatch_size
                 mb_inds = b_inds[start:end]
-
+                # print("mb_inds", mb_inds)
+                # print("b_obs[mb_inds]", b_obs[mb_inds], b_obs[mb_inds].size(),len(b_obs[mb_inds]))
+                # print("b_actions.long()[mb_inds]",b_actions.long()[mb_inds])
+                # 这里的mb_inds是索引的序列，索引被shuffle过了，因此该序列内的索引是随机排列的[0,511]之间的数
+                # b_obs[mb_inds]是个[128,4]的输入tensor，输入给critic，将输出128个value，组成[128,1]的二维输出张量
+                # b_actions.long()[mb_inds]是128个动作组成的tensor(只有1维,128个元素的list)
                 _, newlogprob, entropy, newvalue = agent.get_action_and_value(b_obs[mb_inds], b_actions.long()[mb_inds])
+
+                # print("newlogprob", newlogprob, newlogprob.size())
+                # print("entropy", entropy, entropy.size())
+                # print("newvalue", newvalue, newvalue.size())
+                # newlogprob 和 entropy 的 size = [128] 是个长度为128的一维张量
+                # newvalue 的 size = [128,1] 是critic网络对batch=128的输入产生的输出
+
+                # 计算旧概率分布的log值与新概率分布的log值之差
                 logratio = newlogprob - b_logprobs[mb_inds]
                 ratio = logratio.exp()
 

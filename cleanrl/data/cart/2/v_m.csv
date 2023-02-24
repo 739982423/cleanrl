@@ -1,0 +1,1620 @@
+﻿model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2628.5870723724365,200,13.142935361862182
+vgg19,10,4,2749.6570434570312,26,105.75604013296274
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4160.096673965454,200,20.80048336982727
+vgg19,10,4,4336.44677734375,41,105.76699456935975
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7118.492534637451,200,35.592462673187256
+vgg19,10,4,7389.6127853393555,70,105.56589693341937
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2579.8740491867065,200,12.899370245933532
+vgg19,10,8,469.7978820800781,2,234.89894104003906
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4151.172122955322,200,20.755860614776612
+vgg19,10,8,2105.834945678711,9,233.9816606309679
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7118.786849975586,200,35.59393424987793
+vgg19,10,8,5619.730422973633,24,234.15543429056802
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2604.6281909942627,200,13.023140954971314
+vgg19,10,16,271.0876159667969,1,271.0876159667969
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4174.305067062378,200,20.87152533531189
+vgg19,10,16,1885.4347839355469,7,269.3478262765067
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7168.261493682861,200,35.84130746841431
+vgg19,10,16,4852.709564208984,18,269.594975789388
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1685.5666255950928,200,8.427833127975465
+vgg19,10,4,1826.8036880493164,17,107.4590404734892
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2236.9793272018433,200,11.184896636009217
+vgg19,10,4,2370.0787048339844,22,107.73085021972656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3806.071319580078,200,19.03035659790039
+vgg19,10,4,4003.5839462280273,37,108.20497151967642
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1687.8456010818481,200,8.439228005409241
+vgg19,10,8,231.89952087402344,1,231.89952087402344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2208.2580461502075,200,11.041290230751038
+vgg19,10,8,236.5911102294922,1,236.5911102294922
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3778.799768447876,200,18.89399884223938
+vgg19,10,8,1898.741714477539,8,237.34271430969238
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1638.7694735527039,200,8.193847367763519
+vgg19,10,16,267.00079345703125,1,267.00079345703125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2235.404354095459,200,11.177021770477294
+vgg19,10,16,268.32281494140625,1,268.32281494140625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3808.263038635254,200,19.04131519317627
+vgg19,10,16,1634.4967346191406,6,272.41612243652344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1614.9818897247314,200,8.074909448623657
+vgg19,10,4,1727.7463912963867,16,107.98414945602417
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1746.7716188430786,200,8.733858094215392
+vgg19,10,4,1865.927734375,17,109.76045496323529
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2595.289472579956,200,12.97644736289978
+vgg19,10,4,2726.2226028442383,24,113.59260845184326
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1626.3700542449951,200,8.131850271224975
+vgg19,10,8,230.31228637695312,1,230.31228637695312
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1741.517149925232,200,8.70758574962616
+vgg19,10,8,231.98883056640625,1,231.98883056640625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2566.5463342666626,200,12.832731671333313
+vgg19,10,8,490.8481903076172,2,245.4240951538086
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1604.9247360229492,200,8.024623680114747
+vgg19,10,16,265.8427734375,1,265.8427734375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1735.2908143997192,200,8.676454071998597
+vgg19,10,16,268.7979431152344,1,268.7979431152344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2595.995937347412,200,12.97997968673706
+vgg19,10,16,273.6987609863281,1,273.6987609863281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1613.2330250740051,200,8.066165125370025
+vgg19,10,4,1715.0702285766602,16,107.19188928604126
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1672.758457183838,200,8.363792285919189
+vgg19,10,4,1787.9090881347656,16,111.74431800842285
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2195.116484642029,200,10.975582423210144
+vgg19,10,4,2279.5307846069336,19,119.97530445299651
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1676.9205403327942,200,8.38460270166397
+vgg19,10,8,230.49417114257812,1,230.49417114257812
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1733.0794506072998,200,8.665397253036499
+vgg19,10,8,232.00070190429688,1,232.00070190429688
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2163.124035835266,200,10.81562017917633
+vgg19,10,8,232.2380828857422,1,232.2380828857422
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1670.5895957946777,200,8.352947978973388
+vgg19,10,16,265.2146301269531,1,265.2146301269531
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1740.0500144958496,200,8.700250072479248
+vgg19,10,16,267.1695251464844,1,267.1695251464844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2193.728735923767,200,10.968643679618836
+vgg19,10,16,268.3821716308594,1,268.3821716308594
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1694.6788511276245,200,8.473394255638123
+vgg19,10,4,1834.1539840698242,17,107.89141082763672
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1710.6989965438843,200,8.553494982719421
+vgg19,10,4,1806.3711700439453,16,112.89819812774658
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,1930.2199983596802,200,9.6510999917984
+vgg19,10,4,2032.4684524536133,16,127.02927827835083
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1618.940124988556,200,8.09470062494278
+vgg19,10,8,228.95382690429688,1,228.95382690429688
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1738.2092847824097,200,8.691046423912049
+vgg19,10,8,231.942138671875,1,231.942138671875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,1908.2495069503784,200,9.541247534751893
+vgg19,10,8,232.59341430664062,1,232.59341430664062
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1655.5923223495483,200,8.277961611747742
+vgg19,10,16,265.22418212890625,1,265.22418212890625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1680.5381126403809,200,8.402690563201904
+vgg19,10,16,268.1068420410156,1,268.1068420410156
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,1937.4360008239746,200,9.687180004119874
+vgg19,10,16,267.1683654785156,1,267.1683654785156
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1632.2321214675903,200,8.161160607337951
+vgg19,10,4,1727.1723403930664,16,107.94827127456665
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1731.588900566101,200,8.657944502830505
+vgg19,10,4,1830.0022201538086,16,114.37513875961304
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1845.9085483551025,200,9.229542741775512
+vgg19,10,4,1993.5005950927734,15,132.90003967285156
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1652.7560005187988,200,8.263780002593995
+vgg19,10,8,230.791015625,1,230.791015625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1719.9451780319214,200,8.599725890159608
+vgg19,10,8,230.76400756835938,1,230.76400756835938
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1773.3473615646362,200,8.86673680782318
+vgg19,10,8,232.02102661132812,1,232.02102661132812
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1710.3402891159058,200,8.551701445579528
+vgg19,10,16,265.0563659667969,1,265.0563659667969
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1679.6628465652466,200,8.398314232826232
+vgg19,10,16,268.4559326171875,1,268.4559326171875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1806.071717262268,200,9.03035858631134
+vgg19,10,16,267.0400695800781,1,267.0400695800781
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1655.5601863861084,200,8.277800931930543
+vgg19,10,4,1736.1813888549805,16,108.51133680343628
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1683.9067850112915,200,8.419533925056458
+vgg19,10,4,1738.529182434082,15,115.90194549560547
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1802.269079208374,200,9.01134539604187
+vgg19,10,4,1910.512077331543,14,136.4651483808245
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1674.0349054336548,200,8.370174527168274
+vgg19,10,8,230.434814453125,1,230.434814453125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1809.3171854019165,200,9.046585927009582
+vgg19,10,8,230.5062713623047,1,230.5062713623047
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1767.614818572998,200,8.838074092864991
+vgg19,10,8,232.3231658935547,1,232.3231658935547
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1598.4049944877625,200,7.992024972438812
+vgg19,10,16,265.2153625488281,1,265.2153625488281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1704.3739852905273,200,8.521869926452636
+vgg19,10,16,267.2046203613281,1,267.2046203613281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1769.6992645263672,200,8.848496322631837
+vgg19,10,16,267.0180358886719,1,267.0180358886719
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1669.0141763687134,200,8.345070881843567
+vgg19,10,4,1736.131217956543,16,108.50820112228394
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1704.821153640747,200,8.524105768203736
+vgg19,10,4,1754.314208984375,15,116.95428059895833
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1772.6185874938965,200,8.863092937469482
+vgg19,10,4,1852.8370056152344,13,142.5259235088642
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1617.2544913291931,200,8.086272456645965
+vgg19,10,8,230.57594299316406,1,230.57594299316406
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1765.725474357605,200,8.828627371788025
+vgg19,10,8,230.20806884765625,1,230.20806884765625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1705.5831956863403,200,8.527915978431702
+vgg19,10,8,232.07644653320312,1,232.07644653320312
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1659.10604763031,200,8.29553023815155
+vgg19,10,16,265.5190734863281,1,265.5190734863281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1694.3312911987305,200,8.471656455993653
+vgg19,10,16,268.1231384277344,1,268.1231384277344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1835.9207696914673,200,9.179603848457337
+vgg19,10,16,267.0210266113281,1,267.0210266113281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,4,1747.7675857543945,200,8.738837928771973
+vgg19,10,4,1849.7053146362305,17,108.8061949786018
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,8,1745.447774887085,200,8.727238874435425
+vgg19,10,4,1866.6420669555664,16,116.6651291847229
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,16,1668.667046546936,200,8.343335232734681
+vgg19,10,4,1777.166160583496,12,148.09718004862467
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,4,1711.8049659729004,200,8.559024829864502
+vgg19,10,8,230.27352905273438,1,230.27352905273438
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,8,1697.552451133728,200,8.48776225566864
+vgg19,10,8,230.72569274902344,1,230.72569274902344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,16,1656.5417890548706,200,8.282708945274353
+vgg19,10,8,232.00067138671875,1,232.00067138671875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,4,1653.173156261444,200,8.26586578130722
+vgg19,10,16,264.9989013671875,1,264.9989013671875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,8,1654.4846062660217,200,8.272423031330108
+vgg19,10,16,268.0606689453125,1,268.0606689453125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,90,16,1774.4182081222534,200,8.872091040611267
+vgg19,10,16,268.10986328125,1,268.10986328125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2683.032706260681,200,13.415163531303406
+vgg19,20,4,2779.79443359375,52,53.45758526141827
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4199.240459442139,200,20.996202297210694
+vgg19,20,4,4362.431720733643,82,53.20038683821515
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7185.197681427002,200,35.92598840713501
+vgg19,20,4,7397.004013061523,139,53.21585620907571
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2642.937249183655,200,13.214686245918275
+vgg19,20,8,2820.024459838867,24,117.5010191599528
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4202.687618255615,200,21.013438091278076
+vgg19,20,8,4337.272438049316,37,117.22357940673828
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7209.564987182617,200,36.047824935913084
+vgg19,20,8,7410.13020324707,63,117.62111433725508
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2688.796827316284,200,13.44398413658142
+vgg19,20,16,2589.014450073242,19,136.26391842490747
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4275.098751068115,200,21.375493755340575
+vgg19,20,16,4376.499725341797,32,136.76561641693115
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7316.103973388672,200,36.58051986694336
+vgg19,20,16,7530.206115722656,55,136.91283846768465
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1665.5049314498901,200,8.32752465724945
+vgg19,20,4,1741.7674942016602,32,54.43023419380188
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2300.5608882904053,200,11.502804441452026
+vgg19,20,4,2411.3518676757812,44,54.80345153808594
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3895.4381771087646,200,19.477190885543823
+vgg19,20,4,4054.385570526123,74,54.78899419629896
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1676.8450899124146,200,8.384225449562074
+vgg19,20,8,1773.5409240722656,15,118.2360616048177
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2272.3138933181763,200,11.36156946659088
+vgg19,20,8,2384.7676544189453,20,119.23838272094727
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3849.536352157593,200,19.247681760787962
+vgg19,20,8,4070.205093383789,34,119.71191451128792
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1699.0658559799194,200,8.495329279899597
+vgg19,20,16,1509.9158477783203,11,137.2650770707564
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2308.130813598633,200,11.540654067993165
+vgg19,20,16,2077.4165954589844,15,138.49443969726562
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,3931.542013168335,200,19.657710065841673
+vgg19,20,16,4054.4202575683594,29,139.8075950885641
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1648.0687370300293,200,8.240343685150146
+vgg19,20,4,1692.355094909668,31,54.59209983579574
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1703.6770915985107,200,8.518385457992554
+vgg19,20,4,1744.1649169921875,31,56.26338441910282
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2682.671772956848,200,13.413358864784241
+vgg19,20,4,2778.6310806274414,48,57.888147513071694
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1606.1760621070862,200,8.03088031053543
+vgg19,20,8,1664.343162536621,14,118.88165446690151
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1738.817632675171,200,8.694088163375854
+vgg19,20,8,1833.4723892211914,15,122.23149261474609
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2641.1256971359253,200,13.205628485679627
+vgg19,20,8,2792.0238723754883,22,126.91017601706766
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1649.6198377609253,200,8.248099188804627
+vgg19,20,16,1380.7640380859375,10,138.07640380859374
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1713.6522874832153,200,8.568261437416076
+vgg19,20,16,1426.710693359375,10,142.6710693359375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2688.906656265259,200,13.444533281326294
+vgg19,20,16,2510.1546783447266,17,147.6561575496898
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1659.4985961914062,200,8.297492980957031
+vgg19,20,4,1745.1340827941895,32,54.53544008731842
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1754.8379220962524,200,8.774189610481262
+vgg19,20,4,1811.3108367919922,32,56.603463649749756
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2273.7231006622314,200,11.368615503311156
+vgg19,20,4,2375.9204444885254,39,60.92103703816732
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1690.391170501709,200,8.451955852508545
+vgg19,20,8,1786.327522277832,15,119.0885014851888
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1748.816967010498,200,8.74408483505249
+vgg19,20,8,1868.031867980957,15,124.53545786539713
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2251.890336036682,200,11.25945168018341
+vgg19,20,8,2422.9436111450195,18,134.60797839694553
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1687.7266283035278,200,8.43863314151764
+vgg19,20,16,1387.827621459961,10,138.7827621459961
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1723.0457248687744,200,8.615228624343873
+vgg19,20,16,1586.899169921875,11,144.26356090198863
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2301.55526638031,200,11.50777633190155
+vgg19,20,16,2036.0441436767578,13,156.61878028282752
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1633.222557067871,200,8.166112785339356
+vgg19,20,4,1700.9294738769531,31,54.86869270570816
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1656.1683917045593,200,8.280841958522796
+vgg19,20,4,1735.1712684631348,30,57.839042282104494
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2010.3138856887817,200,10.051569428443909
+vgg19,20,4,2069.4184532165527,32,64.66932666301727
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1624.4393291473389,200,8.122196645736695
+vgg19,20,8,1677.484130859375,14,119.82029506138393
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1690.2912950515747,200,8.451456475257874
+vgg19,20,8,1764.832748413086,14,126.05948202950614
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,1975.1521892547607,200,9.875760946273804
+vgg19,20,8,2131.2074966430664,15,142.08049977620442
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1687.4074563980103,200,8.437037281990051
+vgg19,20,16,1392.461196899414,10,139.2461196899414
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1705.2910346984863,200,8.526455173492431
+vgg19,20,16,1470.8502197265625,10,147.08502197265625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2033.8676223754883,200,10.169338111877442
+vgg19,20,16,1824.0354309082031,11,165.82140280983666
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1667.4094743728638,200,8.337047371864319
+vgg19,20,4,1707.5332145690918,31,55.08171659900296
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1739.4438390731812,200,8.697219195365905
+vgg19,20,4,1805.7471923828125,31,58.24990943170363
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1865.2146635055542,200,9.32607331752777
+vgg19,20,4,1966.2080535888672,29,67.80027770996094
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1637.0503368377686,200,8.185251684188843
+vgg19,20,8,1792.2994842529297,15,119.48663228352865
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1681.152159690857,200,8.405760798454285
+vgg19,20,8,1782.216423034668,14,127.30117307390485
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1831.0593938827515,200,9.155296969413758
+vgg19,20,8,1940.2100524902344,13,149.24692711463342
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1618.3584632873535,200,8.091792316436768
+vgg19,20,16,1397.7657012939453,10,139.77657012939454
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1715.429723739624,200,8.57714861869812
+vgg19,20,16,1479.7835845947266,10,147.97835845947264
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1879.9668464660645,200,9.399834232330322
+vgg19,20,16,1736.1877136230469,10,173.6187713623047
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1708.8668804168701,200,8.54433440208435
+vgg19,20,4,1764.2220497131348,32,55.13193905353546
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1681.7109460830688,200,8.408554730415345
+vgg19,20,4,1772.2250633239746,30,59.07416877746582
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1795.3138580322266,200,8.976569290161132
+vgg19,20,4,1849.6076736450195,26,71.1387566786546
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1741.5697298049927,200,8.707848649024964
+vgg19,20,8,1802.291893005371,15,120.15279286702474
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1712.0104999542236,200,8.560052499771118
+vgg19,20,8,1803.846664428711,14,128.8461903163365
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1851.2403211593628,200,9.256201605796814
+vgg19,20,8,1920.6966247558594,12,160.05805206298828
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1706.018466949463,200,8.530092334747314
+vgg19,20,16,1535.44580078125,11,139.58598188920453
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1660.659236907959,200,8.303296184539795
+vgg19,20,16,1354.1951599121094,9,150.46612887912326
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1848.2496643066406,200,9.241248321533202
+vgg19,20,16,1465.9558410644531,8,183.24448013305664
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1656.748098373413,200,8.283740491867066
+vgg19,20,4,1718.7152633666992,31,55.442427850538685
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1747.400011062622,200,8.73700005531311
+vgg19,20,4,1840.2934799194336,31,59.364305803852695
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1764.065788269043,200,8.820328941345215
+vgg19,20,4,1833.9995155334473,25,73.3599806213379
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1652.3882522583008,200,8.261941261291504
+vgg19,20,8,1694.0719680786133,14,121.0051405770438
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1684.460124015808,200,8.42230062007904
+vgg19,20,8,1818.7731018066406,14,129.91236441476005
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1732.3820819854736,200,8.661910409927367
+vgg19,20,8,1772.2508850097656,11,161.1137168190696
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,4,1675.8975343704224,200,8.379487671852111
+vgg19,20,16,1400.5563201904297,10,140.05563201904297
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,8,1739.6472940444946,200,8.698236470222474
+vgg19,20,16,1503.2000732421875,10,150.32000732421875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,80,16,1810.6363186836243,200,9.053181593418122
+vgg19,20,16,1491.0694732666016,8,186.3836841583252
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2742.2376012802124,200,13.711188006401063
+vgg19,30,4,2849.741542816162,87,32.75564991742715
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4306.720235824585,200,21.533601179122925
+vgg19,30,4,4459.017997741699,136,32.78689704221838
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,30,4,6563.925819396973,200,32.81962909698486
+mobilenet,10,16,6408.399463653564,174,36.829881975020484
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2751.5191020965576,200,13.757595510482789
+vgg19,30,8,2897.4411697387695,40,72.43602924346924
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4337.794691085815,200,21.68897345542908
+vgg19,30,8,4498.222267150879,62,72.55197205082062
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7428.2044677734375,200,37.14102233886719
+vgg19,30,8,7633.203422546387,105,72.69717545282273
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2837.9618215560913,200,14.189809107780457
+vgg19,30,16,3008.5587997436523,35,85.95882284981865
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4468.722333908081,200,22.343611669540405
+vgg19,30,16,4662.833847045898,54,86.34877494529441
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7648.1103515625,200,38.2405517578125
+vgg19,30,16,7871.491981506348,91,86.49991188468513
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1707.324026107788,200,8.53662013053894
+vgg19,30,4,1772.2505226135254,53,33.43868910591557
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2373.621214866638,200,11.868106074333191
+vgg19,30,4,2462.583972930908,73,33.734027026450796
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4018.212993621826,200,20.09106496810913
+vgg19,30,4,4158.627338409424,123,33.809978361052224
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1652.6431379318237,200,8.263215689659118
+vgg19,30,8,1761.0950393676758,24,73.37895997365315
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2368.2384967803955,200,11.841192483901978
+vgg19,30,8,2518.6070404052734,34,74.07667765897862
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4015.4246196746826,200,20.077123098373413
+vgg19,30,8,4176.7560958862305,56,74.58493028368268
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1708.732765197754,200,8.54366382598877
+vgg19,30,16,1829.5079650878906,21,87.11942690894718
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2460.3758430480957,200,12.30187921524048
+vgg19,30,16,2562.9843826293945,29,88.37877181480671
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4187.903287887573,200,20.939516439437867
+vgg19,30,16,4386.65518951416,49,89.52357529620735
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1611.096929550171,200,8.055484647750854
+vgg19,30,4,1649.876609802246,49,33.670951220454
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1697.2396788597107,200,8.486198394298553
+vgg19,30,4,1754.6965065002441,50,35.093930130004885
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2815.149700164795,200,14.075748500823975
+vgg19,30,4,2931.8325424194336,81,36.195463486659676
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1663.9063653945923,200,8.31953182697296
+vgg19,30,8,1764.546531677246,24,73.52277215321858
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1724.7603168487549,200,8.623801584243774
+vgg19,30,8,1766.8772659301758,23,76.82075069261634
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2780.141568183899,200,13.900707840919495
+vgg19,30,8,2879.042510986328,36,79.97340308295355
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1665.0477075576782,200,8.32523853778839
+vgg19,30,16,1763.633445739746,20,88.18167228698731
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1745.307520866394,200,8.72653760433197
+vgg19,30,16,1843.6673583984375,20,92.18336791992188
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2911.5138626098633,200,14.557569313049317
+vgg19,30,16,3065.921226501465,32,95.81003832817078
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1638.5357384681702,200,8.19267869234085
+vgg19,30,4,1691.2254638671875,50,33.82450927734375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1734.9276189804077,200,8.674638094902038
+vgg19,30,4,1776.059944152832,50,35.52119888305664
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2390.0345277786255,200,11.950172638893127
+vgg19,30,4,2486.3259658813477,65,38.25116870586689
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1638.8332118988037,200,8.194166059494018
+vgg19,30,8,1707.9519653320312,23,74.25878110139266
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1690.4162864685059,200,8.45208143234253
+vgg19,30,8,1782.880729675293,23,77.51655346414317
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2361.063744544983,200,11.805318722724914
+vgg19,30,8,2459.461753845215,29,84.80902599466258
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1676.4873600006104,200,8.382436800003052
+vgg19,30,16,1762.612174987793,20,88.13060874938965
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1733.520480632782,200,8.66760240316391
+vgg19,30,16,1792.8132553100586,18,99.60073640611436
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2463.0311708450317,200,12.315155854225159
+vgg19,30,16,2616.6174240112305,26,100.63913169273964
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1669.867392539978,200,8.34933696269989
+vgg19,30,4,1717.0264167785645,50,34.34052833557129
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1722.2087631225586,200,8.611043815612794
+vgg19,30,4,1777.5654029846191,50,35.55130805969238
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2327.6023645401,200,11.6380118227005
+vgg19,30,4,2441.403907775879,55,44.389161959561434
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1689.519874572754,200,8.44759937286377
+vgg19,30,8,1795.1851501464844,24,74.79938125610352
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1742.729022026062,200,8.71364511013031
+vgg19,30,8,1813.385627746582,23,78.84285338028617
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2099.1347217559814,200,10.495673608779907
+vgg19,30,8,2179.8095703125,24,90.82539876302083
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1661.178087234497,200,8.305890436172485
+vgg19,30,16,1767.5915145874023,20,88.37957572937012
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1726.6159973144531,200,8.633079986572266
+vgg19,30,16,1815.2361068725586,19,95.53874246697677
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2192.1959915161133,200,10.960979957580566
+vgg19,30,16,2281.3990631103516,21,108.63805062430245
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1671.2707452774048,200,8.356353726387024
+vgg19,30,4,1734.3967514038086,51,34.00777943929037
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1723.8877439498901,200,8.61943871974945
+vgg19,30,4,1776.3907928466797,49,36.25287332340162
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1970.6296072006226,200,9.853148036003113
+vgg19,30,4,2050.169147491455,48,42.71185723940531
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1643.9648661613464,200,8.219824330806732
+vgg19,30,8,1713.9288711547852,23,74.51864657194719
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1688.1922841072083,200,8.440961420536041
+vgg19,30,8,1757.6990127563477,22,79.89540967074308
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,1944.002010345459,200,9.720010051727295
+vgg19,30,8,2008.6545944213867,21,95.65021878197079
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1689.3792276382446,200,8.446896138191223
+vgg19,30,16,1768.0091018676758,20,88.40045509338378
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1761.2411212921143,200,8.806205606460571
+vgg19,30,16,1822.7853164672852,19,95.93606928775185
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,2034.2632331848145,200,10.171316165924072
+vgg19,30,16,2151.739891052246,19,113.24946795011822
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1658.216733455658,200,8.29108366727829
+vgg19,30,4,1710.3965034484863,50,34.20793006896972
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1752.4471349716187,200,8.762235674858093
+vgg19,30,4,1794.867374420166,49,36.62994641673808
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1918.8068227767944,200,9.594034113883971
+vgg19,30,4,1983.9361267089844,44,45.08945742520419
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1622.073706150055,200,8.110368530750275
+vgg19,30,8,1721.0362548828125,23,74.82766325577445
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1685.3647947311401,200,8.4268239736557
+vgg19,30,8,1777.3276824951172,22,80.78762193159623
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1867.054440498352,200,9.33527220249176
+vgg19,30,8,1973.8241500854492,20,98.69120750427246
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,4,1663.5156145095825,200,8.317578072547912
+vgg19,30,16,1785.1478118896484,20,89.25739059448242
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,8,1696.6337957382202,200,8.4831689786911
+vgg19,30,16,1749.1676559448242,18,97.17598088582356
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,70,16,1981.055998802185,200,9.905279994010925
+vgg19,30,16,2054.7653732299805,17,120.86855136646943
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2834.9720315933228,200,14.174860157966613
+vgg19,40,4,2939.8298873901367,115,25.56373815121858
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4435.679864883423,200,22.178399324417114
+vgg19,40,4,4569.094470977783,179,25.525667435630073
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,40,4,5111.249292373657,200,25.556246461868287
+mobilenet,10,16,4942.556114196777,130,38.019662416898285
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2972.8860845565796,200,14.864430422782897
+vgg19,40,8,3118.431224822998,71,43.92156654680279
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4659.58738899231,200,23.29793694496155
+vgg19,40,8,4814.062721252441,109,44.16571303901323
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,7920.5150718688965,200,39.602575359344485
+vgg19,40,8,8147.075942993164,184,44.27758664670198
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3174.0765533447266,200,15.870382766723633
+vgg19,40,16,3291.7997093200684,62,53.09354369871078
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4958.736005783081,200,24.793680028915404
+vgg19,40,16,5100.266555786133,95,53.687016376696135
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,16,8514.148765563965,200,42.570743827819825
+vgg19,40,16,8778.323825836182,162,54.187184110099885
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1710.8253145217896,200,8.554126572608947
+vgg19,40,4,1749.6881504058838,63,27.77282778422038
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2535.5362186431885,200,12.677681093215943
+vgg19,40,4,2641.5059146881104,97,27.232019739052685
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4413.560346603394,200,22.067801733016967
+vgg19,40,4,4538.8114376068115,162,28.017354553128467
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1743.164927482605,200,8.715824637413025
+vgg19,40,8,1800.1187210083008,40,45.00296802520752
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2593.3977575302124,200,12.966988787651061
+vgg19,40,8,2700.837989807129,59,45.77691508147676
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4550.495845794678,200,22.75247922897339
+vgg19,40,8,4727.424537658691,99,47.75176300665345
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1817.8817901611328,200,9.089408950805664
+vgg19,40,16,1861.0004386901855,34,54.73530702029957
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2879.8075246810913,200,14.399037623405457
+vgg19,40,16,2982.074977874756,52,57.34759572836069
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4856.225984573364,200,24.28112992286682
+vgg19,40,16,5009.632183074951,87,57.58197911580404
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1678.3682899475098,200,8.391841449737548
+vgg19,40,4,1737.9026527404785,66,26.331858374855734
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1769.3642406463623,200,8.846821203231812
+vgg19,40,4,1811.0121326446533,64,28.297064572572708
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,2928.9955167770386,200,14.644977583885193
+vgg19,40,4,3037.3382987976074,106,28.65413489431705
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1633.4036836624146,200,8.167018418312074
+vgg19,40,8,1710.2407112121582,38,45.00633450558311
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1780.960412979126,200,8.90480206489563
+vgg19,40,8,1853.2165756225586,39,47.51837373391176
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3085.37305355072,200,15.426865267753602
+vgg19,40,8,3204.32511138916,65,49.29730940598708
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1693.4270734786987,200,8.467135367393494
+vgg19,40,16,1770.548095703125,32,55.329627990722656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1947.315746307373,200,9.736578731536865
+vgg19,40,16,1988.1769638061523,34,58.475793053122125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3375.1213054656982,200,16.87560652732849
+vgg19,40,16,3527.618942260742,58,60.821016245874866
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1619.5176634788513,200,8.097588317394257
+vgg19,40,4,1669.7707786560059,62,26.931786752516224
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1755.203685760498,200,8.776018428802491
+vgg19,40,4,1801.9677085876465,64,28.155745446681976
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2488.725371360779,200,12.443626856803894
+vgg19,40,4,2593.786148071289,86,30.16030404734057
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1635.0584330558777,200,8.175292165279389
+vgg19,40,8,1715.3625259399414,38,45.14111910368267
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1702.0749444961548,200,8.510374722480774
+vgg19,40,8,1756.5371894836426,36,48.79269970787896
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2641.048801422119,200,13.205244007110595
+vgg19,40,8,2764.97513961792,53,52.16934225694189
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1634.1861424446106,200,8.170930712223052
+vgg19,40,16,1720.1038398742676,31,55.4872206411054
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1773.0507516860962,200,8.86525375843048
+vgg19,40,16,1812.9470405578613,30,60.43156801859538
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2884.2393350601196,200,14.421196675300598
+vgg19,40,16,3015.334804534912,47,64.15605967095557
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1664.144868850708,200,8.32072434425354
+vgg19,40,4,1700.2995853424072,63,26.988882307022337
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1715.8698873519897,200,8.579349436759948
+vgg19,40,4,1775.6130924224854,62,28.63892084552396
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2211.585308074951,200,11.057926540374757
+vgg19,40,4,2286.6247577667236,71,32.20598250375667
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1611.344922542572,200,8.056724612712861
+vgg19,40,8,1673.929759979248,37,45.241344864304004
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1703.0077438354492,200,8.515038719177246
+vgg19,40,8,1775.770809173584,36,49.32696692148844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2338.9635829925537,200,11.69481791496277
+vgg19,40,8,2419.5589866638184,44,54.98997696963224
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1641.3739185333252,200,8.206869592666626
+vgg19,40,16,1730.3553276062012,31,55.817913793748424
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1705.5316200256348,200,8.527658100128173
+vgg19,40,16,1774.5287170410156,29,61.190645415207435
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2573.177119255066,200,12.86588559627533
+vgg19,40,16,2659.749824523926,39,68.19871344933144
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1620.608826160431,200,8.103044130802154
+vgg19,40,4,1672.2655067443848,63,26.54389693245055
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1722.0760688781738,200,8.610380344390869
+vgg19,40,4,1765.4325428009033,61,28.941517095096774
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,2051.4060792922974,200,10.257030396461486
+vgg19,40,4,2125.6963596343994,63,33.74121205768888
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1639.647008895874,200,8.19823504447937
+vgg19,40,8,1688.3734741210938,37,45.631715516786315
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1734.6893730163574,200,8.673446865081788
+vgg19,40,8,1781.5849609375,36,49.48847113715278
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,2163.7051219940186,200,10.818525609970093
+vgg19,40,8,2244.984645843506,39,57.5637088677822
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,4,1635.641728401184,200,8.17820864200592
+vgg19,40,16,1675.605037689209,30,55.85350125630696
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,8,1692.4997186660767,200,8.462498593330384
+vgg19,40,16,1735.7105560302734,28,61.98966271536691
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,60,16,2364.1949424743652,200,11.820974712371827
+vgg19,40,16,2468.49609375,35,70.52845982142857
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,2976.9421157836914,200,14.884710578918456
+vgg19,50,4,3084.2217350006104,149,20.69947473154772
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,4,4168.0288009643555,200,20.840144004821777
+mobilenet,10,8,4039.2583541870117,173,23.34831418605209
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,4,4170.645126342773,200,20.85322563171387
+mobilenet,10,16,4000.427848815918,100,40.00427848815918
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3191.735677719116,200,15.958678388595581
+vgg19,50,8,3303.585205078125,91,36.303134121737635
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,4957.718023300171,200,24.788590116500856
+vgg19,50,8,5107.93692779541,140,36.48526376996722
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,7353.400424957275,200,36.76700212478638
+mobilenet,10,16,7162.980365753174,169,42.38449920564008
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3594.081606864929,200,17.970408034324645
+vgg19,50,16,3725.421977996826,82,45.43197534142471
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,5546.138916015625,200,27.730694580078126
+vgg19,50,16,5741.686065673828,125,45.93348852539062
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,9212.249603271484,200,46.061248016357425
+mobilenet,10,16,8991.486137390137,196,45.87492927239866
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1705.536955833435,200,8.527684779167176
+vgg19,50,4,1791.6257190704346,84,21.328877607981365
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2603.940700531006,200,13.019703502655029
+vgg19,50,4,2701.992353439331,125,21.615938827514647
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,4,4377.435167312622,200,21.88717583656311
+mobilenet,20,16,4278.302833557129,196,21.828075681413925
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1815.378526687622,200,9.07689263343811
+vgg19,50,8,1861.3373947143555,50,37.22674789428711
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2771.1390991210938,200,13.855695495605469
+vgg19,50,8,2869.3747749328613,76,37.754931249116595
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,4722.0409297943115,200,23.610204648971557
+vgg19,50,8,4880.000961303711,127,38.42520441971426
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2050.5559644699097,200,10.252779822349549
+vgg19,50,16,2108.094207763672,45,46.84653795030382
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,3148.4512252807617,200,15.74225612640381
+vgg19,50,16,3297.8985328674316,69,47.795630911122196
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,5383.970212936401,200,26.919851064682007
+vgg19,50,16,5560.949378967285,114,48.78025771023934
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1669.6500806808472,200,8.348250403404236
+vgg19,50,4,1711.7562885284424,79,21.667801120613195
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1784.573371887207,200,8.922866859436034
+vgg19,50,4,1858.556037902832,82,22.66531753540039
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3092.394362449646,200,15.46197181224823
+vgg19,50,4,3186.865348815918,136,23.432833447175867
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1693.9919986724854,200,8.469959993362426
+vgg19,50,8,1755.750400543213,47,37.35639150091942
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1902.351999282837,200,9.511759996414185
+vgg19,50,8,1975.258171081543,50,39.50516342163086
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3301.504532814026,200,16.50752266407013
+vgg19,50,8,3437.126491546631,84,40.91817251841227
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1659.439486503601,200,8.297197432518006
+vgg19,50,16,1710.6642875671387,36,47.51845243242052
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,2182.3605699539185,200,10.911802849769593
+vgg19,50,16,2249.9208908081055,45,49.9982420179579
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3779.090292930603,200,18.895451464653014
+vgg19,50,16,3907.4182357788086,75,52.098909810384114
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1636.3459177017212,200,8.181729588508606
+vgg19,50,4,1663.3912620544434,77,21.60248392278498
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1692.374659538269,200,8.461873297691346
+vgg19,50,4,1758.4974327087402,75,23.446632436116538
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2611.5311698913574,200,13.057655849456786
+vgg19,50,4,2707.106622695923,110,24.610060206326573
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1667.3281230926514,200,8.336640615463256
+vgg19,50,8,1726.2926712036133,46,37.52810154790463
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1733.9317779541016,200,8.669658889770508
+vgg19,50,8,1780.4673156738281,44,40.465166265314274
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2838.0444765090942,200,14.190222382545471
+vgg19,50,8,2942.884006500244,68,43.27770597794477
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1658.805407524109,200,8.294027037620545
+vgg19,50,16,1722.576416015625,36,47.849344889322914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1907.6028480529785,200,9.538014240264893
+vgg19,50,16,1964.5202026367188,38,51.69790006938734
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,3225.617205619812,200,16.12808602809906
+vgg19,50,16,3349.19571685791,61,54.90484781734279
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1636.1784286499023,200,8.180892143249512
+vgg19,50,4,1684.0666522979736,78,21.590598106384277
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1759.0294036865234,200,8.795147018432617
+vgg19,50,4,1796.3187732696533,77,23.328815237268223
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2312.0238456726074,200,11.560119228363037
+vgg19,50,4,2400.6548805236816,92,26.094074788300887
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1636.6390681266785,200,8.183195340633393
+vgg19,50,8,1696.3504905700684,45,37.69667756822374
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1695.642723083496,200,8.47821361541748
+vgg19,50,8,1743.7417259216309,42,41.51766014099121
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2500.640763282776,200,12.50320381641388
+vgg19,50,8,2601.4092903137207,57,45.63875947918808
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,4,1674.7107257843018,200,8.373553628921508
+vgg19,50,16,1736.3300514221191,36,48.23139031728109
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,8,1805.9015684127808,200,9.029507842063904
+vgg19,50,16,1852.823429107666,35,52.937812260219026
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,50,16,2855.9445123672485,200,14.279722561836243
+vgg19,50,16,2953.6218185424805,51,57.91415330475452
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3120.772894859314,200,15.60386447429657
+vgg19,60,4,3217.0726947784424,175,18.3832725415911
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,60,4,3706.5569133758545,200,18.532784566879272
+mobilenet,10,8,3590.1269454956055,147,24.42263228228303
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,60,4,3743.228925704956,200,18.71614462852478
+mobilenet,10,16,3572.754550933838,85,42.03240648157456
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3370.815951347351,200,16.854079756736756
+vgg19,60,8,3498.6458988189697,107,32.69762522260719
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,5233.642597198486,200,26.168212985992433
+vgg19,60,8,5404.110511779785,164,32.95189336451089
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,60,8,6638.449897766113,200,33.19224948883057
+mobilenet,10,16,6447.015647888184,144,44.770941999223496
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3911.489398956299,200,19.557446994781493
+vgg19,60,16,4036.4842948913574,96,42.04671140511831
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,6041.028125762939,200,30.205140628814696
+vgg19,60,16,6211.198963165283,146,42.54245865181701
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,60,16,8599.915428161621,200,42.99957714080811
+mobilenet,10,16,8392.267780303955,162,51.8041221006417
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1782.9882535934448,200,8.914941267967224
+vgg19,60,4,1854.4178562164307,97,19.117709857901346
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2714.269857406616,200,13.571349287033081
+vgg19,60,4,2809.967945098877,146,19.246355788348474
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,60,4,3890.2081356048584,200,19.45104067802429
+mobilenet,20,16,3783.1409606933594,164,23.06793268715463
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1918.970398902893,200,9.594851994514466
+vgg19,60,8,1968.580810546875,59,33.365776449947035
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2923.4088287353516,200,14.617044143676758
+vgg19,60,8,3026.9235877990723,89,34.01037739100081
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,5006.177412033081,200,25.030887060165405
+vgg19,60,8,5174.6518630981445,149,34.72920713488688
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2260.664065361023,200,11.303320326805114
+vgg19,60,16,2332.85103225708,54,43.20094504179778
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,3445.9442234039307,200,17.229721117019654
+vgg19,60,16,3585.196620941162,81,44.261686678285955
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,5859.826723098755,200,29.299133615493773
+vgg19,60,16,6022.802265167236,133,45.28422755764839
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1705.7138576507568,200,8.528569288253784
+vgg19,60,4,1754.8725109100342,91,19.284313306703673
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1866.041374206543,200,9.330206871032715
+vgg19,60,4,1929.792402267456,95,20.313604234394273
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3212.2457904815674,200,16.061228952407838
+vgg19,60,4,3325.2917671203613,160,20.78307354450226
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1673.3890523910522,200,8.36694526195526
+vgg19,60,8,1725.0442276000977,51,33.82439661960976
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1996.4380207061768,200,9.982190103530884
+vgg19,60,8,2060.5980796813965,58,35.52755309795511
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3482.2752647399902,200,17.41137632369995
+vgg19,60,8,3618.0861282348633,98,36.9192462064782
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1778.0347871780396,200,8.890173935890198
+vgg19,60,16,1854.0444717407227,42,44.14391599382673
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,2372.3850269317627,200,11.861925134658813
+vgg19,60,16,2414.1002922058105,52,46.425005619342514
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,4086.084032058716,200,20.43042016029358
+vgg19,60,16,4235.383197784424,88,48.129354520277545
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1681.9023084640503,200,8.409511542320251
+vgg19,60,4,1734.5689582824707,90,19.272988425360786
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1706.7667560577393,200,8.533833780288695
+vgg19,60,4,1771.1776008605957,85,20.83738353953642
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2719.533345222473,200,13.597666726112365
+vgg19,60,4,2806.183322906494,128,21.923307210206985
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1670.0316429138184,200,8.350158214569092
+vgg19,60,8,1730.940544128418,51,33.940010669184666
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,1752.383903503418,200,8.76191951751709
+vgg19,60,8,1796.1386833190918,49,36.655891496307994
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,2960.975172996521,200,14.804875864982606
+vgg19,60,8,3063.9705200195312,79,38.78443696227255
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,4,1717.2557735443115,200,8.586278867721557
+vgg19,60,16,1776.1188278198242,40,44.402970695495604
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,8,2080.0648670196533,200,10.400324335098267
+vgg19,60,16,2146.1795196533203,45,47.69287821451823
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,40,16,3480.038109779358,200,17.400190548896788
+vgg19,60,16,3594.8066368103027,71,50.631079391694406
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,4,3349.7755336761475,200,16.748877668380736
+mobilenet,10,4,3266.334571838379,197,16.580378537250656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,4,3365.4217319488525,200,16.827108659744262
+mobilenet,10,8,3259.388484954834,128,25.46397253870964
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,4,3379.289545059204,200,16.89644772529602
+mobilenet,10,16,3218.6439933776855,74,43.49518909969845
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3546.1602668762207,200,17.730801334381102
+vgg19,70,8,3679.3988151550293,120,30.661656792958578
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,5515.5120639801025,200,27.577560319900513
+vgg19,70,8,5673.737131118774,183,31.004028038900408
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,8,6242.910972595215,200,31.214554862976073
+mobilenet,10,16,6067.22180557251,129,47.03272717498069
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,4211.432388305664,200,21.05716194152832
+vgg19,70,16,4347.484046936035,107,40.63069202743958
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,6558.815189361572,200,32.79407594680786
+vgg19,70,16,6760.821994781494,164,41.22452435842374
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,16,8298.190280914307,200,41.49095140457153
+mobilenet,10,16,8053.311672210693,146,55.159668987744475
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1835.356803894043,200,9.176784019470215
+vgg19,70,4,1922.1567077636719,111,17.316727096970016
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2842.0739459991455,200,14.210369729995728
+vgg19,70,4,2951.8679370880127,168,17.57064248266674
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,70,4,3538.5808715820312,200,17.692904357910155
+mobilenet,20,16,3438.4370765686035,143,24.045014521458764
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2008.8596229553223,200,10.04429811477661
+vgg19,70,8,2075.68204498291,66,31.449727954286516
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,3074.864192008972,200,15.37432096004486
+vgg19,70,8,3210.121534347534,100,32.10121534347534
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,5236.483804702759,200,26.182419023513795
+vgg19,70,8,5393.220212936401,165,32.686183108705464
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2421.2328634262085,200,12.106164317131043
+vgg19,70,16,2470.2515983581543,59,41.868671158612784
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,3695.328887939453,200,18.476644439697267
+vgg19,70,16,3818.6151695251465,89,42.90578842163086
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,6237.648794174194,200,31.18824397087097
+vgg19,70,16,6434.189674377441,147,43.76999778488055
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1634.3259582519531,200,8.171629791259766
+vgg19,70,4,1680.5232563018799,96,17.505450586477917
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,1927.37984085083,200,9.636899204254151
+vgg19,70,4,2005.0095653533936,109,18.394583168379757
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3333.075406074524,200,16.66537703037262
+vgg19,70,4,3445.876543045044,183,18.829926464727016
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1698.7610874176025,200,8.493805437088012
+vgg19,70,8,1743.812484741211,54,32.292823791503906
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,2114.727294921875,200,10.573636474609375
+vgg19,70,8,2167.95493888855,64,33.87429592013359
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,3637.4138107299805,200,18.187069053649903
+vgg19,70,8,3767.036678314209,107,35.20595026461878
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,4,1812.9647064208984,200,9.064823532104493
+vgg19,70,16,1850.5365905761719,43,43.035734664562135
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,8,2536.626717567444,200,12.683133587837219
+vgg19,70,16,2609.1259803771973,58,44.98493069615857
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,30,16,4328.3147621154785,200,21.64157381057739
+vgg19,70,16,4456.278636932373,95,46.90819617823551
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,4,3154.930916786194,200,15.77465458393097
+mobilenet,10,4,3068.5094871520996,180,17.047274928622777
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,4,3188.182942390442,200,15.94091471195221
+mobilenet,10,8,3072.75394821167,115,26.719599549666697
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,4,3189.9129028320312,200,15.949564514160157
+mobilenet,10,16,3037.506435394287,67,45.33591694618339
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3819.1913108825684,200,19.09595655441284
+vgg19,80,8,3959.8592414855957,140,28.284708867754254
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,8,5718.138601303101,200,28.590693006515504
+mobilenet,10,8,5569.6403884887695,188,29.62574674728069
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,8,5752.398590087891,200,28.761992950439453
+mobilenet,10,16,5540.265720367432,110,50.366052003340286
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,4661.664419174194,200,23.30832209587097
+vgg19,80,16,4809.911937713623,125,38.47929550170898
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,7192.932750701904,200,35.96466375350952
+vgg19,80,16,7395.814472198486,190,38.925339327360454
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,16,7855.681900024414,200,39.27840950012207
+mobilenet,10,16,7589.481338500977,125,60.715850708007814
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,1927.0375690460205,200,9.635187845230103
+vgg19,80,4,2003.9930582046509,123,16.292626489468706
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,2964.779552459717,200,14.823897762298584
+vgg19,80,4,3071.762143135071,186,16.514850231908984
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,80,4,3330.2956924438477,200,16.651478462219238
+mobilenet,20,16,3232.152738571167,130,24.862713373624363
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2170.817346572876,200,10.85408673286438
+vgg19,80,8,2210.108480453491,76,29.080374742809095
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,3344.2101974487305,200,16.721050987243654
+vgg19,80,8,3442.006078720093,116,29.672466195862867
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,5615.151607513428,200,28.075758037567137
+vgg19,80,8,5778.656658172607,191,30.254746901427264
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,4,2674.400384902954,200,13.37200192451477
+vgg19,80,16,2720.5776176452637,69,39.42866112529368
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,8,4013.420509338379,200,20.067102546691896
+vgg19,80,16,4162.649642944336,103,40.41407420334307
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,20,16,6854.788644790649,200,34.273943223953246
+vgg19,80,16,7034.975742340088,170,41.38221024905934
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,4,2978.9756450653076,200,14.894878225326538
+mobilenet,10,4,2884.546438217163,163,17.69660391544272
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,4,3004.9826860427856,200,15.024913430213928
+mobilenet,10,8,2902.037176132202,106,27.37770920879436
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,4,3021.0727376937866,200,15.105363688468934
+mobilenet,10,16,2864.4569091796875,61,46.95830998655225
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,3715.6109161376953,200,18.578054580688477
+vgg19,90,8,3838.1806640625,147,26.110072544642858
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,8,5256.443141937256,200,26.28221570968628
+mobilenet,10,8,5134.008255004883,179,28.68161036315577
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,8,5287.701057434082,200,26.43850528717041
+mobilenet,10,16,5090.786781311035,104,48.94987289722149
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,4,4588.4326095581055,200,22.942163047790526
+vgg19,90,16,4727.220909118652,130,36.36323776245117
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+mobilenet,10,8,7163.727771759033,200,35.81863885879517
+vgg19,90,16,7374.4029541015625,200,36.87201477050781
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,16,7425.991161346436,200,37.12995580673218
+mobilenet,10,16,7193.22253036499,120,59.94352108637492
+

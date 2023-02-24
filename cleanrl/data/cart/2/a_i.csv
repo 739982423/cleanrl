@@ -1,0 +1,1620 @@
+﻿model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1485.959490776062,200,7.42979745388031
+inception,10,4,1408.7151374816895,25,56.34860549926758
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1489.8187556266785,200,7.449093778133392
+inception,10,8,1338.7552337646484,14,95.62537384033203
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1500.98992061615,200,7.50494960308075
+inception,10,16,1383.3032989501953,9,153.7003665500217
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2783.5917749404907,200,13.917958874702453
+inception,10,4,2691.450553894043,48,56.07188653945923
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2792.2560958862305,200,13.961280479431153
+inception,10,8,2666.9726943969727,28,95.24902479989188
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2809.172441482544,200,14.04586220741272
+inception,10,16,2593.799560546875,17,152.57644473805146
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3088.8980798721313,200,15.444490399360657
+inception,10,4,2988.556812286377,53,56.387864382761826
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3098.9078073501587,200,15.494539036750794
+inception,10,8,2965.1691131591797,31,95.65061655352193
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3104.3421669006348,200,15.521710834503175
+inception,10,16,2901.565902709961,19,152.71399487947164
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1502.0552649497986,200,7.510276324748993
+inception,20,4,1440.7154846191406,47,30.653520949343417
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1507.5380816459656,200,7.537690408229828
+inception,20,8,1426.791648864746,28,50.95684460231236
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1509.7062063217163,200,7.548531031608581
+inception,20,16,1446.0839538574219,18,80.33799743652344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2812.7461433410645,200,14.063730716705322
+inception,20,4,2743.17244720459,90,30.479693857828774
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2814.939257621765,200,14.074696288108825
+inception,20,8,2726.5690841674805,54,50.49202007717557
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2835.389825820923,200,14.176949129104614
+inception,20,16,2718.7417907714844,34,79.96299384622013
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3101.554750442505,200,15.507773752212524
+inception,20,4,3023.2274284362793,99,30.53765079228565
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3107.0068759918213,200,15.535034379959107
+inception,20,8,3036.2157707214355,60,50.603596178690594
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3126.491099357605,200,15.632455496788024
+inception,20,16,3046.430519104004,38,80.16922418694747
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1517.6477732658386,200,7.588238866329193
+inception,30,4,1472.2875518798828,72,20.44843822055393
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1527.6174416542053,200,7.638087208271027
+inception,30,8,1469.9853744506836,45,32.666341654459636
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1540.4790434837341,200,7.702395217418671
+inception,30,16,1460.5282287597656,28,52.16172245570591
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2837.2744941711426,200,14.186372470855712
+inception,30,4,2775.00083732605,138,20.108701719753984
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2862.646304130554,200,14.31323152065277
+inception,30,8,2787.770435333252,86,32.4159352945727
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2912.5162525177,200,14.562581262588502
+inception,30,16,2838.316547393799,55,51.605755407159975
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3125.1161212921143,200,15.625580606460572
+inception,30,4,3063.6034393310547,153,20.023551891052644
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3147.9327640533447,200,15.739663820266724
+inception,30,8,3088.4064044952393,95,32.509541099949885
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3211.239393234253,200,16.056196966171264
+inception,30,16,3122.997215270996,60,52.049953587849934
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1524.0347499847412,200,7.620173749923706
+inception,40,4,1482.9886779785156,73,20.314913396965967
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1564.618844985962,200,7.823094224929809
+inception,40,8,1506.7605781555176,56,26.906438895634242
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1576.9814748764038,200,7.884907374382019
+inception,40,16,1517.1694374084473,36,42.14359548356798
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2843.2317457199097,200,14.216158728599549
+inception,40,4,2795.9987258911133,139,20.11509874741808
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2907.08057308197,200,14.535402865409852
+inception,40,8,2844.6462383270264,108,26.33931702154654
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3015.87939453125,200,15.07939697265625
+inception,40,16,2924.494873046875,70,41.77849818638393
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3140.9652137756348,200,15.704826068878173
+inception,40,4,3084.9370822906494,159,19.4021200144066
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3205.2061491012573,200,16.026030745506286
+inception,40,8,3132.0193367004395,118,26.542536751698638
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3312.4617795944214,200,16.562308897972105
+inception,40,16,3243.8082885742188,77,42.12738037109375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1526.7469429969788,200,7.633734714984894
+inception,50,4,1516.9434566497803,76,19.959782324339216
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1566.4373450279236,200,7.832186725139618
+inception,50,8,1519.9887943267822,67,22.686399915325108
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1661.4181771278381,200,8.307090885639191
+inception,50,16,1589.627426147461,45,35.32505391438802
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2857.3780546188354,200,14.286890273094178
+inception,50,4,2829.5720291137695,140,20.21122877938407
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2969.863931655884,200,14.84931965827942
+inception,50,8,2908.917470932007,129,22.549747836682222
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3186.058939933777,200,15.930294699668885
+inception,50,16,3121.4288291931152,89,35.0722340358777
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3158.2881631851196,200,15.791440815925599
+inception,50,4,3112.038656234741,161,19.329432647420752
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3251.499924659729,200,16.257499623298646
+inception,50,8,3189.1098346710205,141,22.61780024589376
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3476.184024810791,200,17.380920124053954
+inception,50,16,3420.4184074401855,97,35.26204543752769
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1522.4762206077576,200,7.612381103038788
+inception,60,4,1522.3705615997314,78,19.51757130256066
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1589.2719993591309,200,7.946359996795654
+inception,60,8,1542.1511688232422,76,20.291462747674238
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1737.3783679008484,200,8.686891839504241
+inception,60,16,1689.2604331970215,53,31.872838362207954
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2880.287941932678,200,14.401439709663391
+inception,60,4,2835.1373138427734,146,19.418748724950504
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3007.428957939148,200,15.03714478969574
+inception,60,8,2937.494466781616,143,20.54191934812319
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3352.4910135269165,200,16.762455067634583
+inception,60,16,3291.514886856079,105,31.347760827200755
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3156.4315853118896,200,15.782157926559448
+inception,60,4,3108.936538696289,152,20.453529859844007
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3288.8999042510986,200,16.444499521255494
+inception,60,8,3240.48423576355,154,21.042105427036038
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3641.9235038757324,200,18.20961751937866
+inception,60,16,3563.4920387268066,113,31.535327776343422
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1523.285216331482,200,7.616426081657409
+inception,70,4,1519.957763671875,75,20.266103515625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1595.5710401535034,200,7.977855200767517
+inception,70,8,1566.0449905395508,76,20.6058551386783
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1775.6705889701843,200,8.878352944850922
+inception,70,16,1732.5437030792236,57,30.395503562793397
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2871.4992628097534,200,14.357496314048767
+inception,70,4,2829.2890625,143,19.7852381993007
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3033.2826251983643,200,15.166413125991822
+inception,70,8,2970.9158992767334,147,20.210312239977778
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3463.086974143982,200,17.31543487071991
+inception,70,16,3399.739908218384,113,30.086193878038795
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3178.345633506775,200,15.891728167533875
+inception,70,4,3136.5482597351074,163,19.242627360338084
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3318.6694717407227,200,16.593347358703614
+inception,70,8,3267.5423336029053,159,20.55058071448368
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3754.031913757324,200,18.77015956878662
+inception,70,16,3664.828998565674,121,30.287842963352677
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1529.5095658302307,200,7.647547829151153
+inception,80,4,1519.665117263794,77,19.735910613815506
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1607.0894417762756,200,8.035447208881378
+inception,80,8,1589.1727142333984,79,20.116110306751878
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1845.5857973098755,200,9.227928986549378
+inception,80,16,1798.2374095916748,63,28.5434509458996
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2889.1550674438477,200,14.445775337219239
+inception,80,4,2849.6025981903076,146,19.517826015002107
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3055.758074760437,200,15.278790373802185
+inception,80,8,3011.0174045562744,150,20.073449363708495
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3635.6812238693237,200,18.17840611934662
+inception,80,16,3568.7090454101562,126,28.323087661985365
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3185.1974401474,200,15.925987200737
+inception,80,4,3142.87774848938,161,19.52097980428186
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3350.001569747925,200,16.750007848739624
+inception,80,8,3303.82279586792,159,20.778759722439748
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3925.909355163574,200,19.62954677581787
+inception,80,16,3846.4032039642334,135,28.491875584920248
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1543.3259534835815,200,7.716629767417908
+inception,90,4,1540.8696632385254,73,21.1078036060072
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1642.667423248291,200,8.213337116241455
+inception,90,8,1610.8325490951538,84,19.1765779654185
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,4,1857.073697090149,200,9.285368485450745
+inception,90,16,1805.9009037017822,70,25.79858433859689
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,2910.710045814514,200,14.55355022907257
+inception,90,4,2889.7446517944336,137,21.09302665543382
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3152.4636793136597,200,15.762318396568299
+inception,90,8,3103.4312953948975,165,18.808674517544834
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,8,3626.174924850464,200,18.130874624252318
+inception,90,16,3543.7932739257812,139,25.49491563975382
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3216.773244857788,200,16.08386622428894
+inception,90,4,3171.586462020874,148,21.429638256897796
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3441.5982055664062,200,17.20799102783203
+inception,90,8,3376.625436782837,176,19.185371799902484
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,10,16,3926.409860610962,200,19.63204930305481
+inception,90,16,3859.590850830078,150,25.73060567220052
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,785.8984951972961,200,3.9294924759864807
+inception,10,4,745.9519996643066,13,57.38092305110051
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,788.2373418807983,200,3.9411867094039916
+inception,10,8,679.6193923950195,7,97.08848462785993
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,790.7062718868256,200,3.9535313594341277
+inception,10,16,617.0245971679688,4,154.2561492919922
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1371.5277752876282,200,6.857638876438141
+inception,10,4,1310.5299911499023,23,56.97956483260445
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1377.0223336219788,200,6.885111668109894
+inception,10,8,1255.4932861328125,13,96.57640662560097
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1380.5111980438232,200,6.902555990219116
+inception,10,16,1231.9964141845703,8,153.9995517730713
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1592.4916162490845,200,7.962458081245423
+inception,10,4,1542.1166763305664,27,57.11543245668764
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1594.4022026062012,200,7.972011013031006
+inception,10,8,1448.952049255371,15,96.5968032836914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1603.2070693969727,200,8.016035346984863
+inception,10,16,1390.1222534179688,9,154.4580281575521
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,798.9451518058777,200,3.9947257590293885
+inception,20,4,752.953950881958,24,31.37308128674825
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,798.5591666698456,200,3.992795833349228
+inception,20,8,724.6592674255371,14,51.76137624468122
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,800.0645101070404,200,4.000322550535202
+inception,20,16,736.2052459716797,9,81.80058288574219
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1384.9164786338806,200,6.924582393169403
+inception,20,4,1331.617956161499,43,30.967859445616256
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1398.2254724502563,200,6.991127362251282
+inception,20,8,1343.500087738037,26,51.67308029761681
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1405.3912649154663,200,7.026956324577331
+inception,20,16,1306.0193939208984,16,81.62621212005615
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1601.098205089569,200,8.005491025447846
+inception,20,4,1551.6740455627441,50,31.033480911254884
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1612.386242866516,200,8.061931214332581
+inception,20,8,1547.19482421875,30,51.573160807291664
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1620.3935413360596,200,8.101967706680298
+inception,20,16,1550.567283630371,19,81.60880440159848
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,799.5846719741821,200,3.9979233598709105
+inception,30,4,760.6729526519775,37,20.558728450053447
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,806.2048325538635,200,4.0310241627693175
+inception,30,8,764.9790420532227,23,33.25995835014012
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,814.91481757164,200,4.0745740878582
+inception,30,16,747.5120582580566,14,53.39371844700405
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1397.2588481903076,200,6.986294240951538
+inception,30,4,1359.3395538330078,67,20.28865005720907
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1414.1309461593628,200,7.070654730796814
+inception,30,8,1354.1990966796875,41,33.029246260480186
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1455.9196124076843,200,7.2795980620384215
+inception,30,16,1383.3284149169922,26,53.20493903526893
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1623.025122642517,200,8.115125613212586
+inception,30,4,1577.6978225708008,77,20.4895821113091
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1638.1667499542236,200,8.190833749771118
+inception,30,8,1595.5587539672852,48,33.24080737431844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1681.306983947754,200,8.40653491973877
+inception,30,16,1609.763744354248,30,53.65879147847493
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,796.9736955165863,200,3.9848684775829315
+inception,40,4,799.190788269043,39,20.492071494078026
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,814.8436160087585,200,4.074218080043793
+inception,40,8,786.605281829834,29,27.124320063097723
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,844.1786246299744,200,4.220893123149872
+inception,40,16,783.5481910705566,18,43.53045505947537
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1399.3573155403137,200,6.9967865777015685
+inception,40,4,1373.4297542572021,71,19.344081045876088
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1446.753791809082,200,7.23376895904541
+inception,40,8,1411.3075790405273,52,27.140530366163986
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1504.838529586792,200,7.52419264793396
+inception,40,16,1462.871425628662,34,43.02563016554888
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1620.5182032585144,200,8.102591016292571
+inception,40,4,1591.9240379333496,80,19.89905047416687
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1664.7384243011475,200,8.323692121505736
+inception,40,8,1603.7773170471191,59,27.182666390629137
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1730.336799621582,200,8.65168399810791
+inception,40,16,1688.1649551391602,39,43.286280901004105
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,797.8188152313232,200,3.9890940761566163
+inception,50,4,810.8808326721191,41,19.777581284685834
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,828.9976305961609,200,4.144988152980805
+inception,50,8,788.364667892456,34,23.187196114484003
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,888.2485136985779,200,4.441242568492889
+inception,50,16,845.8420486450195,23,36.77574124543563
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1404.829472064972,200,7.02414736032486
+inception,50,4,1394.0953922271729,71,19.6351463693968
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1478.384864807129,200,7.391924324035645
+inception,50,8,1440.3418865203857,62,23.231320750328802
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1595.8938546180725,200,7.979469273090363
+inception,50,16,1561.234115600586,43,36.30777013024618
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1622.6220502853394,200,8.113110251426697
+inception,50,4,1619.6351566314697,80,20.245439457893372
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1715.2420110702515,200,8.576210055351257
+inception,50,8,1672.0862121582031,71,23.550510030397227
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1856.125054359436,200,9.28062527179718
+inception,50,16,1801.1186294555664,49,36.7575230501136
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,801.1558737754822,200,4.005779368877411
+inception,60,4,802.3312644958496,40,20.05828161239624
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,848.8833599090576,200,4.244416799545288
+inception,60,8,838.1692447662354,41,20.443152311371595
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,936.4881935119629,200,4.682440967559814
+inception,60,16,921.5482387542725,28,32.91243709836687
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1407.8514857292175,200,7.039257428646088
+inception,60,4,1394.7029819488525,72,19.37087474928962
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1494.3812799453735,200,7.471906399726867
+inception,60,8,1490.8167686462402,71,20.99741927670761
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1679.6748504638672,200,8.398374252319336
+inception,60,16,1621.4908447265625,50,32.42981689453125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1629.5788197517395,200,8.147894098758698
+inception,60,4,1618.5501136779785,83,19.500603779252753
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1746.3286018371582,200,8.731643009185792
+inception,60,8,1702.2773704528809,80,21.27846713066101
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1935.9741106033325,200,9.679870553016663
+inception,60,16,1883.0346145629883,57,33.03569499233313
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,801.428320646286,200,4.00714160323143
+inception,70,4,799.3735980987549,40,19.984339952468872
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,849.8082239627838,200,4.249041119813919
+inception,70,8,854.9798069000244,41,20.853166021951814
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,954.7728981971741,200,4.77386449098587
+inception,70,16,917.7412185668945,29,31.64624891609981
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1410.3334064483643,200,7.051667032241821
+inception,70,4,1411.6586284637451,72,19.60636983977424
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1517.267614364624,200,7.58633807182312
+inception,70,8,1478.0939254760742,72,20.52908229827881
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1754.521987438202,200,8.77260993719101
+inception,70,16,1700.3939933776855,54,31.488777655142325
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1631.4328365325928,200,8.157164182662964
+inception,70,4,1618.813949584961,80,20.23517436981201
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1760.6595783233643,200,8.803297891616822
+inception,70,8,1730.3561191558838,86,20.120419990184697
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,2008.7171506881714,200,10.043585753440857
+inception,70,16,1932.3059177398682,61,31.677146192456856
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,803.4118711948395,200,4.017059355974197
+inception,80,4,805.255334854126,40,20.13138337135315
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,850.7466244697571,200,4.253733122348786
+inception,80,8,857.9031982421875,41,20.92446824980945
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,4,994.0055384635925,200,4.970027692317963
+inception,80,16,953.4495697021484,32,29.79529905319214
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1422.1133742332458,200,7.110566871166229
+inception,80,4,1405.4218273162842,73,19.252353798853207
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1529.0311012268066,200,7.645155506134033
+inception,80,8,1495.0001602172852,75,19.9333354695638
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,8,1831.2892174720764,200,9.156446087360383
+inception,80,16,1772.5603885650635,60,29.54267314275106
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1640.2793011665344,200,8.201396505832673
+inception,80,4,1624.4477729797363,82,19.810338694874833
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,1771.644733428955,200,8.858223667144776
+inception,80,8,1748.4343395233154,86,20.330631854922274
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,20,16,2073.83650970459,200,10.36918254852295
+inception,80,16,2019.922233581543,68,29.704738729140338
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,516.4944632053375,200,2.5824723160266876
+inception,10,4,466.9468803405762,8,58.36836004257202
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,516.5877447128296,200,2.582938723564148
+inception,10,8,392.8793640136719,4,98.21984100341797
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,521.2230393886566,200,2.606115196943283
+inception,10,16,313.7855682373047,2,156.89278411865234
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,865.5267839431763,200,4.327633919715882
+inception,10,4,816.3659820556641,14,58.311855861118865
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,876.0993275642395,200,4.380496637821198
+inception,10,8,793.2787857055664,8,99.1598482131958
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,878.8740134239197,200,4.394370067119598
+inception,10,16,634.6031341552734,4,158.65078353881836
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1016.7621049880981,200,5.083810524940491
+inception,10,4,942.7031326293945,16,58.91894578933716
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1020.5179843902588,200,5.102589921951294
+inception,10,8,897.1181335449219,9,99.67979261610243
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1025.1000628471375,200,5.125500314235687
+inception,10,16,799.0809020996094,5,159.81618041992186
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,521.0386550426483,200,2.6051932752132414
+inception,20,4,476.14867401123047,15,31.743244934082032
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,525.8780148029327,200,2.6293900740146636
+inception,20,8,476.8341751098633,9,52.98157501220703
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,537.6949458122253,200,2.688474729061127
+inception,20,16,428.2631378173828,5,85.65262756347656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,874.4428477287292,200,4.372214238643647
+inception,20,4,826.0814723968506,26,31.77236432295579
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,878.7605438232422,200,4.393802719116211
+inception,20,8,790.188835144043,15,52.679255676269534
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,892.0761275291443,200,4.460380637645722
+inception,20,16,755.6514511108398,9,83.96127234564887
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1083.5456013679504,200,5.417728006839752
+inception,20,4,1021.0019836425781,30,34.033399454752605
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1039.1377925872803,200,5.195688962936401
+inception,20,8,968.7655982971191,18,53.82031101650662
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1057.8944659233093,200,5.2894723296165465
+inception,20,16,948.528694152832,11,86.2298812866211
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,523.5237760543823,200,2.6176188802719116
+inception,30,4,502.4729309082031,24,20.93637212117513
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,534.573216676712,200,2.67286608338356
+inception,30,8,481.9893112182617,14,34.42780794416155
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,546.4202563762665,200,2.7321012818813326
+inception,30,16,497.5986213684082,9,55.288735707600914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,881.6049609184265,200,4.408024804592133
+inception,30,4,865.0174083709717,41,21.0979855700237
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,906.6726403236389,200,4.533363201618195
+inception,30,8,859.3371238708496,25,34.373484954833984
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,936.9269104003906,200,4.6846345520019534
+inception,30,16,896.4558067321777,16,56.02848792076111
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1037.0723218917847,200,5.185361609458924
+inception,30,4,1002.4477119445801,47,21.32867472222511
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1055.0577592849731,200,5.275288796424865
+inception,30,8,1013.0463600158691,29,34.932633103995485
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1097.1003198623657,200,5.485501599311829
+inception,30,16,1018.2386817932129,18,56.5688156551785
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,530.3012156486511,200,2.651506078243256
+inception,40,4,521.7802219390869,27,19.325193405151367
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,542.1643838882446,200,2.7108219194412233
+inception,40,8,506.9120635986328,18,28.161781311035156
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,576.343071937561,200,2.881715359687805
+inception,40,16,508.2975654602051,11,46.20886958729137
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,883.7246069908142,200,4.418623034954071
+inception,40,4,880.0197162628174,44,20.000448096882213
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,919.4186253547668,200,4.597093126773834
+inception,40,8,870.7902393341064,31,28.090007720455045
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,966.7538890838623,200,4.833769445419311
+inception,40,16,896.7637405395508,20,44.838187026977536
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1038.9926710128784,200,5.194963355064392
+inception,40,4,1029.912582397461,51,20.19436436073453
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1082.3150072097778,200,5.411575036048889
+inception,40,8,1036.6258525848389,36,28.79516257180108
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1147.3968625068665,200,5.736984312534332
+inception,40,16,1071.689655303955,23,46.59520240451979
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,525.2367672920227,200,2.6261838364601133
+inception,50,4,533.223934173584,26,20.508612852830154
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,557.9453458786011,200,2.7897267293930055
+inception,50,8,536.6991024017334,22,24.395413745533336
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,599.8583998680115,200,2.9992919993400573
+inception,50,16,538.7850875854492,14,38.48464911324637
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,888.1593255996704,200,4.440796627998352
+inception,50,4,884.2714891433716,45,19.650477536519368
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,942.4092211723328,200,4.712046105861663
+inception,50,8,918.6596164703369,38,24.175253065008867
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,1032.1608324050903,200,5.1608041620254514
+inception,50,16,988.9037780761719,26,38.03476069523738
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1038.5937910079956,200,5.192968955039978
+inception,50,4,1031.996446609497,50,20.639928932189942
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1110.5706868171692,200,5.552853434085846
+inception,50,8,1065.944507598877,43,24.789407153462253
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1206.3264617919922,200,6.031632308959961
+inception,50,16,1171.9955863952637,30,39.066519546508786
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,525.5991044044495,200,2.6279955220222475
+inception,60,4,538.2979545593262,27,19.936961279975044
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,569.3206422328949,200,2.8466032111644743
+inception,60,8,556.8277435302734,26,21.416451674241287
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,626.2516138553619,200,3.1312580692768095
+inception,60,16,586.8226280212402,17,34.518978118896484
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,887.8271679878235,200,4.439135839939118
+inception,60,4,889.033857345581,44,20.205314939672295
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,975.0681619644165,200,4.875340809822083
+inception,60,8,951.6331157684326,46,20.687676429748535
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,1089.8516492843628,200,5.449258246421814
+inception,60,16,1059.8264083862305,31,34.18794865762034
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1041.994559764862,200,5.20997279882431
+inception,60,4,1042.9450855255127,52,20.056636260106014
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1143.3920984268188,200,5.716960492134095
+inception,60,8,1122.7628784179688,53,21.18420525316922
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1284.2042922973633,200,6.421021461486816
+inception,60,16,1225.0431022644043,35,35.0012314932687
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,531.9531841278076,200,2.659765920639038
+inception,70,4,545.4970245361328,27,20.20359350133825
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,572.0823056697845,200,2.860411528348923
+inception,70,8,567.0852756500244,27,21.00315835740831
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,4,645.241438627243,200,3.226207193136215
+inception,70,16,598.2585906982422,18,33.236588372124565
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,892.9882555007935,200,4.464941277503967
+inception,70,4,901.5364112854004,46,19.59861763663914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,979.5885434150696,200,4.897942717075348
+inception,70,8,987.0310764312744,47,21.000661200665412
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,8,1122.4405426979065,200,5.612202713489532
+inception,70,16,1084.914463043213,33,32.87619584979433
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1046.0496006011963,200,5.230248003005982
+inception,70,4,1043.8656673431396,52,20.07433975659884
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1160.5630054473877,200,5.802815027236939
+inception,70,8,1136.3096294403076,55,20.660175080732866
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,30,16,1306.0995230674744,200,6.530497615337372
+inception,70,16,1275.3783702850342,38,33.562588691711426
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,408.8048640489578,200,2.044024320244789
+inception,10,4,357.09619522094727,6,59.51603253682455
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,410.7797782421112,200,2.0538988912105562
+inception,10,8,299.17535400390625,3,99.72511800130208
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,413.25913536548615,200,2.0662956768274308
+inception,10,16,160.8601531982422,1,160.8601531982422
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,598.4078397750854,200,2.9920391988754274
+inception,10,4,550.3646125793457,9,61.1516236199273
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,601.2770228385925,200,3.0063851141929625
+inception,10,8,512.557975769043,5,102.5115951538086
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,606.5290875434875,200,3.032645437717438
+inception,10,16,332.1562805175781,2,166.07814025878906
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,707.7544004917145,200,3.5387720024585723
+inception,10,4,619.5591011047363,10,61.95591011047363
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,712.5225293636322,200,3.562612646818161
+inception,10,8,622.7197113037109,6,103.78661855061848
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,718.6638720035553,200,3.5933193600177766
+inception,10,16,496.54197692871094,3,165.5139923095703
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,412.37311947345734,200,2.061865597367287
+inception,20,4,390.80496406555176,12,32.56708033879598
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,416.6951677799225,200,2.0834758388996124
+inception,20,8,377.53443908691406,7,53.93349129813058
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,432.39667093753815,200,2.1619833546876905
+inception,20,16,352.7623291015625,4,88.19058227539062
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,609.6816325187683,200,3.0484081625938417
+inception,20,4,576.0771141052246,17,33.886889065013214
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,617.692831993103,200,3.088464159965515
+inception,20,8,557.6513557434082,10,55.76513557434082
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,641.9648025035858,200,3.209824012517929
+inception,20,16,546.5395812988281,6,91.08993021647136
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,721.7932505607605,200,3.6089662528038025
+inception,20,4,679.7098236083984,20,33.98549118041992
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,727.693728685379,200,3.6384686434268954
+inception,20,8,675.1643943786621,12,56.263699531555176
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,742.7767672538757,200,3.7138838362693787
+inception,20,16,626.8452987670898,7,89.54932839529855
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,419.46579337120056,200,2.097328966856003
+inception,30,4,394.4765110015869,18,21.915361722310383
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,426.40492844581604,200,2.13202464222908
+inception,30,8,390.0419502258301,11,35.4583591114391
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,441.12150394916534,200,2.205607519745827
+inception,30,16,348.03273010253906,6,58.005455017089844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,621.4782400131226,200,3.1073912000656128
+inception,30,4,585.235071182251,26,22.509041199317345
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,635.1839351654053,200,3.1759196758270263
+inception,30,8,589.8110427856445,16,36.86319017410278
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,658.5231347084045,200,3.2926156735420227
+inception,30,16,591.9835205078125,10,59.19835205078125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,733.9073603153229,200,3.6695368015766143
+inception,30,4,701.8459510803223,31,22.640191970332975
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,752.1982743740082,200,3.7609913718700407
+inception,30,8,704.3264999389648,19,37.06981578626131
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,782.9995203018188,200,3.914997601509094
+inception,30,16,715.6198959350586,12,59.63499132792155
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,422.77552020549774,200,2.1138776010274887
+inception,40,4,415.57698822021484,21,19.7893803914388
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,435.8428170681,200,2.1792140853405
+inception,40,8,409.3847007751465,14,29.241764341081893
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,459.72675251960754,200,2.2986337625980378
+inception,40,16,425.0493469238281,9,47.22770521375868
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,628.3005123138428,200,3.141502561569214
+inception,40,4,633.9443511962891,32,19.810760974884033
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,652.3928966522217,200,3.2619644832611083
+inception,40,8,609.812126159668,20,30.4906063079834
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,701.8790738582611,200,3.5093953692913056
+inception,40,16,636.1638488769531,13,48.935680682842545
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,746.5604796409607,200,3.7328023982048033
+inception,40,4,749.7709083557129,38,19.730813377781917
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,771.681248664856,200,3.85840624332428
+inception,40,8,736.0649566650391,24,30.66937319437663
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,819.4668819904327,200,4.097334409952164
+inception,40,16,740.1156883239746,15,49.34104588826497
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,413.41308641433716,200,2.067065432071686
+inception,50,4,435.76034927368164,21,20.750492822556268
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,446.43183994293213,200,2.2321591997146606
+inception,50,8,430.49557876586914,17,25.323269339168775
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,489.5746247768402,200,2.447873123884201
+inception,50,16,442.3716163635254,11,40.21560148759322
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,629.5377287864685,200,3.1476886439323426
+inception,50,4,614.1136341094971,32,19.191051065921783
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,670.0341105461121,200,3.3501705527305603
+inception,50,8,630.1312961578369,24,26.255470673243206
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,746.7529258728027,200,3.7337646293640137
+inception,50,16,697.0356826782227,17,41.002098981071924
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,740.5239353179932,200,3.7026196765899657
+inception,50,4,738.3734703063965,37,19.956039738010716
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,792.3751366138458,200,3.961875683069229
+inception,50,8,778.2832050323486,29,26.837351897667194
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,868.9332478046417,200,4.3446662390232085
+inception,50,16,831.7125854492188,20,41.585629272460935
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,416.47046279907227,200,2.0823523139953615
+inception,60,4,439.03504180908203,21,20.90643056233724
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,460.3336000442505,200,2.3016680002212526
+inception,60,8,437.9261722564697,20,21.896308612823486
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,4,514.9060156345367,200,2.5745300781726836
+inception,60,16,473.2559394836426,13,36.40430303720328
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,630.7380797863007,200,3.1536903989315035
+inception,60,4,644.9599666595459,32,20.15499895811081
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,689.5466568470001,200,3.447733284235001
+inception,60,8,653.7447700500488,29,22.542923105174097
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,8,762.9397439956665,200,3.8146987199783324
+inception,60,16,705.2131881713867,19,37.11648358796772
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,737.3413450717926,200,3.686706725358963
+inception,60,4,758.5145893096924,36,21.069849703047012
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,818.6035504341125,200,4.093017752170563
+inception,60,8,796.4657001495361,35,22.75616286141532
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,40,16,911.5255677700043,200,4.5576278388500215
+inception,60,16,859.7767066955566,23,37.38159594328507
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,324.38979184627533,200,1.6219489592313767
+inception,10,4,248.48957061767578,4,62.122392654418945
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,328.21008110046387,200,1.6410504055023194
+inception,10,8,207.0122833251953,2,103.50614166259766
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,331.9045760631561,200,1.6595228803157807
+inception,10,16,160.41722106933594,1,160.41722106933594
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,517.6920003890991,200,2.5884600019454957
+inception,10,4,432.0163803100586,7,61.7166257585798
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,517.9670720100403,200,2.5898353600502015
+inception,10,8,412.18511962890625,4,103.04627990722656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,521.7560641765594,200,2.608780320882797
+inception,10,16,343.24974060058594,2,171.62487030029297
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,604.5219194889069,200,3.0226095974445344
+inception,10,4,523.7173728942871,8,65.46467161178589
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,617.2977254390717,200,3.0864886271953584
+inception,10,8,452.2938537597656,4,113.0734634399414
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,614.009439945221,200,3.0700471997261047
+inception,10,16,349.5008087158203,2,174.75040435791016
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,330.40249490737915,200,1.6520124745368958
+inception,20,4,277.3628120422363,8,34.67035150527954
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,335.2313919067383,200,1.6761569595336914
+inception,20,8,283.4049606323242,5,56.680992126464844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,345.77168011665344,200,1.7288584005832672
+inception,20,16,266.8122253417969,3,88.93740844726562
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,522.2333760261536,200,2.6111668801307677
+inception,20,4,475.30681228637695,14,33.950486591884065
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,530.9576969146729,200,2.6547884845733645
+inception,20,8,452.16476821899414,8,56.52059602737427
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,539.3817915916443,200,2.6969089579582213
+inception,20,16,445.64463806152344,5,89.1289276123047
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,611.1801264286041,200,3.0559006321430204
+inception,20,4,575.2667236328125,16,35.95417022705078
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,623.2667207717896,200,3.1163336038589478
+inception,20,8,540.7297859191895,9,60.081087324354385
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,634.1127679347992,200,3.170563839673996
+inception,20,16,475.9384307861328,5,95.18768615722657
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,339.0674557685852,200,1.695337278842926
+inception,30,4,324.44812965393066,14,23.17486640385219
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,348.0356796979904,200,1.7401783984899521
+inception,30,8,304.34716415405273,8,38.04339551925659
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,363.71148908138275,200,1.8185574454069138
+inception,30,16,306.4212112426758,5,61.28424224853516
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,535.427490234375,200,2.677137451171875
+inception,30,4,502.3871040344238,22,22.835777456110176
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,547.5061106681824,200,2.7375305533409118
+inception,30,8,484.8565444946289,13,37.29665726881761
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,568.6998393535614,200,2.843499196767807
+inception,30,16,482.03311920166016,8,60.25413990020752
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,630.1458234786987,200,3.1507291173934937
+inception,30,4,606.1004772186279,25,24.244019088745116
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,644.9705600738525,200,3.2248528003692627
+inception,30,8,592.4462089538574,15,39.49641393025716
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,671.6818888187408,200,3.358409444093704
+inception,30,16,575.4967651367188,9,63.94408501519097
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,343.8189764022827,200,1.7190948820114136
+inception,40,4,335.3786926269531,17,19.728158389820774
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,355.70383989810944,200,1.7785191994905472
+inception,40,8,315.546178817749,10,31.554617881774902
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,378.2147203683853,200,1.8910736018419265
+inception,40,16,317.1262092590332,6,52.85436820983887
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,546.5284793376923,200,2.7326423966884614
+inception,40,4,524.9953918457031,27,19.444273772063077
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,578.8680000305176,200,2.894340000152588
+inception,40,8,538.100959777832,17,31.65299763399012
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,608.6762237548828,200,3.043381118774414
+inception,40,16,541.0522804260254,11,49.18657094782049
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,637.3531839847565,200,3.1867659199237823
+inception,40,4,646.4380493164062,31,20.852840300529234
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,662.3794548511505,200,3.3118972742557524
+inception,40,8,623.5806427001953,19,32.82003382632607
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,716.7982091903687,200,3.5839910459518434
+inception,40,16,633.244441986084,12,52.770370165506996
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,336.8512316942215,200,1.6842561584711075
+inception,50,4,351.91340827941895,17,20.700788722318762
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,369.33827221393585,200,1.8466913610696793
+inception,50,8,333.33862495422363,12,27.778218746185303
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,4,398.8951677083969,200,1.9944758385419845
+inception,50,16,344.74332427978516,8,43.092915534973145
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,543.7384326457977,200,2.7186921632289884
+inception,50,4,547.7190685272217,28,19.56139530454363
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,580.6686723232269,200,2.903343361616135
+inception,50,8,538.1155834197998,20,26.90577917098999
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,8,638.0919997692108,200,3.190459998846054
+inception,50,16,587.4325065612793,14,41.959464754377095
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,645.4798407554626,200,3.2273992037773134
+inception,50,4,645.05832862854,33,19.547222079652727
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,684.2263035774231,200,3.4211315178871153
+inception,50,8,655.4476146697998,23,28.497722376947817
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,50,16,747.7365429401398,200,3.738682714700699
+inception,50,16,673.803352355957,15,44.920223490397134
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,307.01939249038696,200,1.5350969624519348
+inception,10,4,255.6908187866211,4,63.92270469665527
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,310.3718410730362,200,1.551859205365181
+inception,10,8,211.08576202392578,2,105.54288101196289
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,313.21660900115967,200,1.5660830450057983
+inception,10,16,159.72434997558594,1,159.72434997558594
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,464.42137575149536,200,2.322106878757477
+inception,10,4,386.7413787841797,6,64.45689646402995
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,459.79177618026733,200,2.2989588809013366
+inception,10,8,332.3783645629883,3,110.79278818766277
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,470.7759053707123,200,2.3538795268535613
+inception,10,16,340.6243438720703,2,170.31217193603516
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,552.1236145496368,200,2.7606180727481844
+inception,10,4,475.1999092102051,7,67.88570131574359
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,554.33615899086,200,2.7716807949543
+inception,10,8,448.6891174316406,4,112.17227935791016
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,563.8532149791718,200,2.8192660748958587
+inception,10,16,352.0223693847656,2,176.0111846923828
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,314.70812809467316,200,1.5735406404733658
+inception,20,4,287.4492492675781,8,35.931156158447266
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,321.5514234304428,200,1.607757117152214
+inception,20,8,242.42921447753906,4,60.607303619384766
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,329.97830379009247,200,1.6498915189504624
+inception,20,16,196.35411071777344,2,98.17705535888672
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,469.1952955722809,200,2.3459764778614045
+inception,20,4,424.07183837890625,12,35.33931986490885
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,487.58870553970337,200,2.4379435276985166
+inception,20,8,417.9660110473633,7,59.70943014962332
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,484.9362881183624,200,2.424681440591812
+inception,20,16,370.56685638427734,4,92.64171409606934
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,568.8649909496307,200,2.8443249547481537
+inception,20,4,533.5590019226074,14,38.11135728018625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,575.4920313358307,200,2.8774601566791533
+inception,20,8,503.76988983154297,8,62.97123622894287
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,584.6154570579529,200,2.9230772852897644
+inception,20,16,490.5421142578125,5,98.1084228515625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,321.38870334625244,200,1.6069435167312622
+inception,30,4,290.2336940765381,12,24.18614117304484
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,327.48195254802704,200,1.6374097627401352
+inception,30,8,278.4897880554199,7,39.78425543648856
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,344.4800959825516,200,1.722400479912758
+inception,30,16,255.59385299682617,4,63.89846324920654
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,482.69801449775696,200,2.4134900724887847
+inception,30,4,452.5254096984863,19,23.817126826236123
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,489.249502658844,200,2.44624751329422
+inception,30,8,458.60758209228516,12,38.21729850769043
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,513.9637749195099,200,2.5698188745975497
+inception,30,16,435.49914169311523,7,62.21416309901646
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,577.1142086982727,200,2.8855710434913635
+inception,30,4,555.9533500671387,22,25.270606821233574
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,590.0242884159088,200,2.950121442079544
+inception,30,8,537.1930923461914,13,41.322545565091644
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,620.6632299423218,200,3.103316149711609
+inception,30,16,533.8450927734375,8,66.73063659667969
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,327.0494405031204,200,1.6352472025156022
+inception,40,4,328.4032325744629,16,20.52520203590393
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,336.1117123365402,200,1.680558561682701
+inception,40,8,296.06236457824707,9,32.89581828647189
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,4,358.7075845003128,200,1.793537922501564
+inception,40,16,311.83382415771484,6,51.972304026285805
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,487.1861436367035,200,2.4359307181835175
+inception,40,4,481.0438117980957,24,20.043492158253986
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,503.63420581817627,200,2.5181710290908814
+inception,40,8,477.99709701538086,15,31.866473134358724
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,8,536.5564804077148,200,2.6827824020385744
+inception,40,16,461.5906562805176,9,51.28785069783529
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,587.5647039413452,200,2.937823519706726
+inception,40,4,578.4339580535889,27,21.423479927910698
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,607.810272693634,200,3.03905136346817
+inception,40,8,553.8748779296875,16,34.61717987060547
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,60,16,648.496001958847,200,3.2424800097942352
+inception,40,16,596.4324531555176,11,54.221132105047054
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,298.54246401786804,200,1.4927123200893402
+inception,10,4,202.59913635253906,3,67.53304545084636
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,301.61139249801636,200,1.5080569624900817
+inception,10,8,113.29106903076172,1,113.29106903076172
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,303.19926488399506,200,1.5159963244199752
+inception,10,16,155.7935333251953,1,155.7935333251953
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,437.22512221336365,200,2.186125611066818
+inception,10,4,385.3591079711914,6,64.22651799519856
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,437.78060722351074,200,2.1889030361175537
+inception,10,8,322.86710357666016,3,107.62236785888672
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,444.0084161758423,200,2.2200420808792116
+inception,10,16,171.52000427246094,1,171.52000427246094
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,527.769504070282,200,2.63884752035141
+inception,10,4,424.5743942260742,6,70.76239903767903
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,531.1708147525787,200,2.6558540737628937
+inception,10,8,353.6734085083008,3,117.8911361694336
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,534.8962879180908,200,2.674481439590454
+inception,10,16,350.17991638183594,2,175.08995819091797
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,305.90707194805145,200,1.5295353597402572
+inception,20,4,260.267520904541,7,37.18107441493443
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,310.75001752376556,200,1.5537500876188277
+inception,20,8,242.94121170043945,4,60.73530292510986
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,315.1622716188431,200,1.5758113580942155
+inception,20,16,190.9698257446289,2,95.48491287231445
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,447.1963517665863,200,2.2359817588329314
+inception,20,4,397.2891845703125,11,36.11719859730113
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,454.3730251789093,200,2.2718651258945464
+inception,20,8,359.4967346191406,6,59.91612243652344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,462.21030378341675,200,2.311051518917084
+inception,20,16,369.4806442260742,4,92.37016105651855
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,539.787168264389,200,2.698935841321945
+inception,20,4,507.1935272216797,13,39.01488670935998
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,552.5329926013947,200,2.7626649630069733
+inception,20,8,454.2679100036621,7,64.89541571480888
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,568.1540141105652,200,2.840770070552826
+inception,20,16,415.91270446777344,4,103.97817611694336
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,311.5382397174835,200,1.5576911985874176
+inception,30,4,276.1735363006592,11,25.106685118241742
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,318.5930885076523,200,1.5929654425382613
+inception,30,8,281.9803810119629,7,40.282911573137554
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,4,334.663391828537,200,1.6733169591426849
+inception,30,16,259.6857566833496,4,64.9214391708374
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,460.12201595306396,200,2.30061007976532
+inception,30,4,436.54784202575684,18,24.252657890319824
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,471.5875861644745,200,2.3579379308223722
+inception,30,8,433.8068504333496,11,39.43698640303178
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,8,491.74390268325806,200,2.4587195134162902
+inception,30,16,438.38988876342773,7,62.62712696620396
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,555.0616960525513,200,2.7753084802627566
+inception,30,4,530.3790740966797,20,26.518953704833983
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,567.7491195201874,200,2.838745597600937
+inception,30,8,516.1941757202148,12,43.016181310017906
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,70,16,594.0596792697906,200,2.9702983963489533
+inception,30,16,488.5204772949219,7,69.78863961356026
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,336.4793926477432,200,1.6823969632387161
+inception,10,4,264.9257011413574,4,66.23142528533936
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,338.8272633552551,200,1.6941363167762757
+inception,10,8,216.29151916503906,2,108.14575958251953
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,347.0239996910095,200,1.7351199984550476
+inception,10,16,164.24847412109375,1,164.24847412109375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,423.5250245332718,200,2.117625122666359
+inception,10,4,350.73206329345703,5,70.1464126586914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,426.4412479400635,200,2.1322062397003174
+inception,10,8,238.4955825805664,2,119.2477912902832
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,435.1845111846924,200,2.175922555923462
+inception,10,16,177.76025390625,1,177.76025390625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,499.9981138706207,200,2.4999905693531037
+inception,10,4,435.8545684814453,6,72.64242808024089
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,502.0504322052002,200,2.510252161026001
+inception,10,8,371.4668197631836,3,123.82227325439453
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,515.2349123954773,200,2.5761745619773864
+inception,10,16,198.29869079589844,1,198.29869079589844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,346.4333436489105,200,1.7321667182445526
+inception,20,4,298.8997459411621,8,37.362468242645264
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,349.2287356853485,200,1.7461436784267426
+inception,20,8,300.84963607788086,5,60.16992721557617
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,4,357.79462349414825,200,1.7889731174707413
+inception,20,16,196.7515869140625,2,98.37579345703125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,434.75049591064453,200,2.173752479553223
+inception,20,4,397.6603546142578,10,39.76603546142578
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,440.54876828193665,200,2.202743841409683
+inception,20,8,332.82220458984375,5,66.56444091796875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,8,455.82336163520813,200,2.2791168081760405
+inception,20,16,309.0625305175781,3,103.02084350585938
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,512.4530868530273,200,2.5622654342651368
+inception,20,4,459.1432304382324,11,41.740293676202946
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,521.2110731601715,200,2.6060553658008576
+inception,20,8,413.33373260498047,6,68.8889554341634
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,80,16,534.4437429904938,200,2.6722187149524688
+inception,20,16,418.5652389526367,4,104.64130973815918
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,4,377.76963222026825,200,1.8888481611013412
+inception,10,4,319.283016204834,5,63.8566032409668
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,4,380.29769694805145,200,1.9014884847402573
+inception,10,8,216.4593276977539,2,108.22966384887695
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,4,384.33062410354614,200,1.9216531205177307
+inception,10,16,164.78297424316406,1,164.78297424316406
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,8,404.60739302635193,200,2.0230369651317597
+inception,10,4,339.3858184814453,5,67.87716369628906
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,8,406.61264050006866,200,2.0330632025003434
+inception,10,8,229.3601303100586,2,114.6800651550293
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,8,414.80345606803894,200,2.0740172803401946
+inception,10,16,172.56527709960938,1,172.56527709960938
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,16,488.6747200489044,200,2.443373600244522
+inception,10,4,383.16111755371094,5,76.6322235107422
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,16,492.0521285533905,200,2.4602606427669524
+inception,10,8,361.9645767211914,3,120.6548589070638
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+alexnet,90,16,498.8945608139038,200,2.494472804069519
+inception,10,16,192.71888732910156,1,192.71888732910156
+

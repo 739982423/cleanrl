@@ -1,0 +1,10 @@
+poetry run python cleanrl/ppo.py \
+    --seed 1 \
+    --env-id CartPole-v0 \
+    --total-timesteps 100000
+
+# open another temrminal and enter `cd cleanrl/cleanrl`
+tensorboard --logdir runs
+
+虚拟环境地址:
+C:\Users\Administrator\AppData\Local\pypoetry\Cache\virtualenvs\cleanrl-2oJUNIVw-py3.9
