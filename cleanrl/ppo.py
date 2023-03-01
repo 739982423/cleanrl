@@ -36,14 +36,14 @@ def parse_args():
         help="whether to capture videos of the agent performances (check out `videos` folder)")
 
     # Algorithm specific arguments
-    parser.add_argument("--env-id", type=str, default="GPUcluster-v0",
+    parser.add_argument("--env-id", type=str, default="CartPole-v1",
         help="the id of the environment")
     parser.add_argument("--total-timesteps", type=int, default=500000,
         help="total timesteps of the experiments")
     parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
     #num_envs
-    parser.add_argument("--num-envs", type=int, default=4,
+    parser.add_argument("--num-envs", type=int, default=3,
         help="the number of parallel game environments")
     #num_steps
     parser.add_argument("--num-steps", type=int, default=128,
@@ -132,6 +132,10 @@ class Agent(nn.Module):
         probs = Categorical(logits=logits)
         if action is None:
             action = probs.sample()
+        # print(action, action.size())
+        # print(probs.log_prob(action), probs.log_prob(action).size())
+        # print(probs.entropy(), probs.entropy().size())
+        # print("--------------------------")
         return action, probs.log_prob(action), probs.entropy(), self.critic(x)
 
 
@@ -223,11 +227,13 @@ if __name__ == "__main__":
             # 玩args.num_steps步的过程中，收集所有的参数轨迹，组成长度为args.num_steps的list（182-186行定义的参数），以供后续更新参数使用
             values[step] = value.flatten()
             actions[step] = action
+            print("action", action)
             logprobs[step] = logprob
 
             # TRY NOT TO MODIFY: execute the game and log data.
             # 上面是根据当前的状态让网络做决策，得到a和v，并存入容器
             # 接下来还要根据a获取下一个时刻的s以及r等变量
+            # print("action.cpu().numpy()", action.cpu().numpy())
             next_obs, reward, done, info = envs.step(action.cpu().numpy())
             # 获取到r后也存入容器，供后续更新使用
             rewards[step] = torch.tensor(reward).to(device).view(-1)
@@ -265,6 +271,7 @@ if __name__ == "__main__":
             returns = advantages + values
 
         # flatten the batch
+        print("obs1111", obs, obs.type(), obs.shape)
         b_obs = obs.reshape((-1,) + envs.single_observation_space.shape)
         b_logprobs = logprobs.reshape(-1)
         b_actions = actions.reshape((-1,) + envs.single_action_space.shape)
@@ -273,7 +280,7 @@ if __name__ == "__main__":
         b_values = values.reshape(-1)
         # 这里reshape之后，所有容器中的数据都是以一维形式排列，[1,2,3,4]，obs和action因为在一个时刻可能是一个向量，所以它们对应的容器是二维的，将每个时刻的obs和action看作一个数字的话，那么每个容器内
         # 的数据都是[t1_data, t2_data, ... tn_data]这样排列的
-        # print("b_obs", b_obs)
+        print("b_obs2222", b_obs, b_obs.type(), b_obs.shape)
         # print("b_logprobs", b_logprobs)
         # print("b_actions", b_actions)
         # print("b_advantages", b_advantages)
@@ -291,17 +298,17 @@ if __name__ == "__main__":
                 # start从0开始，到batchsize=512结束，步长为minibatch_size，128
                 end = start + args.minibatch_size
                 mb_inds = b_inds[start:end]
-                # print("mb_inds", mb_inds)
-                # print("b_obs[mb_inds]", b_obs[mb_inds], b_obs[mb_inds].size(),len(b_obs[mb_inds]))
-                # print("b_actions.long()[mb_inds]",b_actions.long()[mb_inds])
+                print("mb_inds", mb_inds, mb_inds.shape)
+                print("b_obs[mb_inds]", b_obs[mb_inds].size(),len(b_obs[mb_inds]))
+                print("b_actions.long()[mb_inds]",b_actions.long()[mb_inds].size())
                 # 这里的mb_inds是索引的序列，索引被shuffle过了，因此该序列内的索引是随机排列的[0,511]之间的数
                 # b_obs[mb_inds]是个[128,4]的输入tensor，输入给critic，将输出128个value，组成[128,1]的二维输出张量
                 # b_actions.long()[mb_inds]是128个动作组成的tensor(只有1维,128个元素的list)
                 _, newlogprob, entropy, newvalue = agent.get_action_and_value(b_obs[mb_inds], b_actions.long()[mb_inds])
 
-                # print("newlogprob", newlogprob, newlogprob.size())
-                # print("entropy", entropy, entropy.size())
-                # print("newvalue", newvalue, newvalue.size())
+                print("newlogprob", newlogprob.size())
+                print("entropy", entropy.size())
+                print("newvalue", newvalue.size())
                 # newlogprob 和 entropy 的 size = [128] 是个长度为128的一维张量
                 # newvalue 的 size = [128,1] 是critic网络对batch=128的输入产生的输出
 

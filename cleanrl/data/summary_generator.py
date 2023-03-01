@@ -20,7 +20,7 @@ def get_model_single_latency(model_list, path, store_dict):
             line = 0
             for row in reader:
                 line += 1
-                for idx, b in enumerate(["4","8","12","16"]):
+                for idx, b in enumerate(["1","4","8","12","16"]):
                     key = model_name + "_b" + b + "_g" + str(line * 10)
                     store_dict[key] = float(row[idx])
 
@@ -31,6 +31,8 @@ get_model_single_latency(["alexnet","resnet50","mobilenet","inception","vgg19","
 
 write_lines = [["Model", "Batch", "GPU Resource", "L1RL2", "L1WL2", "L2RD", "L2WD", "L2Hit", "L2Miss", "Latency"]]
 for dir in dirs:
+    if dir[-4:] != ".csv":
+        continue
     with open("./profile/" + dir, mode="r", encoding="utf-8") as f:
         reader = csv.reader(f)
         line = 0

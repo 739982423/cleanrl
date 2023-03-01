@@ -1,1 +1,4 @@
-此文件夹中的3和4个模型共存数据是之前测试的
+此文件夹中的3和4个模型共存数据是之前测试的结果，因为保存的形式有一些测试数据不完整，所以需要
+先执行delete_invalid_data.py删除不完整的测试数据（不完整就是指测试4个共存结果只有不到4个模型的测试数据）
+得到cleaned的数据，再执行3和4models_data_preprocessing.py操作这些cleaned数据得到便于cart获取输入数据的csv格式：
+pro_cleaned_xxx.csv
