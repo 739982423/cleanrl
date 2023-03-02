@@ -104,8 +104,9 @@ class GPU():
 
     def checkGPUResource(self):
         cur_gpu_resource = 100
-        for place in self.places:
+        for idx, place in enumerate(self.places):
             cur_gpu_resource -= place.gpu_resource
+            # print("place{}, gpu_r={}".format(idx, place.gpu_resource))
         return cur_gpu_resource >= 0
 
 class RequestGroup():
@@ -120,46 +121,16 @@ class RequestGroup():
         print("remaining request:", self.cur_requset_nums)
         print("create time:", self.create_time)
 
-class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
-    def __init__(self):
-        # action space: GPU_NUMS * len(candidate_batch) * len(candidate_gpu_resource)
-        self.action_length = GPU_NUMS * len(candidate_batch) * len(candidate_gpu_resource)
-        self.action_space = spaces.MultiDiscrete([self.action_length, self.action_length, self.action_length, self.action_length])
-        # print("self.action multi shape", self.action_space.shape)
-        # observation space: （模型当前时刻请求数 + 模型当前时刻BUFFER队列长度 + 模型在GPU1是否缓存 + GPU2是否缓存 +...+ GPUN是否缓存）* 模型数量
-        self.observation_length = (2 + GPU_NUMS) * MODEL_NUMS
-
-        self.observation_space = spaces.MultiDiscrete([800, 800, 800, 800,
-                                                       500, 500, 500, 500,
-                                                       2, 2, 2, 2, 
-                                                       2, 2, 2, 2], dtype=np.float32)
-        self.model_names = ['resnet50', 'vgg19', 'densenet201', 'mobilenet']                                              
-        self.cnt = 0
-        self.GPUS = [GPU(i) for i in range(GPU_NUMS)]
-        self.CART_dtr = joblib.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\drl\\cart.pkl") # 读取
-
+class GPUEnv4a(gym.Env[np.ndarray, Union[int, np.ndarray]]):
+    # 重置buffer状态
+    def defineBuffers(self):
         self.buffers = dict()
         self.buffers['resnet50'] = []
         self.buffers['vgg19'] = []
         self.buffers['densenet201'] = []
         self.buffers['mobilenet'] = []
-        
-        self.input_streams = dict()
-        self.input_streams['resnet50'] = [i for i in range(100, 120)]
-        self.input_streams['vgg19'] = [i for i in range(100, 120)]
-        self.input_streams['densenet201'] = [i for i in range(100, 120)]
-        self.input_streams['mobilenet'] = [i for i in range(100, 120)]
-        
-        self.discard_request_nums = dict()
-        self.discard_request_nums['resnet50'] = [0 for _ in range(20)]
-        self.discard_request_nums['vgg19'] = [0 for _ in range(20)]
-        self.discard_request_nums['densenet201'] = [0 for _ in range(20)]
-        self.discard_request_nums['mobilenet'] = [0 for _ in range(20)]
 
-        self.time_scale = 1 # 代表1s
-        self.time = 0       # 表示执行过程的第几个time scale
-        self.request_retention_time_scale = 3 # 表示请求经过多少个time scale之后没被处理的话就丢弃了
-
+    # 展示buffer情况
     def showBufferDetails(self):
         for model_name in self.model_names:
             cur_buffer = self.buffers[model_name]
@@ -167,6 +138,73 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
             print("model name:", model_name)
             for request_group in cur_buffer:
                 request_group.showDetails()
+
+    # 执行该函数获得某时刻的state
+    def getStateFunc(self, next_time):
+        # state的定义是：（模型的请求到达数 + 对应的buffer内请求数 + 是否在GPU1缓存 + 是否在GPU2缓存）× 模型数量
+        # 在基础架构下是4×4=16个数字
+        state_vector = []
+        for model_name in self.model_names:
+            next_input = self.input_streams[model_name][next_time]
+            cur_model_buffer = self.buffers[model_name]
+            buffer_request_nums = 0
+            for rq in cur_model_buffer:
+                buffer_request_nums += rq.cur_requset_nums
+            # 模型的请求到达数
+            state_vector.append(next_input)
+            # 对应的buffer内请求数
+            state_vector.append(buffer_request_nums)
+            # 是否在GPU1缓存
+            state_vector.append(1)
+            # 是否在GPU2缓存
+            state_vector.append(1)
+        return torch.Tensor(state_vector)
+    
+    def __init__(self):
+        # ----------------- 函数定义部分 ---------------------
+        def defineInputStream(self):
+            self.input_streams = dict()
+            self.input_streams['resnet50'] = [i for i in range(150, 170)]
+            self.input_streams['vgg19'] = [i for i in range(150, 170)]
+            self.input_streams['densenet201'] = [i for i in range(150, 170)]
+            self.input_streams['mobilenet'] = [i for i in range(250, 270)]
+        def defineDiscardRequest(self):
+            self.discard_request_nums = dict()
+            self.discard_request_nums['resnet50'] = [0 for _ in range(20)]
+            self.discard_request_nums['vgg19'] = [0 for _ in range(20)]
+            self.discard_request_nums['densenet201'] = [0 for _ in range(20)]
+            self.discard_request_nums['mobilenet'] = [0 for _ in range(20)]
+
+        # ---------------- 实际初始化（一次性定义部分） -------------------
+        # action space: GPU_NUMS * len(candidate_batch) * len(candidate_gpu_resource)
+        # self.action_length = GPU_NUMS * len(candidate_batch) * len(candidate_gpu_resource)
+
+        # 3.1修改action定义：action space: GPU_NUMS * len(candidate_batch)
+        self.action_length = GPU_NUMS * len(candidate_batch)
+        self.action_space = spaces.MultiDiscrete([self.action_length, self.action_length, self.action_length, self.action_length])
+
+        # observation space: （模型当前时刻请求数 + 模型当前时刻BUFFER队列长度 + 模型在GPU1是否缓存 + GPU2是否缓存 +...+ GPUN是否缓存）* 模型数量
+        self.observation_length = (2 + GPU_NUMS) * MODEL_NUMS
+        self.observation_space = spaces.MultiDiscrete([800, 800, 800, 800,
+                                                       500, 500, 500, 500,
+                                                       2, 2, 2, 2, 
+                                                       2, 2, 2, 2], dtype=np.float32)
+
+        self.model_names = ['resnet50', 'vgg19', 'densenet201', 'mobilenet']                                              
+        self.CART_dtr = joblib.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\drl\\cart.pkl") # 读取
+        self.request_retention_time_scale = 3           # 表示请求经过多少个time scale之后没被处理的话就丢弃了
+        self.time_scale = 1                             # 代表1s
+        self.time_duration = 20
+
+        defineInputStream(self)
+        defineDiscardRequest(self)
+
+        # ---------------- 实际初始化（游戏结束需要重置的部分） -------------------
+        self.GPUS = [GPU(i) for i in range(GPU_NUMS)]
+        self.time = 0                                   # 表示执行过程的第几个time scale
+        self.defineBuffers()
+        
+
 
     def step(self, action): 
         # 执行该函数输出所有GPU上的所有place信息
@@ -176,21 +214,24 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
 
         # 执行该函数则检查当前所有模型buffer中是否有过期请求，如果有过期请求则删除它们并记录SLO
         def checkExpiredRequestInBuffer(self):
+            discarded_request_nums = -10
             for model_name, buffer in self.buffers.items():
                 new_buffer = []
                 for group in buffer:
                     # 如果当前时间-请求到达时间>设置的保留时长，丢弃该group
-                    if self.time - group.create_time > self.request_retention_time_scale:
+                    if self.time - group.create_time >= self.request_retention_time_scale:
                         # 丢弃前对丢弃的请求进行记录：t=group.create_time时刻，model_name的cur_requset_nums个请求没有被处理，触发SLO
                         self.discard_request_nums[group.model_name][group.create_time] += group.cur_requset_nums
+                        discarded_request_nums += group.cur_requset_nums
                         continue
                     else:
                         new_buffer.append(group)
-                buffer = new_buffer
+                self.buffers[model_name] = new_buffer
+            return discarded_request_nums
         
         # 执行该函数则根据当前action在各个GPU上放置places
-        def placeAccordingToActions(self, action, model_names):
-            if len(action) != MODEL_NUMS or len(model_names) != MODEL_NUMS:
+        def placeAccordingToActions_old(self, action):
+            if len(action) != MODEL_NUMS or len(self.model_names) != MODEL_NUMS:
                 print("每时刻动作数量与模型种类数不符~")
                 return
             for i in range(len(action)):
@@ -200,13 +241,45 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
                 batch_idx = cur_a // len(candidate_gpu_resource)
                 cur_a -= batch_idx * len(candidate_gpu_resource)
                 gpu_resource_idx = cur_a
-                new_model_place = ModelPlace(model_names[i], candidate_batch[batch_idx], 
-                                             candidate_gpu_resource[gpu_resource_idx], gpu_idx)
-                self.GPUS[gpu_idx].addPlaces(new_model_place)
+                new_model_place = ModelPlace(self.model_names[i], candidate_batch[int(batch_idx)], 
+                                             candidate_gpu_resource[int(gpu_resource_idx)], int(gpu_idx))
+                self.GPUS[int(gpu_idx)].addPlaces(new_model_place)
+
+
+        def placeAccordingToActions(self, action):
+            if len(action) != MODEL_NUMS or len(self.model_names) != MODEL_NUMS:
+                print("每时刻动作数量与模型种类数不符~")
+                return
+            tmp_gpus = [[] for _ in range(len(self.GPUS))]
+            for i in range(len(action)):
+                cur_a = action[i]
+                gpu_idx = int(cur_a // len(candidate_batch))
+                cur_a -= int(gpu_idx * len(candidate_batch))
+                batch_idx = cur_a
+                tmp_gpus[gpu_idx].append((self.model_names[i], batch_idx))
+            
+            for gpu_idx, tmp_gpu in enumerate(tmp_gpus):
+                n = len(tmp_gpu)
+                tmp_gpu_r = []
+                if n == 1:
+                    tmp_gpu_r = [100]
+                elif n == 2:
+                    tmp_gpu_r = [50, 50]
+                elif n == 3:
+                    tmp_gpu_r = [30, 30, 40]
+                elif n == 4:
+                    tmp_gpu_r = [20, 20, 30, 30]
+                for idx, model_data in enumerate(tmp_gpu):
+                    cur_model_name = model_data[0]
+                    cur_model_batch = candidate_batch[int(model_data[1])]
+                    cur_model_gpu_r = tmp_gpu_r[idx]
+                    new_model_place = ModelPlace(cur_model_name, cur_model_batch, cur_model_gpu_r, gpu_idx)
+                    self.GPUS[gpu_idx].addPlaces(new_model_place)
 
         # 执行该函数则检查当前action表示的动作是否可行（GPU资源量大于100则不可行），需要先执行placeAccordingToActions，放置后再检查
         def checkActionFeasibility(self):
-            for GPU in self.GPUS:
+            for idx, GPU in enumerate(self.GPUS):
+                # print("GPU{}:".format(idx))
                 if not GPU.checkGPUResource():
                     return False
             return True
@@ -259,24 +332,37 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
                     place.throughput = int((1000 * self.time_scale) / place.inter_latency * place.b)
         
         # 执行该函数则将输入buffer中的请求数减少take_nums个，如果buffer中没有这么多没处理完的请求，则清空buffer
-        def takeRequsetOutOfBuffer(self, buffer, take_nums):
+        def takeRequsetOutOfBuffer(model_name, take_nums):
+            buffer = self.buffers[model_name]
             i = 0
-            buffer_inference = 0
+            actual_inf = 0
+
+            buffered_request_sum = 0
+            # 首先遍历计算当前buffer中该模型有多少缓存的请求数
             for idx, group in enumerate(buffer):
-                if take_nums > 0:
-                    if group.cur_requset_nums > take_nums:
-                        group.cur_requset_nums -= take_nums
-                        buffer_inference += take_nums
-                        take_nums = 0
-                    else:
-                        take_nums -= group.cur_requset_nums
-                        buffer_inference += group.cur_requset_nums
-                    i = idx
-            buffer = buffer[i:]
-            return buffer_inference
+                buffered_request_sum += group.cur_requset_nums
+            # 如果缓存的请求数小于take_nums(当前可处理的)，说明可将缓存中的全部处理，则记录实际推理数量actual_inf为缓存内的请求数，然后直接清空buffer
+            if buffered_request_sum <= take_nums:
+                actual_inf = buffered_request_sum
+                self.buffers[model_name] = []
+            # 否则逐个查看requestGroup，将可以处理完的group删除掉
+            else:
+                for idx, group in enumerate(buffer):
+                    if take_nums > 0:
+                        if group.cur_requset_nums > take_nums:
+                            group.cur_requset_nums -= take_nums
+                            actual_inf += take_nums
+                            take_nums = 0
+                        else:
+                            take_nums -= group.cur_requset_nums
+                            actual_inf += group.cur_requset_nums
+                        i = idx
+                self.buffers[model_name] = buffer[i:]
+
+            return actual_inf
 
         # 执行该函数则检查各个模型的吞吐量是否达标，是否需要buffer增减
-        def checkThroughput(self, model_names):
+        def checkThroughput(self):
             # 定义一个最后要最小化的变量t，t表示当前时刻所有GPU上所有place的执行时间之和
             t = 0
             throughput = dict()
@@ -288,7 +374,7 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
                 for place in GPU.places:
                     model_name = place.model_name
                     throughput[model_name] += place.throughput
-            for model_name in model_names:
+            for model_name in self.model_names:
                 model_request_nums = self.input_streams[model_name][self.time]
                 model_throughput = throughput[model_name]
                 # 接下来分几种情况：
@@ -316,19 +402,39 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
                     buffer_inf = 0
                     if len(self.buffers[model_name]) >= 1:
                         # 使用一个函数处理剩余吞吐量和buffer的关系，返回实际推理的数量（是一个小于等于remaining_throughput_nums的值）
-                        buffer_inf = takeRequsetOutOfBuffer(self.buffers[model_name], remaining_throughput_nums)
+                        buffer_inf = takeRequsetOutOfBuffer(model_name, remaining_throughput_nums)
                         # 根据实际推理数量计算推理时长
                         # （时间间隔 / 吞吐量 = 推理一次的时间） × （本次时间间隔内的推理数量+buffer中取出的请求推理数量）
                     t += (self.time_scale / model_throughput) * (model_request_nums + buffer_inf)
-                print(t)
+            return t
+        
+        # 执行该函数则清空所有GPU上的place信息，这个函数应该在每次step结束之前调用且必须调用
+        def clearGPUPlaces(self):
+            for GPU in self.GPUS:
+                GPU.deletePlaces()
         # ---------------- 函数执行部分 -----------------
-        checkExpiredRequestInBuffer(self)
-        placeAccordingToActions(self, action, self.model_names)
-        checkActionFeasibility(self)
+        done = False
+        reward = 0
+        reward -= 0.1 * checkExpiredRequestInBuffer(self)
+        placeAccordingToActions(self, action)
         getRealThroughput(self)
-        showAllPlaceDetails(self)
-        checkThroughput(self, self.model_names)
-        self.showBufferDetails()
+        # showAllPlaceDetails(self)
+        reward -= checkThroughput(self)
+        # self.showBufferDetails()
+
+        clearGPUPlaces(self)
+
+        next_state = np.array([])
+        if self.time + 1 < self.time_duration:
+            next_state = np.array(self.getStateFunc(self.time + 1))
+        else:
+            done = True
+        self.time += 1
+        # reward /= self.time
+        # reward += self.time * 100
+
+        return next_state, reward, done, {'time': self.time - 1}
+
 
         # print("step: action:", action)
         # reward = 1
@@ -340,15 +446,27 @@ class GPUEnv(gym.Env[np.ndarray, Union[int, np.ndarray]]):
         # return np.array(next_state, dtype=np.float32), reward, done, {}
 
     def reset(self):
-        # new_state = np.ones(16)
-        # print("reset: state:", new_state)
-        # return np.array(new_state, dtype=np.float32)
-        self.state = self.np_random.uniform(low=-0.05, high=0.05, size=(16,))
-        self.steps_beyond_done = None
-        # print("reset: state:", self.state)
-        return np.array(self.state, dtype=np.float32)
+        # 初始化部分需要对__init__函数中定义的诸多变量进行重置
+        self.defineBuffers()
+        self.GPUS = [GPU(i) for i in range(GPU_NUMS)]
+        self.time = 0    
 
-if __name__ == "__main__":
-    env = GPUEnv()
-    action = [10, 20, 30, 40]
-    env.step(action)
+        # 获取初始状态
+        origin_state = self.getStateFunc(0)
+        return np.array(origin_state, dtype=np.float32)
+
+# if __name__ == "__main__":
+#     env = GPUEnv()
+#     action = [10, 20, 30, 40]
+#     env.step(action)
+#     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=step1 over-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+#     env.step(action)
+#     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=step2 over-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+#     env.step(action)
+#     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=step3 over-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+#     action = [10, 23, 33, 40]
+#     env.step(action)
+#     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=step4 over-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+#     action = [11, 23, 44, 40]
+#     env.step(action)
+#     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=step5 over-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
