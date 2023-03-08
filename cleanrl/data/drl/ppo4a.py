@@ -40,12 +40,12 @@ def parse_args():
     parser.add_argument("--env-id", type=str, default="GPUcluster-4a",
         help="the id of the environment")
     #total_timesteps
-    parser.add_argument("--total-timesteps", type=int, default=100000,
+    parser.add_argument("--total-timesteps", type=int, default=8000000,
         help="total timesteps of the experiments")
     parser.add_argument("--learning-rate", type=float, default=5e-4,
         help="the learning rate of the optimizer")
     #num_envs
-    parser.add_argument("--num-envs", type=int, default=5,
+    parser.add_argument("--num-envs", type=int, default=3,
         help="the number of parallel game environments")
     #num_steps
     parser.add_argument("--num-steps", type=int, default=128,
@@ -153,6 +153,42 @@ class Agent(nn.Module):
 
     def get_value(self, x):
         return self.critic(x)
+
+    def get_action_and_value1(self, x, action=None):
+        logits = self.actor1(x)
+        probs = Categorical(logits=logits)
+        if action is None:
+            action = probs.sample()
+        else:
+            action = action.reshape((1, -1))
+        return action, probs.log_prob(action), probs.entropy(), self.critic(x)
+    
+    def get_action_and_value2(self, x, action=None):
+        logits = self.actor2(x)
+        probs = Categorical(logits=logits)
+        if action is None:
+            action = probs.sample()
+        else:
+            action = action.reshape((1, -1))
+        return action, probs.log_prob(action), probs.entropy(), self.critic(x)
+
+    def get_action_and_value3(self, x, action=None):
+        logits = self.actor3(x)
+        probs = Categorical(logits=logits)
+        if action is None:
+            action = probs.sample()
+        else:
+            action = action.reshape((1, -1))
+        return action, probs.log_prob(action), probs.entropy(), self.critic(x)
+
+    def get_action_and_value4(self, x, action=None):
+        logits = self.actor4(x)
+        probs = Categorical(logits=logits)
+        if action is None:
+            action = probs.sample()
+        else:
+            action = action.reshape((1, -1))
+        return action, probs.log_prob(action), probs.entropy(), self.critic(x)
 
     def get_action_and_value(self, x, action=None):
         logits1 = self.actor1(x)
@@ -336,8 +372,16 @@ if __name__ == "__main__":
     obs = torch.zeros((args.num_steps, args.num_envs) + (single_env.observation_length,)).to(device)
     # print("obs", obs.type(), obs.shape)
     actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
+    actions1 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    actions2 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    actions3 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    actions4 = torch.zeros((args.num_steps, args.num_envs)).to(device)
     # print("origin actions ", actions.type(), actions.shape)
     logprobs = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
+    logprobs1 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    logprobs2 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    logprobs3 = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    logprobs4 = torch.zeros((args.num_steps, args.num_envs)).to(device)
     rewards = torch.zeros((args.num_steps, args.num_envs)).to(device)
     # print("rewards ", rewards.type(), rewards.shape)
     dones = torch.zeros((args.num_steps, args.num_envs)).to(device)
@@ -370,7 +414,20 @@ if __name__ == "__main__":
 
             # ALGO LOGIC: action logic
             with torch.no_grad():
-                action, logprob, _, value = agent.get_action_and_value(next_obs)
+                action1, logprob1, _, value = agent.get_action_and_value1(next_obs)
+                action2, logprob2, _, value2 = agent.get_action_and_value2(next_obs)
+                action3, logprob3, _, value3 = agent.get_action_and_value3(next_obs)
+                action4, logprob4, _, value4 = agent.get_action_and_value4(next_obs)
+                # 这里四个value的值是完全相同的
+                # print("action1-4:",action1, action2, action3, action4)
+                # print("value1-4:",value, value2, value3, value4)
+                # 用每个actor的子动作组成总动作和总logprob
+                action = torch.zeros((args.num_envs, 4))    #这里的4是actor数量
+                logprob = torch.zeros((args.num_envs, 4))
+                for i in range(args.num_envs):
+                    action[i] = torch.Tensor([action1[i], action2[i], action3[i], action4[i]])
+                    logprob[i] = torch.Tensor([logprob1[i], logprob2[i], logprob3[i], logprob4[i]])
+
                 # print("action:", action)
                 # print("logprob:", logprob)
                 # print("value:", value)
@@ -387,11 +444,28 @@ if __name__ == "__main__":
             # print("act", action, action.type(), action.shape)
             # print("logprob", logprob, logprob.type(), logprob.shape)
             actions[step] = action
+            actions1[step] = action1
+            actions2[step] = action2
+            actions3[step] = action3
+            actions4[step] = action4
+
             logprobs[step] = logprob
-            # print("values", values.type(), values.shape)
+            logprobs1[step] = logprob1
+            logprobs2[step] = logprob2
+            logprobs3[step] = logprob3
+            logprobs4[step] = logprob4
             # print("actions", actions.type(), actions.shape)
+            # print("actions1", actions1.type(), actions1.shape)
             # print("logprobs", logprobs.type(), logprobs.shape)
-            # print("rewards", rewards.type(), rewards.shape)
+            # print("logprobs1", logprobs1.type(), logprobs1.shape)
+            # sys.exit()
+            # if step == args.num_steps - 1:
+                # print("values", values.type(), values.shape)
+                # print("actions", actions.type(), actions.shape)
+                # print("logprobs", logprobs.type(), logprobs.shape)
+                # print("rewards", rewards.type(), rewards.shape)
+                # print("actions[0]", actions[0])
+                # print("logprobs[0]", logprobs[0])
             # TRY NOT TO MODIFY: execute the game and log data.
             # 上面是根据当前的状态让网络做决策，得到a和v，并存入容器
             # 接下来还要根据a获取下一个时刻的s以及r等变量
@@ -407,11 +481,11 @@ if __name__ == "__main__":
                 if "episode" in item.keys():
                     few_episode_return += item['episode']['r']
                     few_episode_end_time += item['time']
-                    # print(f"global_step={global_step}, episodic_return={item['episode']['r']}, end_time={item['time']}")
-                    if global_step % few_episode_nums == 0:
-                        print(f"global_step={global_step}, few_episodic_return={few_episode_return / few_episode_nums}")
-                        few_episode_return = 0
-                        few_episode_end_time = 0
+                    print(f"global_step={global_step}, episodic_return={item['episode']['r']}, end_time={item['time']}")
+                    # if global_step % few_episode_nums == 0:
+                    #     print(f"global_step={global_step}, few_episodic_return={few_episode_return / few_episode_nums}")
+                    #     few_episode_return = 0
+                    #     few_episode_end_time = 0
                     writer.add_scalar("charts/episodic_return", item["episode"]["r"], global_step)
                     writer.add_scalar("charts/episodic_length", item["episode"]["l"], global_step)
                     break
@@ -445,8 +519,19 @@ if __name__ == "__main__":
         # flatten the batch
         # print("obs1111", obs, obs.type(), obs.shape)
         b_obs = obs.reshape((-1,) + (single_env.observation_length,))
+
         b_logprobs = logprobs.reshape((-1,) + envs.single_action_space.shape)
+        b_logprobs1 = logprobs1.reshape((-1, 1))
+        b_logprobs2 = logprobs2.reshape((-1, 1))
+        b_logprobs3 = logprobs3.reshape((-1, 1))
+        b_logprobs4 = logprobs4.reshape((-1, 1))
+
         b_actions = actions.reshape((-1,) + envs.single_action_space.shape)
+        b_actions1 = actions1.reshape((-1, 1))
+        b_actions2 = actions2.reshape((-1, 1))
+        b_actions3 = actions3.reshape((-1, 1))
+        b_actions4 = actions4.reshape((-1, 1))
+
         b_advantages = advantages.reshape(-1)
         b_returns = returns.reshape(-1)
         b_values = values.reshape(-1)
@@ -454,11 +539,12 @@ if __name__ == "__main__":
         # 的数据都是[t1_data, t2_data, ... tn_data]这样排列的
         # print("b_obs2222", b_obs, b_obs.type(), b_obs.shape)
         # print("b_logprobs", b_logprobs.type(), b_logprobs.shape)
-        # print("b_actions", b_actions)
-        # print("b_advantages", b_advantages)
-        # print("b_returns", b_returns)
-        # print("b_values", b_values)
-
+        # print("b_actions", b_actions.type(), b_actions.shape)
+        # print("b_advantages", b_advantages.type(), b_advantages.shape)
+        # print("b_returns", b_returns.type(), b_returns.shape)
+        # print("b_values", b_values.type(), b_values.shape)
+        # print("b_actions[0-4]", b_actions[0], b_actions[1], b_actions[2], b_actions[3])
+        # print("b_logprobs[0-4]", b_logprobs[0], b_logprobs[1], b_logprobs[2], b_logprobs[3])
         # Optimizing the policy and value network
         b_inds = np.arange(args.batch_size)
         # b_inds=[1,2,3,...,512]
@@ -478,7 +564,19 @@ if __name__ == "__main__":
                 # 这里的mb_inds是索引的序列，索引被shuffle过了，因此该序列内的索引是随机排列的[0,511]之间的数
                 # b_obs[mb_inds]是个[128,4]的输入tensor，输入给critic，将输出128个value，组成[128,1]的二维输出张量
                 # b_actions.long()[mb_inds]是128个动作组成的tensor(只有1维,128个元素的list)
+
                 _, newlogprob, entropy, newvalue = agent.get_action_and_value(b_obs[mb_inds], b_actions.long()[mb_inds])
+
+                _, newlogprob1, entropy1, newvalue1 = agent.get_action_and_value1(b_obs[mb_inds], b_actions1.long()[mb_inds])
+                _, newlogprob2, entropy2, newvalue2 = agent.get_action_and_value2(b_obs[mb_inds], b_actions2.long()[mb_inds])
+                _, newlogprob3, entropy3, newvalue3 = agent.get_action_and_value3(b_obs[mb_inds], b_actions3.long()[mb_inds])
+                _, newlogprob4, entropy4, newvalue4 = agent.get_action_and_value4(b_obs[mb_inds], b_actions4.long()[mb_inds])
+                # 这里四个newvalue也是完全相同的，只需要一个用作后续计算即可
+                # print("b_obs[mb_inds]:", b_obs[mb_inds].shape)
+                # print("b_actions1.long()[mb_inds]:", b_actions1.long()[mb_inds].shape)
+                # print("b_logprobs1[mb_inds]:", b_logprobs1[mb_inds].shape)
+                # print("newlogprob1:", newlogprob1.shape)
+                
 
                 # print("newlogprob", newlogprob, newlogprob.size())
                 # print("entropy", entropy, entropy.size())
@@ -489,7 +587,27 @@ if __name__ == "__main__":
                 # 计算旧概率分布的log值与新概率分布的log值之差
                 logratio = newlogprob - b_logprobs[mb_inds]
 
+                newlogprob1 = newlogprob1.reshape((-1, 1))
+                newlogprob2 = newlogprob2.reshape((-1, 1))
+                newlogprob3 = newlogprob3.reshape((-1, 1))
+                newlogprob4 = newlogprob4.reshape((-1, 1))
+
+                logratio1 = newlogprob1 - b_logprobs1[mb_inds]
+                logratio2 = newlogprob2 - b_logprobs2[mb_inds]
+                logratio3 = newlogprob3 - b_logprobs3[mb_inds]
+                logratio4 = newlogprob4 - b_logprobs4[mb_inds]
+
+                # print("logratio:", logratio.shape)
+                # print("logratio1", logratio1.shape)
+
                 ratio = logratio.exp()
+
+                ratio1 = logratio1.exp()
+                ratio2 = logratio2.exp()
+                ratio3 = logratio3.exp()
+                ratio4 = logratio4.exp()
+
+
                 # print("old b_logprobs", b_logprobs[mb_inds].shape)
                 # print("new b_logprobs", newlogprob.shape)
                 # print("logratio", logratio.shape)
@@ -508,20 +626,20 @@ if __name__ == "__main__":
                 if args.norm_adv:
                     mb_advantages = (mb_advantages - mb_advantages.mean()) / (mb_advantages.std() + 1e-8)
 
-                ratio1 = []
-                ratio2 = []
-                ratio3 = []
-                ratio4 = []
-                for i in range(len(ratio)):
-                    ratio1.append(ratio[i][0])
-                    ratio2.append(ratio[i][1])
-                    ratio3.append(ratio[i][2])
-                    ratio4.append(ratio[i][3])
+                # ratio1 = []
+                # ratio2 = []
+                # ratio3 = []
+                # ratio4 = []
+                # for i in range(len(ratio)):
+                #     ratio1.append(ratio[i][0])
+                #     ratio2.append(ratio[i][1])
+                #     ratio3.append(ratio[i][2])
+                #     ratio4.append(ratio[i][3])
 
-                ratio1 = torch.Tensor(ratio1)
-                ratio2 = torch.Tensor(ratio2)
-                ratio3 = torch.Tensor(ratio3)
-                ratio4 = torch.Tensor(ratio4)
+                # ratio1 = torch.Tensor(ratio1)
+                # ratio2 = torch.Tensor(ratio2)
+                # ratio3 = torch.Tensor(ratio3)
+                # ratio4 = torch.Tensor(ratio4)
 
                 # Policy loss
                 actor1_pg_loss1 = -mb_advantages * ratio1
@@ -558,8 +676,10 @@ if __name__ == "__main__":
                     v_loss = 0.5 * ((newvalue - b_returns[mb_inds]) ** 2).mean()
 
                 entropy_loss = entropy.mean()
-                loss = actor1_pg_loss + actor2_pg_loss + actor3_pg_loss + actor4_pg_loss -\
-                       args.ent_coef * entropy_loss + v_loss * args.vf_coef
+                # loss = actor1_pg_loss + actor2_pg_loss + actor3_pg_loss + actor4_pg_loss -\
+                #        args.ent_coef * entropy_loss + v_loss * args.vf_coef
+                loss = actor1_pg_loss + actor2_pg_loss + actor3_pg_loss + actor4_pg_loss +\
+                       v_loss * args.vf_coef
 
                 optimizer.zero_grad()
                 loss.backward()

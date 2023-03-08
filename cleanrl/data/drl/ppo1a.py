@@ -8,6 +8,7 @@ from distutils.util import strtobool
 
 import gym
 import numpy as np
+import datetime as dt
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -38,9 +39,9 @@ def parse_args():
     # Algorithm specific arguments
     parser.add_argument("--env-id", type=str, default="GPUcluster-1a",
         help="the id of the environment")
-    parser.add_argument("--total-timesteps", type=int, default=800000,
+    parser.add_argument("--total-timesteps", type=int, default=2000000,
         help="total timesteps of the experiments")
-    parser.add_argument("--learning-rate", type=float, default=5e-4,
+    parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
     #num_envs
     parser.add_argument("--num-envs", type=int, default=5,
@@ -73,6 +74,12 @@ def parse_args():
         help="coefficient of the entropy")
     parser.add_argument("--vf-coef", type=float, default=0.5,
         help="coefficient of the value function")
+    # --- 新增 ----
+    parser.add_argument("--discard-alpha", type=float, default=0.7,
+        help="请求发生丢弃时计算reward的系数")
+    parser.add_argument("--load-alpha", type=float, default=0.5,
+        help="模型发生加载时计算reward的系数")
+    # ---- END ----
     parser.add_argument("--max-grad-norm", type=float, default=0.5,
         help="the maximum norm for the gradient clipping")
     parser.add_argument("--target-kl", type=float, default=None,
@@ -86,7 +93,7 @@ def parse_args():
 
 def make_env(env_id, seed, idx, capture_video, run_name):
     def thunk():
-        env = gym.make(env_id)
+        env = gym.make(env_id, discard_cost_alpha = args.discard_alpha, load_cost_alpha = args.load_alpha)
         env = gym.wrappers.RecordEpisodeStatistics(env)
         if capture_video:
             if idx == 0:
@@ -181,6 +188,15 @@ if __name__ == "__main__":
     agent = Agent(single_env).to(device)
     optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
 
+    # 存储当前使用环境的各个模型输入流信息
+    input_stream = single_env.getInputStreamMessage()
+    for k, v in input_stream.items():
+        model_name = k
+        model_input_stream = v
+        for stream_time in range(len(model_input_stream)):
+            cur_time_request = model_input_stream[stream_time]
+            writer.add_scalar("inputs/{}".format(model_name), cur_time_request, stream_time)
+
     # ALGO Logic: Storage setup
     obs = torch.zeros((args.num_steps, args.num_envs) + (single_env.observation_length,)).to(device)
     actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
@@ -244,6 +260,31 @@ if __name__ == "__main__":
                     print(f"global_step={global_step}, episodic_return={item['episode']['r']}")
                     writer.add_scalar("charts/episodic_return", item["episode"]["r"], global_step)
                     writer.add_scalar("charts/episodic_length", item["episode"]["l"], global_step)
+
+                    writer.add_scalar("charts/resnet50_dis_nums", item["resnet50_dis_nums"], global_step)
+                    writer.add_scalar("charts/resnet50_dis_percent", item["resnet50_dis_percent"], global_step)
+                    writer.add_scalar("charts/resnet50_load_times", item["resnet50_load_times"], global_step)
+
+                    writer.add_scalar("charts/vgg19_dis_nums", item["vgg19_dis_nums"], global_step)
+                    writer.add_scalar("charts/vgg19_dis_percent", item["vgg19_dis_percent"], global_step)
+                    writer.add_scalar("charts/vgg19_load_times", item["vgg19_load_times"], global_step)
+
+                    writer.add_scalar("charts/densenet201_dis_nums", item["densenet201_dis_nums"], global_step)
+                    writer.add_scalar("charts/densenet201_dis_percent", item["densenet201_dis_percent"], global_step)
+                    writer.add_scalar("charts/densenet201_load_times", item["densenet201_load_times"], global_step)
+
+                    writer.add_scalar("charts/mobilenet_dis_nums", item["mobilenet_dis_nums"], global_step)
+                    writer.add_scalar("charts/mobilenet_dis_percent", item["mobilenet_dis_percent"], global_step)
+                    writer.add_scalar("charts/mobilenet_load_times", item["mobilenet_load_times"], global_step)
+
+                    writer.add_scalar("charts/alexnet_dis_nums", item["alexnet_dis_nums"], global_step)
+                    writer.add_scalar("charts/alexnet_dis_percent", item["alexnet_dis_percent"], global_step)
+                    writer.add_scalar("charts/alexnet_load_times", item["alexnet_load_times"], global_step)
+
+                    writer.add_scalar("charts/inception_dis_nums", item["inception_dis_nums"], global_step)
+                    writer.add_scalar("charts/inception_dis_percent", item["inception_dis_percent"], global_step)
+                    writer.add_scalar("charts/inception_load_times", item["inception_load_times"], global_step)
+
                     break
 
         # args.num_steps的循环结束了，代表游戏已经玩了args.num_steps步了，先不继续玩了，需要更新网络参数了
@@ -374,3 +415,7 @@ if __name__ == "__main__":
 
     envs.close()
     writer.close()
+
+    current_time = dt.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+    os.mkdir(r"./models/{}".format(current_time))
+    torch.save(agent, r"./models/{}/a1.pt".format(current_time))
