@@ -41,7 +41,7 @@ class Agent(nn.Module):
             nn.Tanh(),
             layer_init(nn.Linear(1024, action_length), std=0.01),
         )
-
+ 
     def get_value(self, x):
         return self.critic(x)
 
@@ -54,20 +54,20 @@ class Agent(nn.Module):
 
 
 if __name__ == "__main__":
-    env = gym.make('GPUcluster-1a', evaluation = True)
-    model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\drl\\models\\2023-03-08-07-37-47\\a1.pt")
-
+    env = gym.make('GPUcluster-1a_p_4m', evaluation_flag = True, input_ascent = 0)
+    device = torch.device('cuda')
+    model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\drl\\runs\\GPUcluster-1a_p_4m__ppo1a_4m__1__r100_v90_d80_m180_r10_\\a1.pt").to(device)
     s = env.reset()
     done = False
     extra_message = None
-    input_stream = env.getInputStreamMessage()
+    input_stream = env.getOncTimeInputStreamMessage()
     while(not done):
-        a, logprob, entropy, c = model.get_action_and_value(torch.Tensor(s))
+        a, logprob, entropy, c = model.get_action_and_value(torch.Tensor(s).to(device))
         print(a) #tensor(8116)
         next_state, reward, done, extra_message = env.step(int(a))
         s = next_state
-        if done:
-            print(extra_message)
+        # 
+        
     
     for k, v in extra_message.items():
         # k是五类图像的关键词throughput,buffer,discard,GPUloadcost,GPUbusytime
@@ -76,7 +76,7 @@ if __name__ == "__main__":
             plt.title("Throughput & Input")
             cnt = 1
             for model_name, t_list in v.items():
-                plt.subplot(2,3,cnt)
+                plt.subplot(2,2,cnt)
                 x = [i for i in range(len(t_list))]
                 plt.plot(x, input_stream[model_name], label = "request")
                 plt.plot(x, t_list, label = "throughput")
@@ -91,7 +91,7 @@ if __name__ == "__main__":
             plt.title("Buffer Length")
             cnt = 1
             for model_name, t_list in v.items():
-                plt.subplot(2,3,cnt)
+                plt.subplot(2,2,cnt)
                 x = [i for i in range(len(t_list))]
                 plt.plot(x, t_list, label = "Buffer Length")
                 plt.legend()
@@ -105,7 +105,7 @@ if __name__ == "__main__":
             plt.title("Discarded Requset Number")
             cnt = 1
             for model_name, t_list in v.items():
-                plt.subplot(2,3,cnt)
+                plt.subplot(2,2,cnt)
                 x = [i for i in range(len(t_list))]
                 plt.plot(x, t_list, label = "Discarded Requset Number")
                 plt.legend()

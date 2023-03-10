@@ -37,9 +37,9 @@ def parse_args():
         help="whether to capture videos of the agent performances (check out `videos` folder)")
 
     # Algorithm specific arguments
-    parser.add_argument("--env-id", type=str, default="GPUcluster-1a",
+    parser.add_argument("--env-id", type=str, default="GPUcluster-1a_p",
         help="the id of the environment")
-    parser.add_argument("--total-timesteps", type=int, default=2000000,
+    parser.add_argument("--total-timesteps", type=int, default=10000000,
         help="total timesteps of the experiments")
     parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
@@ -79,6 +79,8 @@ def parse_args():
         help="请求发生丢弃时计算reward的系数")
     parser.add_argument("--load-alpha", type=float, default=0.5,
         help="模型发生加载时计算reward的系数")
+    parser.add_argument("--input-ascent", type=int, default=0,
+        help="训练时为每个模型每个时刻的请求到达率增加input_ascent的大小")
     # ---- END ----
     parser.add_argument("--max-grad-norm", type=float, default=0.5,
         help="the maximum norm for the gradient clipping")
@@ -93,7 +95,7 @@ def parse_args():
 
 def make_env(env_id, seed, idx, capture_video, run_name):
     def thunk():
-        env = gym.make(env_id, discard_cost_alpha = args.discard_alpha, load_cost_alpha = args.load_alpha)
+        env = gym.make(env_id, discard_cost_alpha = args.discard_alpha, load_cost_alpha = args.load_alpha, input_ascent = args.input_ascent)
         env = gym.wrappers.RecordEpisodeStatistics(env)
         if capture_video:
             if idx == 0:
@@ -177,6 +179,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.deterministic = args.torch_deterministic
 
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
+    # device = torch.device("cuda")
 
     # env setup
     envs = gym.vector.SyncVectorEnv(
@@ -184,18 +187,22 @@ if __name__ == "__main__":
     )
     assert isinstance(envs.single_action_space, gym.spaces.Discrete), "only discrete action space is supported"
 
-    single_env = gym.make(args.env_id)
+    single_env = gym.make(args.env_id, input_ascent = args.input_ascent)
     agent = Agent(single_env).to(device)
     optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
 
     # 存储当前使用环境的各个模型输入流信息
-    input_stream = single_env.getInputStreamMessage()
-    for k, v in input_stream.items():
-        model_name = k
-        model_input_stream = v
-        for stream_time in range(len(model_input_stream)):
-            cur_time_request = model_input_stream[stream_time]
-            writer.add_scalar("inputs/{}".format(model_name), cur_time_request, stream_time)
+    lambda_base = single_env.getInputStreamMessage()
+    writer.add_text(
+        "Env Input",
+        "|param|value|\n|-|-|\n%s" % ("\n".join([f"|{key}|{value}|" for key, value in lambda_base.items()])),
+    )
+    # for k, v in input_stream.items():
+    #     model_name = k
+    #     model_input_stream = v
+    #     for stream_time in range(len(model_input_stream)):
+    #         cur_time_request = model_input_stream[stream_time]
+    #         writer.add_scalar("inputs/{}".format(model_name), cur_time_request, stream_time)
 
     # ALGO Logic: Storage setup
     obs = torch.zeros((args.num_steps, args.num_envs) + (single_env.observation_length,)).to(device)

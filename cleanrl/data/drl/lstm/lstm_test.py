@@ -121,7 +121,7 @@ hidden_dim = 64
 num_layers = 2 
 output_dim = 1
 
-for loop in range(10):
+for loop in range(1):
     model = LSTM(input_dim=input_dim, hidden_dim=hidden_dim, output_dim=output_dim, num_layers=num_layers)
     print(model)
 
@@ -161,14 +161,14 @@ for loop in range(10):
 
 
 
-    # # make predictions
-    # y_test_pred = model(testX)
+    # make predictions
+    y_test_pred = model(testX)
 
-    # # invert predictions
-    # y_train_pred = scaler.inverse_transform(y_train_pred.detach().numpy()[:,-1,0].reshape(-1,1))
-    # y_train = scaler.inverse_transform(trainY.detach().numpy()[:,-1,0].reshape(-1,1))
-    # y_test_pred = scaler.inverse_transform(y_test_pred.detach().numpy()[:,-1,0].reshape(-1,1))
-    # y_test = scaler.inverse_transform(testY.detach().numpy()[:,-1,0].reshape(-1,1))
+    # invert predictions
+    y_train_pred = scaler.inverse_transform(y_train_pred.detach().numpy()[:,-1,0].reshape(-1,1))
+    y_train = scaler.inverse_transform(trainY.detach().numpy()[:,-1,0].reshape(-1,1))
+    y_test_pred = scaler.inverse_transform(y_test_pred.detach().numpy()[:,-1,0].reshape(-1,1))
+    y_test = scaler.inverse_transform(testY.detach().numpy()[:,-1,0].reshape(-1,1))
 
 
 
@@ -193,15 +193,15 @@ for loop in range(10):
 # plt.show()
 
 # # 将训练集和测试集画在一张图上：
-# show_length = 300
-# plt.figure()
-# plt.plot([i for i in range(len(y_train_pred))], y_train_pred, c="orange", label="train_predict")
-# plt.plot([i for i in range(len(y_train))], y_train, c="b", alpha=0.25, label="train_real")
+show_length = 300
+plt.figure()
+plt.plot([i for i in range(len(y_train_pred))], y_train_pred, c="orange", label="train_predict")
+plt.plot([i for i in range(len(y_train))], y_train, c="b", alpha=0.25, label="train_real")
 
-# plt.plot([i for i in range(len(y_train_pred) + len(y_test_pred) - show_length, len(y_train_pred) + len(y_test_pred))], y_test_pred[-show_length:], c="g", label="test_predict")
-# plt.plot([i for i in range(len(y_train_pred) + len(y_test_pred) - show_length, len(y_train_pred) + len(y_test_pred))], y_test[-show_length:], c="b", alpha=0.25, label="test_real")
-# plt.legend()
-# plt.show()
+plt.plot([i for i in range(len(y_train_pred) + len(y_test_pred) - show_length, len(y_train_pred) + len(y_test_pred))], y_test_pred[-show_length:], c="g", label="test_predict")
+plt.plot([i for i in range(len(y_train_pred) + len(y_test_pred) - show_length, len(y_train_pred) + len(y_test_pred))], y_test[-show_length:], c="b", alpha=0.25, label="test_real")
+plt.legend()
+plt.show()
 
 # # 将训练集和测试集画在两张图上：
 # plt.figure()
