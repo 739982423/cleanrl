@@ -39,7 +39,7 @@ def parse_args():
     # Algorithm specific arguments
     parser.add_argument("--env-id", type=str, default="GPUcluster-1a_p_4m",
         help="the id of the environment")
-    parser.add_argument("--total-timesteps", type=int, default=3000000,
+    parser.add_argument("--total-timesteps", type=int, default=1500000,
         help="total timesteps of the experiments")
     parser.add_argument("--learning-rate", type=float, default=2.5e-4,
         help="the learning rate of the optimizer")
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     for k, v in lambda_base.items():
         res_file_name += k[0] + str(v) + "_"
 
-    run_name = f"{args.env_id}__{args.exp_name}__{args.seed}__{res_file_name}"
+    run_name = f"{args.env_id}__{args.exp_name}__{args.seed}__{res_file_name}__gamma{args.gamma}"
     if args.track:
         import wandb
 
@@ -279,18 +279,22 @@ if __name__ == "__main__":
                     writer.add_scalar("dis_nums/resnet50_dis_nums", item["resnet50_dis_nums"], global_step)
                     writer.add_scalar("dis_percent/resnet50_dis_percent", item["resnet50_dis_percent"], global_step)
                     writer.add_scalar("load_times/resnet50_load_times", item["resnet50_load_times"], global_step)
+                    writer.add_scalar("exec_time/resnet50_exec_time", item["resnet50_exec_time"], global_step)
 
                     writer.add_scalar("dis_nums/vgg19_dis_nums", item["vgg19_dis_nums"], global_step)
                     writer.add_scalar("dis_percent/vgg19_dis_percent", item["vgg19_dis_percent"], global_step)
                     writer.add_scalar("load_times/vgg19_load_times", item["vgg19_load_times"], global_step)
+                    writer.add_scalar("exec_time/vgg19_exec_time", item["vgg19_exec_time"], global_step)
 
                     writer.add_scalar("dis_nums/densenet201_dis_nums", item["densenet201_dis_nums"], global_step)
                     writer.add_scalar("dis_percent/densenet201_dis_percent", item["densenet201_dis_percent"], global_step)
                     writer.add_scalar("load_times/densenet201_load_times", item["densenet201_load_times"], global_step)
+                    writer.add_scalar("exec_time/densenet201_exec_time", item["densenet201_exec_time"], global_step)
 
                     writer.add_scalar("dis_nums/mobilenet_dis_nums", item["mobilenet_dis_nums"], global_step)
                     writer.add_scalar("dis_percent/mobilenet_dis_percent", item["mobilenet_dis_percent"], global_step)
                     writer.add_scalar("load_times/mobilenet_load_times", item["mobilenet_load_times"], global_step)
+                    writer.add_scalar("exec_time/mobilenet_exec_time", item["mobilenet_exec_time"], global_step)
                     break
 
         # args.num_steps的循环结束了，代表游戏已经玩了args.num_steps步了，先不继续玩了，需要更新网络参数了

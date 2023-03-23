@@ -1,0 +1,7 @@
+ascend,resnet50_load_times,vgg19_load_times,densenet201_load_times,mobilenet_load_times
+0,60,54,52,53
+20,55,56,46,66
+40,62,46,26,53
+60,60,48,10,62
+80,55,36,11,56
+180,40,2,2,51

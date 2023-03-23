@@ -6,6 +6,9 @@ import torch.nn as nn
 import math
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
+import matplotlib
+
+# matplotlib.rc("font", family='Microsoft YaHei')
 
 # 1.生成数据集
 
@@ -27,6 +30,11 @@ def get_input(load_data_length=5000):
 
     return input_stream
 
+
+def poisson_input(load_data_length=2000):
+    stream = np.random.poisson(100, load_data_length)
+    return stream.reshape((-1,1))
+
 def create_data_seq(data_raw, seq):
     data_feat,data_target = [], []
     for index in range(len(data_raw) - seq - 1):
@@ -43,18 +51,27 @@ def train_test(data_feat, data_target, validate_size, train_size, seq):
     train_size = int(len(data_feat) * train_size)
     validate_size = int(len(data_feat) * validate_size)
 
-    valX = torch.from_numpy(data_feat[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
-    trainX = torch.from_numpy(data_feat[validate_size: train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    # valX = torch.from_numpy(data_feat[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    # trainX = torch.from_numpy(data_feat[validate_size: train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    # testX  = torch.from_numpy(data_feat[train_size + validate_size:].reshape(-1, seq, 1)).type(torch.Tensor)
+
+    # valY = torch.from_numpy(data_target[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    # trainY = torch.from_numpy(data_feat[validate_size: train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    # testY  = torch.from_numpy(data_target[train_size + validate_size:].reshape(-1, seq, 1)).type(torch.Tensor)
+
+    valX =   torch.from_numpy(data_feat[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    trainX = torch.from_numpy(data_feat[validate_size:train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
     testX  = torch.from_numpy(data_feat[train_size + validate_size:].reshape(-1, seq, 1)).type(torch.Tensor)
 
-    valY = torch.from_numpy(data_target[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
-    trainY = torch.from_numpy(data_feat[validate_size: train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    valY =   torch.from_numpy(data_target[:validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
+    trainY = torch.from_numpy(data_target[validate_size:train_size + validate_size].reshape(-1, seq, 1)).type(torch.Tensor)
     testY  = torch.from_numpy(data_target[train_size + validate_size:].reshape(-1, seq, 1)).type(torch.Tensor)
     return trainX, trainY, valX, valY, testX, testY
 
-data = torch.Tensor(get_input())
+data = torch.Tensor(get_input(1440))
+# data = torch.Tensor(poisson_input())
 
-seq = 10
+seq = 5
 scaler = MinMaxScaler(feature_range=(-1., 1.))
 normalized_data = scaler.fit_transform(data)
 print(normalized_data.shape)
@@ -62,12 +79,12 @@ normalized_data = normalized_data.reshape(-1)
 print(normalized_data.shape)
 data_feat, data_target = create_data_seq(normalized_data, seq)
 print(data_feat.shape, data_target.shape)
-trainX, trainY, valX, valY, testX, testY = train_test(data_feat, data_target, seq = seq, validate_size = 0.1, train_size = 0.6)
+trainX, trainY, valX, valY, testX, testY = train_test(data_feat, data_target, seq = seq, validate_size = 0.1, train_size = 0.7)
 print("train shape", trainX.shape, trainY.shape)
 print("validate shape", valX.shape, valY.shape)
 print("test shape", testX.shape, testY.shape)
 
-batch_size = 10
+batch_size = 12
 num_epochs = 150
 
 train = torch.utils.data.TensorDataset(trainX, trainY)
@@ -117,7 +134,7 @@ class LSTM(nn.Module):
 # 5. 定义超参数
 
 input_dim = 1
-hidden_dim = 64
+hidden_dim = 128
 num_layers = 2 
 output_dim = 1
 
@@ -126,7 +143,7 @@ for loop in range(1):
     print(model)
 
     loss_fn = torch.nn.MSELoss(size_average=True)
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.0005)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     hist_trainset = np.zeros(num_epochs)
     hist_valset = np.zeros(num_epochs)
@@ -161,7 +178,7 @@ for loop in range(1):
 
 
 
-    # make predictions
+    # # make predictions
     y_test_pred = model(testX)
 
     # invert predictions
@@ -174,26 +191,32 @@ for loop in range(1):
 
 
     # 保存loss曲线数据
-    with open("train_val_loss.csv", mode="a", encoding="utf-8", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["", "epoch", "loss", "type"])
-        for epoch, data in enumerate(hist_trainset):
-            writer.writerow([epoch, data, "train"])
-        for epoch, data in enumerate(hist_valset):
-            writer.writerow([epoch, data, "validate"])
+    # with open("train_val_loss.csv", mode="a", encoding="utf-8", newline="") as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(["", "epoch", "loss", "type"])
+    #     for epoch, data in enumerate(hist_trainset):
+    #         writer.writerow([epoch, data, "train"])
+    #     for epoch, data in enumerate(hist_valset):
+    #         writer.writerow([epoch, data, "validate"])
         
 
 
 
 # # loss变化曲线
-# plt.figure()
-# plt.plot([i for i in range(len(hist_trainset))], hist_trainset, 'o-.',label = "train set", markerfacecolor="white")
-# plt.plot([i for i in range(len(hist_valset))], hist_valset, '-.',label = "validate set")
-# plt.legend()
-# plt.show()
+plt.figure()
+plt.plot([i for i in range(len(hist_trainset))], hist_trainset, '-',label = "train set", markerfacecolor="white")
+plt.plot([i for i in range(len(hist_valset))], hist_valset, '-',label = "validate set")
+# with open("./train_val_loss_new.csv", mode="a", encoding="utf-8", newline="") as f:
+#     writer = csv.writer(f)
+#     for idx, num in enumerate(hist_trainset):
+#         writer.writerow([num, idx, "train"])
+#     for idx, num in enumerate(hist_valset):
+#         writer.writerow([num, idx, "val"])
+plt.legend()
+plt.show()
 
 # # 将训练集和测试集画在一张图上：
-show_length = 300
+show_length = 100
 plt.figure()
 plt.plot([i for i in range(len(y_train_pred))], y_train_pred, c="orange", label="train_predict")
 plt.plot([i for i in range(len(y_train))], y_train, c="b", alpha=0.25, label="train_real")
@@ -203,19 +226,25 @@ plt.plot([i for i in range(len(y_train_pred) + len(y_test_pred) - show_length, l
 plt.legend()
 plt.show()
 
-# # 将训练集和测试集画在两张图上：
-# plt.figure()
-# plt.subplot(2,1,1)
-# plt.plot([i for i in range(len(y_train_pred))], y_train_pred, label="train_predict")
-# plt.plot([i for i in range(len(y_train))], y_train, label="train_real")
-# plt.legend()
-# plt.subplot(2,1,2)
-# plt.plot([i for i in range(len(y_test_pred))], y_test_pred, label="test_predict")
-# plt.plot([i for i in range(len(y_test))], y_test, label="test_real")
-# plt.legend()
-# plt.show()
-# # calculate root mean squared error
-# trainScore = math.sqrt(mean_squared_error(y_train, y_train_pred))
-# print('Train Score: %.2f RMSE' % (trainScore))
-# testScore = math.sqrt(mean_squared_error(y_test, y_test_pred))
-# print('Test Score: %.2f RMSE' % (testScore))
+# 单画测试集预测结果在一张图上
+figure, ax = plt.subplots()
+
+plt.plot([i for i in range(len(y_test))], y_test, label="Truth")
+plt.plot([i for i in range(len(y_test_pred))], y_test_pred, label="Predict")
+labels = ax.get_xticklabels() + ax.get_yticklabels()
+[label.set_fontname('Times New Roman') for label in labels]
+font1 = {'family': 'Times New Roman',
+            'weight': 'normal',
+            'size': 14,
+            }
+plt.xlabel('Epoch', fontdict=font1)
+plt.ylabel('Tweets Number', fontdict=font1)
+plt.grid(linestyle="-.")
+plt.tick_params(labelsize=13)
+plt.legend(prop=font1, loc=1, markerscale=1,)
+plt.show()
+# calculate root mean squared error
+trainScore = math.sqrt(mean_squared_error(y_train, y_train_pred))
+print('Train Score: %.2f RMSE' % (trainScore))
+testScore = math.sqrt(mean_squared_error(y_test, y_test_pred))
+print('Test Score: %.2f RMSE' % (testScore))

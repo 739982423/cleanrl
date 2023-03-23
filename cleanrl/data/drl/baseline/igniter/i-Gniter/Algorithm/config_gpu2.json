@@ -1,0 +1,1 @@
+{"models": ["vgg19", "mobilenet"], "rates": [200, 200], "slos": [50.0, 50.0], "resources": [42, 3], "batches": [10, 10]}

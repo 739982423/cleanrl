@@ -54,7 +54,7 @@ class Agent(nn.Module):
 
 
 if __name__ == "__main__":
-    env = gym.make('GPUcluster-1a_p_4m', evaluation_flag = True, input_ascent = 0)
+    env = gym.make('GPUcluster-1a_p_4m_2g', evaluation_flag = True, input_ascent = 0)
     device = torch.device('cuda')
     model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\drl\\runs\\GPUcluster-1a_p_4m__ppo1a_4m__1__r100_v90_d80_m180_r10_\\a1.pt").to(device)
     s = env.reset()
