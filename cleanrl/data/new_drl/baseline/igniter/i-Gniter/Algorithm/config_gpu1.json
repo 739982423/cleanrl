@@ -1,0 +1,1 @@
+{"models": ["densenet201", "resnet50"], "rates": [200, 200], "slos": [50.0, 50.0], "resources": [54, 21], "batches": [10, 10]}

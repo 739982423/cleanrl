@@ -1,0 +1,2 @@
+ascend,resnet50_dis_percent,vgg19_dis_percent,densenet201_dis_percent,mobilenet_dis_percent
+80,0.0,0.044909688013136294,0.08588314989876848,0.0
