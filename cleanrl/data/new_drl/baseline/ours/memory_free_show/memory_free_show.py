@@ -7,7 +7,7 @@ import numpy as np
 import os
 import csv
 
-def tensorboard_smoothing(values, smooth = 0.92):
+def tensorboard_smoothing(values, smooth = 0.91):
     """不需要传入step"""
     # [0.81 0.9 1]. res[2] = (0.81 * values[0] + 0.9 * values[1] + values[2]) / 2.71
     norm_factor = smooth + 1

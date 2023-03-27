@@ -76,10 +76,10 @@ class Agent(nn.Module):
 
 
 if __name__ == "__main__":
-    env = gym.make('GPUcluster-1a_mh_p_4m_2g', evaluation_flag = True, input_ascend = 280)
+    env = gym.make('GPUcluster-1a_mh_p_4m_2g', evaluation_flag = True, input_ascend = 0)
     device = torch.device('cuda')
 
-    model_config = "GPUcluster-1a_mh_p_4m_2g__ppo1a_mh_4m_2g__202__r490.0_v470.0_d470.0_m470.0___input_ascend280__memory_alpha0.001_discard_alpha0.5_new"
+    model_config = "GPUcluster-1a_mh_p_4m_2g__ppo1a_mh_4m_2g__203__r290.0_v270.0_d270.0_m270.0___input_ascend80__memory_alpha0.001_discard_alpha0.5_new"
 
     model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\new_drl\\runs_2g_tweet_input_3.25\\{}\\a1.pt".format(model_config)).to(device)
     s = env.reset()

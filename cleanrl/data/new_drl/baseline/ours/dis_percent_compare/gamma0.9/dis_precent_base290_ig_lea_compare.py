@@ -117,13 +117,13 @@ for idx, m in enumerate(file_model_names):
     
     ax[r][c].set_xticks([0, 104, 208, 312, 416, 520], ['0', '200k','400k','600k', '800k', '1000K'])
     ax[r][c].grid(linestyle='-.')
-    ax[r][c].tick_params(labelsize=13)
+    ax[r][c].tick_params(labelsize=12)
     loc = 1
     ax[r][c].legend(prop=font1, loc=loc, markerscale=1,)
 
     ax[r][c].set_title(model_names[idx], fontdict=font2)
     ax[r][c].set_xlabel('Step', fontdict=font1)
-    ax[r][c].set_ylabel('SLO Violation', fontdict=font1)
+    ax[r][c].set_ylabel('Dropped Ratio', fontdict=font1)
     # plt.tight_layout()
 
 
