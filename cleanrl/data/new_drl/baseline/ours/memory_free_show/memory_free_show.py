@@ -21,7 +21,7 @@ def tensorboard_smoothing(values, smooth = 0.91):
         norm_factor += 1
     return res
 
-base = ['210','290']
+base = ['210','330']
 
 figure, ax = plt.subplots(2,1)
 
@@ -37,62 +37,72 @@ font2 = {'family': 'Times New Roman',
 for i in range(2):
     labels = ax[i].get_xticklabels() + ax[i].get_yticklabels()
     [label.set_fontname('Times New Roman') for label in labels]
+for mode in ["wlstm", "wolstm"]:
 
-for idx, m in enumerate(base):
+    for idx, m in enumerate(base):
 
-    sns.set(style="whitegrid")
-    mark = [50 * i + 10 for i in range(0, 11)]
+        sns.set(style="whitegrid")
+        mark = [50 * i + 10 for i in range(0, 11)]
 
-    # 因为只有一个base的数据，所以长度设置为一个csv文件的数据长度：416个点
-    total_df_origin_data = pd.DataFrame({'data':[0 for _ in range(520)], 'x':[0 for _ in range(520)], 'color':[0 for _ in range(520)]})
-    total_df_smoothed_data = pd.DataFrame({'data':[0 for _ in range(520)], 'x':[0 for _ in range(520)], 'color':[0 for _ in range(520)]})
+        # 因为只有一个base的数据，所以长度设置为一个csv文件的数据长度：520个点
+        total_df_origin_data = pd.DataFrame({'data':[0 for _ in range(520)], 'x':[0 for _ in range(520)], 'color':[0 for _ in range(520)]})
+        total_df_smoothed_data = pd.DataFrame({'data':[0 for _ in range(520)], 'x':[0 for _ in range(520)], 'color':[0 for _ in range(520)]})
 
-    total_df_origin_data_cnt = 0
-    total_df_smoothed_data_cnt = 0
+        total_df_origin_data_cnt = 0
+        total_df_smoothed_data_cnt = 0
 
 
-    path = "./base{}/".format(base[idx])
-    files = os.listdir(path)
-    print(path, files)
+        path = "./{}/base{}/".format(mode, base[idx])
+        files = os.listdir(path)
+        print(path, files)
 
-    for csv in files:
-        if csv[-4:] != ".csv":
-            continue
-        df = pd.read_csv("./base{}/{}".format(base[idx], csv))
-        smoothed = tensorboard_smoothing(df['Value'])
-        df['smoothed'] = pd.Series(smoothed)
-        df['x'] = df.index
+        for csv in files:
+            if csv[-4:] != ".csv":
+                continue
+            df = pd.read_csv("./{}/base{}/{}".format(mode, base[idx], csv))
+            smoothed = tensorboard_smoothing(df['Value'])
+            df['smoothed'] = pd.Series(smoothed)
+            df['x'] = df.index
 
-        for i in range(520):
-            total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'data'] = df.loc[i, 'smoothed'] * 1024
-            total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'x'] = df.loc[i, 'x']
-            total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'color'] = "DRL"
-            total_df_smoothed_data_cnt += 1
 
-        for i in range(520):
-            total_df_origin_data.loc[total_df_origin_data_cnt, 'data'] = df.loc[i, 'Value'] * 1024
-            total_df_origin_data.loc[total_df_origin_data_cnt, 'x'] = df.loc[i, 'x']
-            total_df_origin_data.loc[total_df_origin_data_cnt, 'color'] = "DRL"
-            total_df_origin_data_cnt += 1
+            style = "DRL"
+            if mode == "wlstm":
+                style = "DRL+LSTM"
 
-    
-    ax[idx].plot([i for i in range(len(list(total_df_origin_data['data'])))], list(total_df_origin_data['data']), color="#4C72B0", alpha=0.2)
-    ax[idx].plot([i for i in range(len(list(total_df_smoothed_data['data'])))], list(total_df_smoothed_data['data']), color="#4C72B0", marker='o', 
-             markersize=5, markeredgewidth=1, markevery=mark, alpha=1, label="Avg effective memory released per second")
-    
-    
-    ax[idx].set_xticks([0, 104, 208, 312, 416, 520], ['0', '200k','400k','600k', '800k', '1000K'])
-    ax[idx].grid(linestyle='-.')
-    ax[idx].tick_params(labelsize=13)
-    loc = 1
-    if idx == 0:
-        loc = 4
-    ax[idx].legend(prop=font1, loc=loc, markerscale=1,)
+            for i in range(520):
+                total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'data'] = df.loc[i, 'smoothed'] * 1024
+                total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'x'] = df.loc[i, 'x']
+                total_df_smoothed_data.loc[total_df_smoothed_data_cnt, 'color'] = style
+                total_df_smoothed_data_cnt += 1
 
-    ax[idx].set_title(base[idx], fontdict=font2)
-    ax[idx].set_xlabel('Step', fontdict=font1)
-    ax[idx].set_ylabel('Memory Free(MB)', fontdict=font1)
-    # plt.tight_layout()
+            for i in range(520):
+                total_df_origin_data.loc[total_df_origin_data_cnt, 'data'] = df.loc[i, 'Value'] * 1024
+                total_df_origin_data.loc[total_df_origin_data_cnt, 'x'] = df.loc[i, 'x']
+                total_df_origin_data.loc[total_df_origin_data_cnt, 'color'] = style
+                total_df_origin_data_cnt += 1
+
+            palette = sns.color_palette(["#4C72B0","#FF7F0E"])
+            if mode == 'wlstm':
+                color = "#FF7F0E"
+            else:
+                color = "#4C72B0"
+            ax[idx].plot([i for i in range(len(list(total_df_origin_data['data'])))], list(total_df_origin_data['data']), color = color, alpha=0.15)
+            ax[idx].plot([i for i in range(len(list(total_df_smoothed_data['data'])))], list(total_df_smoothed_data['data']), color = color, marker='o', 
+                    markersize=5, markeredgewidth=1, markevery=mark, alpha=1, label=style)
+
+
+            ax[idx].set_xticks([0, 104, 208, 312, 416, 520], ['0', '200k','400k','600k', '800k', '1000K'])
+            ax[idx].grid(linestyle='-.')
+            ax[idx].tick_params(labelsize=13)
+            loc = 1
+            if idx == 0:
+                loc = 4
+            ax[idx].legend(prop=font1, loc=loc, markerscale=1,)
+
+            ax[idx].set_title(base[idx], fontdict=font2)
+            ax[idx].set_xlabel('Step', fontdict=font1)
+            ax[idx].set_ylabel('Memory Free(MB)', fontdict=font1)
+# plt.tight_layout()
 
 
 

@@ -226,7 +226,7 @@ if __name__ == "__main__":
             save_code=True,
         )
     #创建tensorboard存储对象
-    store_file = f"runs_2g_tweet_input_3.25/{run_name}_new"
+    store_file = f"runs_2g_tweet_input_4.3/{run_name}_new"
     writer = SummaryWriter(store_file)
     #tensorboard中添加文本字符串，这里是将所有超参数存成了个表格
     writer.add_text(

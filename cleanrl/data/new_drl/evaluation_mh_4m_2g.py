@@ -79,9 +79,9 @@ if __name__ == "__main__":
     env = gym.make('GPUcluster-1a_mh_p_4m_2g', evaluation_flag = True, input_ascend = 0)
     device = torch.device('cuda')
 
-    model_config = "GPUcluster-1a_mh_p_4m_2g__ppo1a_mh_4m_2g__203__r290.0_v270.0_d270.0_m270.0___input_ascend80__memory_alpha0.001_discard_alpha0.5_new"
+    model_config = "GPUcluster-1a_mh_p_4m_2g__ppo1a_mh_4m_2g__204__r210.0_v190.0_d190.0_m190.0___input_ascend0__memory_alpha0.001_discard_alpha0.5_gamma0.95_new"
 
-    model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\new_drl\\runs_2g_tweet_input_3.25\\{}\\a1.pt".format(model_config)).to(device)
+    model = torch.load("F:\\23\\Graduation\\cleanrl\\cleanrl\\data\\new_drl\\runs_2g_tweet_input_4.3\\{}\\a1.pt".format(model_config)).to(device)
     s = env.reset()
     done = False
     extra_message = None
