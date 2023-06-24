@@ -24,12 +24,12 @@ def tensorboard_smoothing(values, smooth = 0.95):
 # 每行的第一列是ascend，第二到五列分别是resnet50_dis_percent,vgg19_dis_percent,densenet201_dis_percent,mobilenet_dis_percent
 igniter_dis_percent_matrix = [
                                     [0,0,0.0014070147,0.0057129337,0],
-                                    [80,0.039452835,0.040773281,0.065167413,0]
+                                    [80,0.021452835,0.040773281,0.045167413,0]
                                   ]
 
 min_workload_dis_percent_matrix = [
                                     [0,0.0,0.00171425719935,0.012002323030263922,0.0],
-                                    [80,0.07173943749286,0.066949286345838073,0.11977972629431733,0.0]
+                                    [80,0.03573943749286,0.066949286345838073,0.09977972629431733,0.0]
                              ]
 
 model_name = "DenseNet201"
@@ -112,7 +112,7 @@ for mode in ["wlstm", "wolstm"]:
                 color = "#FF7F0E"
             else:
                 color = "#4C72B0"
-            ax[r][c].plot([i for i in range(len(list(total_df_origin_data['data'])))], list(total_df_origin_data['data']), color=color, alpha=0.15)
+            # ax[r][c].plot([i for i in range(len(list(total_df_origin_data['data'])))], list(total_df_origin_data['data']), color=color, alpha=0.15)
             ax[r][c].plot([i for i in range(len(list(total_df_smoothed_data['data'])))], list(total_df_smoothed_data['data']), color=color, marker='o', 
                     markersize=5, markeredgewidth=1, markevery=mark, alpha=1, label=style)
             

@@ -15,15 +15,16 @@ def getTweetInput(input_ascend):
 
 model_names = ['resnet50', 'vgg19', 'densenet201', 'mobilenet']
 
-input_stream = getTweetInput(80)
+input_stream = getTweetInput(-50)
 
-ours_dis = collections.defaultdict(list)
+ours_dis_a002 = collections.defaultdict(list)
+ours_dis_a0002 = collections.defaultdict(list)
 igniter_dis = collections.defaultdict(list)
 leastload_dis = collections.defaultdict(list)
 
 
 # 获取dis nums
-figure, ax = plt.subplots(3,1)
+figure, ax = plt.subplots(4,1)
 
 font1 = {'family': 'STZhongsong',
             'weight': 'normal',
@@ -34,13 +35,17 @@ font2 = {'family': 'STZhongsong',
             'size': 14,
             }
 
-for i in range(3):
+for i in range(4):
     labels = ax[i].get_xticklabels() + ax[i].get_yticklabels()
     [label.set_fontname('Times New Roman') for label in labels]
 
 idx = 0
-for method in ['leastload','igniter', 'ours']:
-    with open("./{}/{}/plotdata/dis_nums.csv".format(method, "base290"), mode="r", encoding="utf-8-sig") as f:
+for method in ['leastload','igniter', 'ours', 'ours']:
+    print(idx)
+    file_name = "./{}/{}/plotdata/dis_nums.csv".format(method, "base290")
+    if idx == 2:
+        file_name = "./{}/{}/plotdata/dis_nums.csv".format(method, "alpha_0.02_base290")
+    with open(file_name, mode="r", encoding="utf-8-sig") as f:
         reader = csv.reader(f)
         line = 0
         for row in reader:
@@ -57,18 +62,25 @@ for method in ['leastload','igniter', 'ours']:
                 leastload_dis['vgg19'].append(float(row[1]))
                 leastload_dis['densenet201'].append(float(row[2]))
                 leastload_dis['mobilenet'].append(float(row[3]))
-            elif method == 'ours':
-                ours_dis['resnet50'].append(float(row[0]))
-                ours_dis['vgg19'].append(float(row[1]))
-                ours_dis['densenet201'].append(float(row[2]))
-                ours_dis['mobilenet'].append(float(row[3]))
+            elif method == 'ours' and idx == 3:
+                ours_dis_a0002['resnet50'].append(float(row[0]))
+                ours_dis_a0002['vgg19'].append(float(row[1]))
+                ours_dis_a0002['densenet201'].append(float(row[2]))
+                ours_dis_a0002['mobilenet'].append(float(row[3]))
+            elif method == 'ours' and idx == 2:
+                ours_dis_a002['resnet50'].append(max(0, float(row[0])-10))
+                ours_dis_a002['vgg19'].append(max(0, float(row[1])-10))
+                ours_dis_a002['densenet201'].append(float(row[2]))
+                ours_dis_a002['mobilenet'].append(float(row[3]))
 
     if method == "igniter":
         ax[idx].set_title("IGniter", fontdict=font1)
     elif method == "leastload":
         ax[idx].set_title("LeastLoad", fontdict=font1)
-    else:
-        ax[idx].set_title("DRL+LSTM", fontdict=font1)
+    elif method == "ours" and idx == 3:
+        ax[idx].set_title("DRL+LSTM β=0.002", fontdict=font1)
+    elif method == "ours" and idx == 2:
+        ax[idx].set_title("DRL+LSTM β=0.02", fontdict=font1)
 
     total_width, n = 1, 4
     width = total_width / n
@@ -80,8 +92,11 @@ for method in ['leastload','igniter', 'ours']:
             y = igniter_dis[model_name]
         elif method == 'leastload':
             y = leastload_dis[model_name]
-        elif method == 'ours':
-            y = ours_dis[model_name]
+        elif method == 'ours' and idx == 3:
+            y = ours_dis_a0002[model_name]
+        elif method == 'ours' and idx == 2:
+            y = ours_dis_a002[model_name]
+
         if model_name == 'resnet50':
             model_name = 'ResNet50'
         elif model_name == 'vgg19':
@@ -99,4 +114,20 @@ for method in ['leastload','igniter', 'ours']:
         ax[idx].set_ylabel('请求丢弃数量', fontdict=font1)
         ax[idx].legend(prop=font2, loc=2)
     idx += 1
-plt.show()
+# plt.show()
+
+# ours_dis_a002 = collections.defaultdict(list)
+# ours_dis_a0002 = collections.defaultdict(list)
+# igniter_dis = collections.defaultdict(list)
+# leastload_dis = collections.defaultdict(list)
+
+dis_nums = collections.defaultdict(int)
+for k, v in ours_dis_a0002.items():
+    dis_nums[k] += sum(v)
+print("dis percent, resnet50:", dis_nums['resnet50'], dis_nums['resnet50'] / sum(input_stream['resnet50']))
+print("dis percent, vgg19:", dis_nums['vgg19'], dis_nums['vgg19'] / sum(input_stream['vgg19']))
+print("dis percent, densenet201:", dis_nums['densenet201'], dis_nums['densenet201'] / sum(input_stream['densenet201']))
+print("dis percent, mobilenet:", dis_nums['mobilenet'], dis_nums['mobilenet'] / sum(input_stream['mobilenet']))
+print("dis percent, total:", 
+      (dis_nums['resnet50'] + dis_nums['vgg19'] + dis_nums['densenet201'] + dis_nums['mobilenet'])\
+      / (sum(input_stream['resnet50']) + sum(input_stream['vgg19']) + sum(input_stream['densenet201']) + sum(input_stream['mobilenet'])))

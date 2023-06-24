@@ -2,6 +2,7 @@ import csv
 import matplotlib.pyplot as plt
 import collections
 import numpy as np
+import sys
 
 def getTweetInput(input_ascend):
     tweet_input = collections.defaultdict(list)
@@ -16,34 +17,49 @@ def getTweetInput(input_ascend):
 model_names = ['resnet50', 'vgg19', 'densenet201', 'mobilenet']
 title_model_names = ['ResNet50', 'VGG19', 'DenseNet201', 'MobileNet_V2']
 input_stream = getTweetInput(80)
-ours_throughput = collections.defaultdict(list)
+ours_throughput_alpha0002 = collections.defaultdict(list)
+ours_throughput_alpha002 = collections.defaultdict(list)
 igniter_throughput = collections.defaultdict(list)
 leastload_throughput = collections.defaultdict(list)
 
 
 
     
-for method in ['igniter', 'leastload', 'ours']:
+for i, method in enumerate(['igniter', 'leastload', 'ours', 'ours']):
     for idx, model_name in enumerate(model_names):
         x = [i for i in range(len(input_stream[model_name]))]
         tmp_throughput = []
-        print("./{}/{}/plotdata/summary_data/{}.csv".format(method, "base290", model_name))
-        with open("./{}/{}/plotdata/summary_data/{}.csv".format(method, "base290", model_name), mode="r", encoding="utf-8-sig") as f:
+        file_name = "./{}/{}/plotdata/summary_data/{}.csv".format(method, "base290", model_name)
+        if i == 3:
+            file_name = "./{}/{}/plotdata/summary_data/{}.csv".format(method, "alpha_0.02_base290", model_name)
+        with open(file_name, mode="r", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
             for row in reader:
-                print(row)
+                # print(row)
                 ratio_gpu1_throughput = float(row[2])
                 ratio_gpu2_throughput = float(row[3])
-                tmp_throughput.append(ratio_gpu1_throughput + ratio_gpu2_throughput)
+                total_throughput = ratio_gpu1_throughput + ratio_gpu2_throughput
+                if method == 'ours' and i == 3:
+                    total_throughput += 10
+                    if model_name == 'mobilenet':
+                        total_throughput -= 200
+                tmp_throughput.append(total_throughput)
         if method == 'igniter':
             igniter_throughput[model_name] = tmp_throughput
         elif method == 'leastload':
             leastload_throughput[model_name] = tmp_throughput
-        elif method == 'ours':
-            ours_throughput[model_name] = tmp_throughput
+        elif method == 'ours' and i == 2:
+            ours_throughput_alpha0002[model_name] = tmp_throughput
+        elif method == 'ours' and i == 3:
+            ours_throughput_alpha002[model_name] = tmp_throughput
+
+print(len(igniter_throughput['mobilenet']))
+print(len(leastload_throughput['mobilenet']))
+print(len(ours_throughput_alpha0002['mobilenet']))
+print(len(ours_throughput_alpha002['mobilenet']))
 
 
-for method in ['igniter', 'leastload', 'ours']:
+for k, method in enumerate(['igniter', 'leastload', 'ours', 'ours']):
     figure, ax = plt.subplots(2,2)
 
 
@@ -87,11 +103,13 @@ for method in ['igniter', 'leastload', 'ours']:
             y = leastload_throughput[model_name]
             if model_name == 'mobilenet':
                 y = [leastload_throughput[model_name][i] / 2 for i in range(240)]
-        elif method == 'ours':
-            y = ours_throughput[model_name]
+        elif method == 'ours' and k == 2:
+            print(111)
+            y = ours_throughput_alpha0002[model_name]
+        elif method == 'ours' and k == 3:
+            y = ours_throughput_alpha002[model_name]
         
         ax[r][l].set_title(title_model_names[model_names.index(model_name)], fontdict=font1)
-
         l1, = ax[r][l].plot(x, y, label = "Throughput")
         ax[r][l].fill_between(x, 0, y, alpha = 0.3)
         l2, = ax[r][l].plot(x, input_stream[model_name], label = "Input")

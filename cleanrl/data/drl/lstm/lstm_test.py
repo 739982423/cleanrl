@@ -85,7 +85,7 @@ print("validate shape", valX.shape, valY.shape)
 print("test shape", testX.shape, testY.shape)
 
 batch_size = 12
-num_epochs = 150
+num_epochs = 250
 
 train = torch.utils.data.TensorDataset(trainX, trainY)
 test = torch.utils.data.TensorDataset(testX, testY)
@@ -229,19 +229,23 @@ plt.show()
 # 单画测试集预测结果在一张图上
 figure, ax = plt.subplots()
 
-plt.plot([i for i in range(len(y_test))], y_test, label="Truth")
-plt.plot([i for i in range(len(y_test_pred))], y_test_pred, label="Predict")
+font2 = {'family': 'STZhongsong',
+            'weight': 'normal',
+            'size': 13,
+            }
+plt.plot([i for i in range(len(y_test))], y_test, label="实际值")
+plt.plot([i for i in range(len(y_test_pred))], y_test_pred, label="预测值")
 labels = ax.get_xticklabels() + ax.get_yticklabels()
 [label.set_fontname('Times New Roman') for label in labels]
 font1 = {'family': 'Times New Roman',
             'weight': 'normal',
             'size': 14,
             }
-plt.xlabel('Epoch', fontdict=font1)
-plt.ylabel('Tweets Number', fontdict=font1)
+plt.xlabel('训练次数', fontdict=font2)
+plt.ylabel('请求数', fontdict=font2)
 plt.grid(linestyle="-.")
 plt.tick_params(labelsize=13)
-plt.legend(prop=font1, loc=1, markerscale=1,)
+plt.legend(prop=font2, loc=1, markerscale=1,)
 plt.show()
 # calculate root mean squared error
 trainScore = math.sqrt(mean_squared_error(y_train, y_train_pred))

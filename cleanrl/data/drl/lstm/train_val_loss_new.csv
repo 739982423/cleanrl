@@ -1,1200 +1,1200 @@
-0.296964109,0,Training Set Loss
-0.279712021,1,Training Set Loss
-0.263657659,2,Training Set Loss
-0.248584732,3,Training Set Loss
-0.234359562,4,Training Set Loss
-0.220951647,5,Training Set Loss
-0.208493739,6,Training Set Loss
-0.197334483,7,Training Set Loss
-0.188085154,8,Training Set Loss
-0.181603089,9,Training Set Loss
-0.178652421,10,Training Set Loss
-0.178799182,11,Training Set Loss
-0.179541379,12,Training Set Loss
-0.178322509,13,Training Set Loss
-0.174551338,14,Training Set Loss
-0.169111118,15,Training Set Loss
-0.163227707,16,Training Set Loss
-0.157799467,17,Training Set Loss
-0.153213799,18,Training Set Loss
-0.149441004,19,Training Set Loss
-0.14621824,20,Training Set Loss
-0.1432105,21,Training Set Loss
-0.140109718,22,Training Set Loss
-0.136681408,23,Training Set Loss
-0.132781282,24,Training Set Loss
-0.128362477,25,Training Set Loss
-0.12348,26,Training Set Loss
-0.118291341,27,Training Set Loss
-0.113039568,28,Training Set Loss
-0.107995383,29,Training Set Loss
-0.103337951,30,Training Set Loss
-0.099013232,31,Training Set Loss
-0.094719574,32,Training Set Loss
-0.090150625,33,Training Set Loss
-0.085336238,34,Training Set Loss
-0.080736175,35,Training Set Loss
-0.076976962,36,Training Set Loss
-0.074395165,37,Training Set Loss
-0.07268741,38,Training Set Loss
-0.071159199,39,Training Set Loss
-0.06958013,40,Training Set Loss
-0.068489544,41,Training Set Loss
-0.068298839,42,Training Set Loss
-0.068263158,43,Training Set Loss
-0.067351341,44,Training Set Loss
-0.065731622,45,Training Set Loss
-0.064169236,46,Training Set Loss
-0.06278231,47,Training Set Loss
-0.061188847,48,Training Set Loss
-0.059360635,49,Training Set Loss
-0.057693273,50,Training Set Loss
-0.056472033,51,Training Set Loss
-0.0555779,52,Training Set Loss
-0.054744855,53,Training Set Loss
-0.05391458,54,Training Set Loss
-0.053191122,55,Training Set Loss
-0.052595861,56,Training Set Loss
-0.05201228,57,Training Set Loss
-0.051321607,58,Training Set Loss
-0.050508868,59,Training Set Loss
-0.04963804,60,Training Set Loss
-0.048763312,61,Training Set Loss
-0.047879994,62,Training Set Loss
-0.046954267,63,Training Set Loss
-0.04598321,64,Training Set Loss
-0.045011442,65,Training Set Loss
-0.044092793,66,Training Set Loss
-0.043248147,67,Training Set Loss
-0.042462029,68,Training Set Loss
-0.041710664,69,Training Set Loss
-0.040985454,70,Training Set Loss
-0.040289909,71,Training Set Loss
-0.039620075,72,Training Set Loss
-0.038954508,73,Training Set Loss
-0.038266782,74,Training Set Loss
-0.037546303,75,Training Set Loss
-0.03680443,76,Training Set Loss
-0.036061436,77,Training Set Loss
-0.035330661,78,Training Set Loss
-0.034615032,79,Training Set Loss
-0.033914499,80,Training Set Loss
-0.033232633,81,Training Set Loss
-0.03257519,82,Training Set Loss
-0.03194353,83,Training Set Loss
-0.031331483,84,Training Set Loss
-0.030729266,85,Training Set Loss
-0.030130466,86,Training Set Loss
-0.02953496,87,Training Set Loss
-0.028946018,88,Training Set Loss
-0.02836596,89,Training Set Loss
-0.027795356,90,Training Set Loss
-0.027235465,91,Training Set Loss
-0.026690168,92,Training Set Loss
-0.026164463,93,Training Set Loss
-0.025661191,94,Training Set Loss
-0.025179558,95,Training Set Loss
-0.024716875,96,Training Set Loss
-0.024271278,97,Training Set Loss
-0.02384242,98,Training Set Loss
-0.02343018,99,Training Set Loss
-0.023033701,100,Training Set Loss
-0.022652198,101,Training Set Loss
-0.02228618,102,Training Set Loss
-0.021937266,103,Training Set Loss
-0.021606633,104,Training Set Loss
-0.02129386,105,Training Set Loss
-0.02099728,106,Training Set Loss
-0.020715097,107,Training Set Loss
-0.020445922,108,Training Set Loss
-0.020188425,109,Training Set Loss
-0.019941062,110,Training Set Loss
-0.019702492,111,Training Set Loss
-0.019472154,112,Training Set Loss
-0.019250199,113,Training Set Loss
-0.01903682,114,Training Set Loss
-0.018831694,115,Training Set Loss
-0.018634021,116,Training Set Loss
-0.018442936,117,Training Set Loss
-0.018257702,118,Training Set Loss
-0.018077618,119,Training Set Loss
-0.017901996,120,Training Set Loss
-0.017730376,121,Training Set Loss
-0.017562708,122,Training Set Loss
-0.017399264,123,Training Set Loss
-0.017240342,124,Training Set Loss
-0.017086048,125,Training Set Loss
-0.016936321,126,Training Set Loss
-0.016791068,127,Training Set Loss
-0.016650243,128,Training Set Loss
-0.016513765,129,Training Set Loss
-0.01638156,130,Training Set Loss
-0.016253596,131,Training Set Loss
-0.016129933,132,Training Set Loss
-0.016010683,133,Training Set Loss
-0.015895901,134,Training Set Loss
-0.015785538,135,Training Set Loss
-0.015679456,136,Training Set Loss
-0.015577503,137,Training Set Loss
-0.015479529,138,Training Set Loss
-0.015385364,139,Training Set Loss
-0.015294852,140,Training Set Loss
-0.015207852,141,Training Set Loss
-0.01512426,142,Training Set Loss
-0.015043996,143,Training Set Loss
-0.01496697,144,Training Set Loss
-0.014893061,145,Training Set Loss
-0.014822135,146,Training Set Loss
-0.014754063,147,Training Set Loss
-0.014688725,148,Training Set Loss
-0.014626016,149,Training Set Loss
-0.636442661,0,Validating Set Loss
-0.595723629,1,Validating Set Loss
-0.556159616,2,Validating Set Loss
-0.517121613,3,Validating Set Loss
-0.478042752,4,Validating Set Loss
-0.438438714,5,Validating Set Loss
-0.398024201,6,Validating Set Loss
-0.356825471,7,Validating Set Loss
-0.315359086,8,Validating Set Loss
-0.274983555,9,Validating Set Loss
-0.238383606,10,Validating Set Loss
-0.209385335,11,Validating Set Loss
-0.190271139,12,Validating Set Loss
-0.17966485,13,Validating Set Loss
-0.175050721,14,Validating Set Loss
-0.174666628,15,Validating Set Loss
-0.17737779,16,Validating Set Loss
-0.182183236,17,Validating Set Loss
-0.188009456,18,Validating Set Loss
-0.193764046,19,Validating Set Loss
-0.198470026,20,Validating Set Loss
-0.201360449,21,Validating Set Loss
-0.201904699,22,Validating Set Loss
-0.199794695,23,Validating Set Loss
-0.194929361,24,Validating Set Loss
-0.187419221,25,Validating Set Loss
-0.177615955,26,Validating Set Loss
-0.166157141,27,Validating Set Loss
-0.153996855,28,Validating Set Loss
-0.142355859,29,Validating Set Loss
-0.132483482,30,Validating Set Loss
-0.125183612,31,Validating Set Loss
-0.120370068,32,Validating Set Loss
-0.117176831,33,Validating Set Loss
-0.114656955,34,Validating Set Loss
-0.112340361,35,Validating Set Loss
-0.110137843,36,Validating Set Loss
-0.107829049,37,Validating Set Loss
-0.104815565,38,Validating Set Loss
-0.100837782,39,Validating Set Loss
-0.097077407,40,Validating Set Loss
-0.095646016,41,Validating Set Loss
-0.096876152,42,Validating Set Loss
-0.09735693,43,Validating Set Loss
-0.093537629,44,Validating Set Loss
-0.086164013,45,Validating Set Loss
-0.078597754,46,Validating Set Loss
-0.072930552,47,Validating Set Loss
-0.068995714,48,Validating Set Loss
-0.066004112,49,Validating Set Loss
-0.063580364,50,Validating Set Loss
-0.061457474,51,Validating Set Loss
-0.059209358,52,Validating Set Loss
-0.056681249,53,Validating Set Loss
-0.054301795,54,Validating Set Loss
-0.052604426,55,Validating Set Loss
-0.051621594,56,Validating Set Loss
-0.050901826,57,Validating Set Loss
-0.049979907,58,Validating Set Loss
-0.048719056,59,Validating Set Loss
-0.04728578,60,Validating Set Loss
-0.045923352,61,Validating Set Loss
-0.044771571,62,Validating Set Loss
-0.04384682,63,Validating Set Loss
-0.043119192,64,Validating Set Loss
-0.042556502,65,Validating Set Loss
-0.042099267,66,Validating Set Loss
-0.04163808,67,Validating Set Loss
-0.041050948,68,Validating Set Loss
-0.040273651,69,Validating Set Loss
-0.039335165,70,Validating Set Loss
-0.038326915,71,Validating Set Loss
-0.037336964,72,Validating Set Loss
-0.036406916,73,Validating Set Loss
-0.035539322,74,Validating Set Loss
-0.034729358,75,Validating Set Loss
-0.033976603,76,Validating Set Loss
-0.033267971,77,Validating Set Loss
-0.032562166,78,Validating Set Loss
-0.031801905,79,Validating Set Loss
-0.030946497,80,Validating Set Loss
-0.029996768,81,Validating Set Loss
-0.028993644,82,Validating Set Loss
-0.027995434,83,Validating Set Loss
-0.027052937,84,Validating Set Loss
-0.026196422,85,Validating Set Loss
-0.025434092,86,Validating Set Loss
-0.024753992,87,Validating Set Loss
-0.024126312,88,Validating Set Loss
-0.023510596,89,Validating Set Loss
-0.022870617,90,Validating Set Loss
-0.022190828,91,Validating Set Loss
-0.021483228,92,Validating Set Loss
-0.020779546,93,Validating Set Loss
-0.020114642,94,Validating Set Loss
-0.01951238,95,Validating Set Loss
-0.018980933,96,Validating Set Loss
-0.018515138,97,Validating Set Loss
-0.01810023,98,Validating Set Loss
-0.01771524,99,Validating Set Loss
-0.017338281,100,Validating Set Loss
-0.016954284,101,Validating Set Loss
-0.016560985,102,Validating Set Loss
-0.016168747,103,Validating Set Loss
-0.01579424,104,Validating Set Loss
-0.015452567,105,Validating Set Loss
-0.015151978,106,Validating Set Loss
-0.014892002,107,Validating Set Loss
-0.014663918,108,Validating Set Loss
-0.014453317,109,Validating Set Loss
-0.014244863,110,Validating Set Loss
-0.014028284,111,Validating Set Loss
-0.013802424,112,Validating Set Loss
-0.013574739,113,Validating Set Loss
-0.013356949,114,Validating Set Loss
-0.013159635,115,Validating Set Loss
-0.012988604,116,Validating Set Loss
-0.012843743,117,Validating Set Loss
-0.012719818,118,Validating Set Loss
-0.01260846,119,Validating Set Loss
-0.012501191,120,Validating Set Loss
-0.012392498,121,Validating Set Loss
-0.012281762,122,Validating Set Loss
-0.012172937,123,Validating Set Loss
-0.012072319,124,Validating Set Loss
-0.01198571,125,Validating Set Loss
-0.011916106,126,Validating Set Loss
-0.011862732,127,Validating Set Loss
-0.011821373,128,Validating Set Loss
-0.011785899,129,Validating Set Loss
-0.011750495,130,Validating Set Loss
-0.011711734,131,Validating Set Loss
-0.011669591,132,Validating Set Loss
-0.011627006,133,Validating Set Loss
-0.011588325,134,Validating Set Loss
-0.011557409,135,Validating Set Loss
-0.011536203,136,Validating Set Loss
-0.011524194,137,Validating Set Loss
-0.011518747,138,Validating Set Loss
-0.011516179,139,Validating Set Loss
-0.011513087,140,Validating Set Loss
-0.011507552,141,Validating Set Loss
-0.011499649,142,Validating Set Loss
-0.011491165,143,Validating Set Loss
-0.011484647,144,Validating Set Loss
-0.011482316,145,Validating Set Loss
-0.011485162,146,Validating Set Loss
-0.011492616,147,Validating Set Loss
-0.011502821,148,Validating Set Loss
-0.01151333,149,Validating Set Loss
-0.261041462,0,Training Set Loss
-0.246184632,1,Training Set Loss
-0.232508898,2,Training Set Loss
-0.219933823,3,Training Set Loss
-0.208457708,4,Training Set Loss
-0.198189929,5,Training Set Loss
-0.189374492,6,Training Set Loss
-0.182388201,7,Training Set Loss
-0.177646816,8,Training Set Loss
-0.175264806,9,Training Set Loss
-0.174455181,10,Training Set Loss
-0.173530355,11,Training Set Loss
-0.171183541,12,Training Set Loss
-0.167250037,13,Training Set Loss
-0.162322134,14,Training Set Loss
-0.157148212,15,Training Set Loss
-0.152268738,16,Training Set Loss
-0.147906363,17,Training Set Loss
-0.144016862,18,Training Set Loss
-0.140401199,19,Training Set Loss
-0.136808619,20,Training Set Loss
-0.133005142,21,Training Set Loss
-0.128813401,22,Training Set Loss
-0.124138169,23,Training Set Loss
-0.118986376,24,Training Set Loss
-0.113481857,25,Training Set Loss
-0.107860453,26,Training Set Loss
-0.102415644,27,Training Set Loss
-0.097361967,28,Training Set Loss
-0.092662334,29,Training Set Loss
-0.088037841,30,Training Set Loss
-0.083325915,31,Training Set Loss
-0.078865245,32,Training Set Loss
-0.075409651,33,Training Set Loss
-0.073471539,34,Training Set Loss
-0.072566018,35,Training Set Loss
-0.071736827,36,Training Set Loss
-0.071024127,37,Training Set Loss
-0.071024619,38,Training Set Loss
-0.071117803,39,Training Set Loss
-0.070086233,40,Training Set Loss
-0.068172336,41,Training Set Loss
-0.066284813,42,Training Set Loss
-0.064509809,43,Training Set Loss
-0.06254191,44,Training Set Loss
-0.060553361,45,Training Set Loss
-0.058968086,46,Training Set Loss
-0.057888944,47,Training Set Loss
-0.057060245,48,Training Set Loss
-0.056280706,49,Training Set Loss
-0.055578813,50,Training Set Loss
-0.055002667,51,Training Set Loss
-0.054463159,52,Training Set Loss
-0.053820644,53,Training Set Loss
-0.053024154,54,Training Set Loss
-0.052124389,55,Training Set Loss
-0.051185835,56,Training Set Loss
-0.050218329,57,Training Set Loss
-0.049196411,58,Training Set Loss
-0.048125092,59,Training Set Loss
-0.047061581,60,Training Set Loss
-0.046070002,61,Training Set Loss
-0.045171339,62,Training Set Loss
-0.044343695,63,Training Set Loss
-0.043559477,64,Training Set Loss
-0.042808961,65,Training Set Loss
-0.042087618,66,Training Set Loss
-0.041373312,67,Training Set Loss
-0.040630095,68,Training Set Loss
-0.039837122,69,Training Set Loss
-0.039006278,70,Training Set Loss
-0.038168252,71,Training Set Loss
-0.037346903,72,Training Set Loss
-0.036550052,73,Training Set Loss
-0.035778522,74,Training Set Loss
-0.035035495,75,Training Set Loss
-0.034324296,76,Training Set Loss
-0.033640426,77,Training Set Loss
-0.032970183,78,Training Set Loss
-0.03229918,79,Training Set Loss
-0.031621568,80,Training Set Loss
-0.030940738,81,Training Set Loss
-0.030262858,82,Training Set Loss
-0.029592229,83,Training Set Loss
-0.028932763,84,Training Set Loss
-0.028291186,85,Training Set Loss
-0.027675759,86,Training Set Loss
-0.027091069,87,Training Set Loss
-0.026535237,88,Training Set Loss
-0.026003081,89,Training Set Loss
-0.025491213,90,Training Set Loss
-0.024999322,91,Training Set Loss
-0.024527907,92,Training Set Loss
-0.024077334,93,Training Set Loss
-0.023649281,94,Training Set Loss
-0.023247194,95,Training Set Loss
-0.022873536,96,Training Set Loss
-0.022526924,97,Training Set Loss
-0.022202652,98,Training Set Loss
-0.021895653,99,Training Set Loss
-0.021602208,100,Training Set Loss
-0.021319482,101,Training Set Loss
-0.021045253,102,Training Set Loss
-0.020778667,103,Training Set Loss
-0.020520357,104,Training Set Loss
-0.020270828,105,Training Set Loss
-0.0200289,106,Training Set Loss
-0.019792015,107,Training Set Loss
-0.019557802,108,Training Set Loss
-0.019324964,109,Training Set Loss
-0.01909312,110,Training Set Loss
-0.018862616,111,Training Set Loss
-0.018634601,112,Training Set Loss
-0.018410677,113,Training Set Loss
-0.018192073,114,Training Set Loss
-0.017979126,115,Training Set Loss
-0.017771602,116,Training Set Loss
-0.017569304,117,Training Set Loss
-0.017372334,118,Training Set Loss
-0.017180931,119,Training Set Loss
-0.016995423,120,Training Set Loss
-0.016816217,121,Training Set Loss
-0.016643718,122,Training Set Loss
-0.01647808,123,Training Set Loss
-0.016319104,124,Training Set Loss
-0.016166387,125,Training Set Loss
-0.016019583,126,Training Set Loss
-0.015878474,127,Training Set Loss
-0.015742928,128,Training Set Loss
-0.015612854,129,Training Set Loss
-0.015488216,130,Training Set Loss
-0.015368998,131,Training Set Loss
-0.015255117,132,Training Set Loss
-0.015146379,133,Training Set Loss
-0.015042544,134,Training Set Loss
-0.014943405,135,Training Set Loss
-0.014848809,136,Training Set Loss
-0.014758638,137,Training Set Loss
-0.014672797,138,Training Set Loss
-0.014591199,139,Training Set Loss
-0.014513767,140,Training Set Loss
-0.014440398,141,Training Set Loss
-0.014370936,142,Training Set Loss
-0.014305213,143,Training Set Loss
-0.014243066,144,Training Set Loss
-0.01418436,145,Training Set Loss
-0.014128976,146,Training Set Loss
-0.01407679,147,Training Set Loss
-0.014027697,148,Training Set Loss
-0.013981585,149,Training Set Loss
-0.548279226,0,Validating Set Loss
-0.5093292,1,Validating Set Loss
-0.471292615,2,Validating Set Loss
-0.43379125,3,Validating Set Loss
-0.396509737,4,Validating Set Loss
-0.359271526,5,Validating Set Loss
-0.322165906,6,Validating Set Loss
-0.28573522,7,Validating Set Loss
-0.251236469,8,Validating Set Loss
-0.220822737,9,Validating Set Loss
-0.19704248,10,Validating Set Loss
-0.181078315,11,Validating Set Loss
-0.171933681,12,Validating Set Loss
-0.16789481,13,Validating Set Loss
-0.167530283,14,Validating Set Loss
-0.169720277,15,Validating Set Loss
-0.173454404,16,Validating Set Loss
-0.177738115,17,Validating Set Loss
-0.181627437,18,Validating Set Loss
-0.184304386,19,Validating Set Loss
-0.185124353,20,Validating Set Loss
-0.183630794,21,Validating Set Loss
-0.179565042,22,Validating Set Loss
-0.172893062,23,Validating Set Loss
-0.163859576,24,Validating Set Loss
-0.153062344,25,Validating Set Loss
-0.141512454,26,Validating Set Loss
-0.130591497,27,Validating Set Loss
-0.121742487,28,Validating Set Loss
-0.115801573,29,Validating Set Loss
-0.112394542,30,Validating Set Loss
-0.110252328,31,Validating Set Loss
-0.108279698,32,Validating Set Loss
-0.106115639,33,Validating Set Loss
-0.10372448,34,Validating Set Loss
-0.100973301,35,Validating Set Loss
-0.098608978,36,Validating Set Loss
-0.098880924,37,Validating Set Loss
-0.102444321,38,Validating Set Loss
-0.104687244,39,Validating Set Loss
-0.100571252,40,Validating Set Loss
-0.091474473,41,Validating Set Loss
-0.082226478,42,Validating Set Loss
-0.075509869,43,Validating Set Loss
-0.071014158,44,Validating Set Loss
-0.067747414,45,Validating Set Loss
-0.065077238,46,Validating Set Loss
-0.062457077,47,Validating Set Loss
-0.059519317,48,Validating Set Loss
-0.056519076,49,Validating Set Loss
-0.054098714,50,Validating Set Loss
-0.052548639,51,Validating Set Loss
-0.051545102,52,Validating Set Loss
-0.050551653,53,Validating Set Loss
-0.04929404,54,Validating Set Loss
-0.047858231,55,Validating Set Loss
-0.046479478,56,Validating Set Loss
-0.045314506,57,Validating Set Loss
-0.044383757,58,Validating Set Loss
-0.043649245,59,Validating Set Loss
-0.043073043,60,Validating Set Loss
-0.042594276,61,Validating Set Loss
-0.042105254,62,Validating Set Loss
-0.041498113,63,Validating Set Loss
-0.040740769,64,Validating Set Loss
-0.039893713,65,Validating Set Loss
-0.039047103,66,Validating Set Loss
-0.038246904,67,Validating Set Loss
-0.03748554,68,Validating Set Loss
-0.036749858,69,Validating Set Loss
-0.036051657,70,Validating Set Loss
-0.035402332,71,Validating Set Loss
-0.034774054,72,Validating Set Loss
-0.034103096,73,Validating Set Loss
-0.033334039,74,Validating Set Loss
-0.032459423,75,Validating Set Loss
-0.031521823,76,Validating Set Loss
-0.030585032,77,Validating Set Loss
-0.029703101,78,Validating Set Loss
-0.028905466,79,Validating Set Loss
-0.028194537,80,Validating Set Loss
-0.027546275,81,Validating Set Loss
-0.02691504,82,Validating Set Loss
-0.026250439,83,Validating Set Loss
-0.025522918,84,Validating Set Loss
-0.024740687,85,Validating Set Loss
-0.023943903,86,Validating Set Loss
-0.023180891,87,Validating Set Loss
-0.022485543,88,Validating Set Loss
-0.021869907,89,Validating Set Loss
-0.021328244,90,Validating Set Loss
-0.020841746,91,Validating Set Loss
-0.020382401,92,Validating Set Loss
-0.019922191,93,Validating Set Loss
-0.019446855,94,Validating Set Loss
-0.01896379,95,Validating Set Loss
-0.018496728,96,Validating Set Loss
-0.018071814,97,Validating Set Loss
-0.017705033,98,Validating Set Loss
-0.017395876,99,Validating Set Loss
-0.017127007,100,Validating Set Loss
-0.016870389,101,Validating Set Loss
-0.016599981,102,Validating Set Loss
-0.016305236,103,Validating Set Loss
-0.015995724,104,Validating Set Loss
-0.015693648,105,Validating Set Loss
-0.015420863,106,Validating Set Loss
-0.015189289,107,Validating Set Loss
-0.014998097,108,Validating Set Loss
-0.014835685,109,Validating Set Loss
-0.014684782,110,Validating Set Loss
-0.014529929,111,Validating Set Loss
-0.014364354,112,Validating Set Loss
-0.014192214,113,Validating Set Loss
-0.0140248,114,Validating Set Loss
-0.013873613,115,Validating Set Loss
-0.013744409,116,Validating Set Loss
-0.013634631,117,Validating Set Loss
-0.013534792,118,Validating Set Loss
-0.013432963,119,Validating Set Loss
-0.01332042,120,Validating Set Loss
-0.01319561,121,Validating Set Loss
-0.013064335,122,Validating Set Loss
-0.012936348,123,Validating Set Loss
-0.012820651,124,Validating Set Loss
-0.012721914,125,Validating Set Loss
-0.01263921,126,Validating Set Loss
-0.012567097,127,Validating Set Loss
-0.012498381,128,Validating Set Loss
-0.012427362,129,Validating Set Loss
-0.012352181,130,Validating Set Loss
-0.012275192,131,Validating Set Loss
-0.012201327,132,Validating Set Loss
-0.01213544,133,Validating Set Loss
-0.012080027,134,Validating Set Loss
-0.012034231,135,Validating Set Loss
-0.01199445,136,Validating Set Loss
-0.011956128,137,Validating Set Loss
-0.011915899,138,Validating Set Loss
-0.011873041,139,Validating Set Loss
-0.011829624,140,Validating Set Loss
-0.011789319,141,Validating Set Loss
-0.011755619,142,Validating Set Loss
-0.011730293,143,Validating Set Loss
-0.011712793,144,Validating Set Loss
-0.011700655,145,Validating Set Loss
-0.011690698,146,Validating Set Loss
-0.011680386,147,Validating Set Loss
-0.011668775,148,Validating Set Loss
-0.011656614,149,Validating Set Loss
-0.337789237,0,Training Set Loss
-0.321435034,1,Training Set Loss
-0.30586347,2,Training Set Loss
-0.290769964,3,Training Set Loss
-0.275965989,4,Training Set Loss
-0.261352628,5,Training Set Loss
-0.246929809,6,Training Set Loss
-0.232824117,7,Training Set Loss
-0.21934332,8,Training Set Loss
-0.207061306,9,Training Set Loss
-0.196906835,10,Training Set Loss
-0.190114498,11,Training Set Loss
-0.187617928,12,Training Set Loss
-0.188334987,13,Training Set Loss
-0.188677639,14,Training Set Loss
-0.186008096,15,Training Set Loss
-0.180379614,16,Training Set Loss
-0.17329523,17,Training Set Loss
-0.166303366,18,Training Set Loss
-0.160333693,19,Training Set Loss
-0.155621827,20,Training Set Loss
-0.151923314,21,Training Set Loss
-0.148780227,22,Training Set Loss
-0.145718321,23,Training Set Loss
-0.142353654,24,Training Set Loss
-0.138437033,25,Training Set Loss
-0.133869275,26,Training Set Loss
-0.128705442,27,Training Set Loss
-0.123151697,28,Training Set Loss
-0.117541909,29,Training Set Loss
-0.112263188,30,Training Set Loss
-0.107592225,31,Training Set Loss
-0.103472359,32,Training Set Loss
-0.099449724,33,Training Set Loss
-0.095010422,34,Training Set Loss
-0.090089269,35,Training Set Loss
-0.085211806,36,Training Set Loss
-0.081134737,37,Training Set Loss
-0.078278616,38,Training Set Loss
-0.076337293,39,Training Set Loss
-0.074506745,40,Training Set Loss
-0.072382472,41,Training Set Loss
-0.070508704,42,Training Set Loss
-0.069733977,43,Training Set Loss
-0.069830075,44,Training Set Loss
-0.06947349,45,Training Set Loss
-0.068267398,46,Training Set Loss
-0.067048699,47,Training Set Loss
-0.066196978,48,Training Set Loss
-0.065145582,49,Training Set Loss
-0.06352549,50,Training Set Loss
-0.061697427,51,Training Set Loss
-0.060161214,52,Training Set Loss
-0.058966473,53,Training Set Loss
-0.057825208,54,Training Set Loss
-0.056616139,55,Training Set Loss
-0.055497546,56,Training Set Loss
-0.054605272,57,Training Set Loss
-0.053871784,58,Training Set Loss
-0.053136617,59,Training Set Loss
-0.052317534,60,Training Set Loss
-0.051448591,61,Training Set Loss
-0.050599597,62,Training Set Loss
-0.049788833,63,Training Set Loss
-0.048970308,64,Training Set Loss
-0.048092075,65,Training Set Loss
-0.047153145,66,Training Set Loss
-0.046200484,67,Training Set Loss
-0.045281451,68,Training Set Loss
-0.044407919,69,Training Set Loss
-0.043561935,70,Training Set Loss
-0.042725861,71,Training Set Loss
-0.041902743,72,Training Set Loss
-0.041109625,73,Training Set Loss
-0.040354855,74,Training Set Loss
-0.039624393,75,Training Set Loss
-0.038891491,76,Training Set Loss
-0.038138758,77,Training Set Loss
-0.037369244,78,Training Set Loss
-0.036597282,79,Training Set Loss
-0.035832565,80,Training Set Loss
-0.035075001,81,Training Set Loss
-0.034322474,82,Training Set Loss
-0.03357983,83,Training Set Loss
-0.032858323,84,Training Set Loss
-0.032166865,85,Training Set Loss
-0.031505007,86,Training Set Loss
-0.030864943,87,Training Set Loss
-0.030239625,88,Training Set Loss
-0.029627943,89,Training Set Loss
-0.029032355,90,Training Set Loss
-0.028453531,91,Training Set Loss
-0.027889004,92,Training Set Loss
-0.02733691,93,Training Set Loss
-0.026799593,94,Training Set Loss
-0.02628256,95,Training Set Loss
-0.025790043,96,Training Set Loss
-0.025322376,97,Training Set Loss
-0.024877625,98,Training Set Loss
-0.024454663,99,Training Set Loss
-0.024053534,100,Training Set Loss
-0.023673244,101,Training Set Loss
-0.023310581,102,Training Set Loss
-0.022961924,103,Training Set Loss
-0.022625627,104,Training Set Loss
-0.022302059,105,Training Set Loss
-0.021991575,106,Training Set Loss
-0.021693196,107,Training Set Loss
-0.021405313,108,Training Set Loss
-0.021126911,109,Training Set Loss
-0.020857453,110,Training Set Loss
-0.020595931,111,Training Set Loss
-0.020340743,112,Training Set Loss
-0.020090673,113,Training Set Loss
-0.019845659,114,Training Set Loss
-0.019606385,115,Training Set Loss
-0.019373368,116,Training Set Loss
-0.019146631,117,Training Set Loss
-0.018926106,118,Training Set Loss
-0.018711962,119,Training Set Loss
-0.018504363,120,Training Set Loss
-0.018303169,121,Training Set Loss
-0.018108083,122,Training Set Loss
-0.017919045,123,Training Set Loss
-0.01773637,124,Training Set Loss
-0.017560441,125,Training Set Loss
-0.017391404,126,Training Set Loss
-0.017229166,127,Training Set Loss
-0.017073568,128,Training Set Loss
-0.016924463,129,Training Set Loss
-0.01678158,130,Training Set Loss
-0.016644511,131,Training Set Loss
-0.016512826,132,Training Set Loss
-0.016386222,133,Training Set Loss
-0.016264502,134,Training Set Loss
-0.016147459,135,Training Set Loss
-0.016034815,136,Training Set Loss
-0.015926281,137,Training Set Loss
-0.015821606,138,Training Set Loss
-0.015720576,139,Training Set Loss
-0.015622959,140,Training Set Loss
-0.015528527,141,Training Set Loss
-0.015437111,142,Training Set Loss
-0.015348635,143,Training Set Loss
-0.01526305,144,Training Set Loss
-0.015180314,145,Training Set Loss
-0.015100364,146,Training Set Loss
-0.015023164,147,Training Set Loss
-0.014948695,148,Training Set Loss
-0.014876927,149,Training Set Loss
-0.727574289,0,Validating Set Loss
-0.691773176,1,Validating Set Loss
-0.656681597,2,Validating Set Loss
-0.621532619,3,Validating Set Loss
-0.585736871,4,Validating Set Loss
-0.548805594,5,Validating Set Loss
-0.510339797,6,Validating Set Loss
-0.470053136,7,Validating Set Loss
-0.427848965,8,Validating Set Loss
-0.383992434,9,Validating Set Loss
-0.339438796,10,Validating Set Loss
-0.296364486,11,Validating Set Loss
-0.258592457,12,Validating Set Loss
-0.230566755,13,Validating Set Loss
-0.213351101,14,Validating Set Loss
-0.204188079,15,Validating Set Loss
-0.200403214,16,Validating Set Loss
-0.20057635,17,Validating Set Loss
-0.203816324,18,Validating Set Loss
-0.209124029,19,Validating Set Loss
-0.215260297,20,Validating Set Loss
-0.220918715,21,Validating Set Loss
-0.224941313,22,Validating Set Loss
-0.226446122,23,Validating Set Loss
-0.224864617,24,Validating Set Loss
-0.219940141,25,Validating Set Loss
-0.211728394,26,Validating Set Loss
-0.20061627,27,Validating Set Loss
-0.187357381,28,Validating Set Loss
-0.173096552,29,Validating Set Loss
-0.159310669,30,Validating Set Loss
-0.147533819,31,Validating Set Loss
-0.138769597,32,Validating Set Loss
-0.132888108,33,Validating Set Loss
-0.12876828,34,Validating Set Loss
-0.12527217,35,Validating Set Loss
-0.121983945,36,Validating Set Loss
-0.119017005,37,Validating Set Loss
-0.116280891,38,Validating Set Loss
-0.113050714,39,Validating Set Loss
-0.108613342,40,Validating Set Loss
-0.10366381,41,Validating Set Loss
-0.100519866,42,Validating Set Loss
-0.100929812,43,Validating Set Loss
-0.102788582,44,Validating Set Loss
-0.101249196,45,Validating Set Loss
-0.095008828,46,Validating Set Loss
-0.087320551,47,Validating Set Loss
-0.081348598,48,Validating Set Loss
-0.077476047,49,Validating Set Loss
-0.07476864,50,Validating Set Loss
-0.072732419,51,Validating Set Loss
-0.071126603,52,Validating Set Loss
-0.069381908,53,Validating Set Loss
-0.067003526,54,Validating Set Loss
-0.064288288,55,Validating Set Loss
-0.062042691,56,Validating Set Loss
-0.060685929,57,Validating Set Loss
-0.059920657,58,Validating Set Loss
-0.059152093,59,Validating Set Loss
-0.058013298,60,Validating Set Loss
-0.056524798,61,Validating Set Loss
-0.054927148,62,Validating Set Loss
-0.053445049,63,Validating Set Loss
-0.052174911,64,Validating Set Loss
-0.051120229,65,Validating Set Loss
-0.050264701,66,Validating Set Loss
-0.049580839,67,Validating Set Loss
-0.048989352,68,Validating Set Loss
-0.048350286,69,Validating Set Loss
-0.047520008,70,Validating Set Loss
-0.046429954,71,Validating Set Loss
-0.045121595,72,Validating Set Loss
-0.043712687,73,Validating Set Loss
-0.042325404,74,Validating Set Loss
-0.0410318,75,Validating Set Loss
-0.039849665,76,Validating Set Loss
-0.038772229,77,Validating Set Loss
-0.037788671,78,Validating Set Loss
-0.036876146,79,Validating Set Loss
-0.035985567,80,Validating Set Loss
-0.03505053,81,Validating Set Loss
-0.034019962,82,Validating Set Loss
-0.032887958,83,Validating Set Loss
-0.031696603,84,Validating Set Loss
-0.030512312,85,Validating Set Loss
-0.0293957,86,Validating Set Loss
-0.028384384,87,Validating Set Loss
-0.027490623,88,Validating Set Loss
-0.026703753,89,Validating Set Loss
-0.025991285,90,Validating Set Loss
-0.02530456,91,Validating Set Loss
-0.024595354,92,Validating Set Loss
-0.023838051,93,Validating Set Loss
-0.023041958,94,Validating Set Loss
-0.022244215,95,Validating Set Loss
-0.0214887,96,Validating Set Loss
-0.020806395,97,Validating Set Loss
-0.020207759,98,Validating Set Loss
-0.019685518,99,Validating Set Loss
-0.01921989,100,Validating Set Loss
-0.018783608,101,Validating Set Loss
-0.018349472,102,Validating Set Loss
-0.017900662,103,Validating Set Loss
-0.017437572,104,Validating Set Loss
-0.016975651,105,Validating Set Loss
-0.01653577,106,Validating Set Loss
-0.016134491,107,Validating Set Loss
-0.015779132,108,Validating Set Loss
-0.015466936,109,Validating Set Loss
-0.015186214,110,Validating Set Loss
-0.014919734,111,Validating Set Loss
-0.014651345,112,Validating Set Loss
-0.014373303,113,Validating Set Loss
-0.014089668,114,Validating Set Loss
-0.013813321,115,Validating Set Loss
-0.013559141,116,Validating Set Loss
-0.013337765,117,Validating Set Loss
-0.013152546,118,Validating Set Loss
-0.012999387,119,Validating Set Loss
-0.012868596,120,Validating Set Loss
-0.012748389,121,Validating Set Loss
-0.012629462,122,Validating Set Loss
-0.01250858,123,Validating Set Loss
-0.012389272,124,Validating Set Loss
-0.012279394,125,Validating Set Loss
-0.012187062,126,Validating Set Loss
-0.012117127,127,Validating Set Loss
-0.012069246,128,Validating Set Loss
-0.012037969,129,Validating Set Loss
-0.012014645,130,Validating Set Loss
-0.011990638,131,Validating Set Loss
-0.011960632,132,Validating Set Loss
-0.01192441,133,Validating Set Loss
-0.011886314,134,Validating Set Loss
-0.011852722,135,Validating Set Loss
-0.011829049,136,Validating Set Loss
-0.011817518,137,Validating Set Loss
-0.011816425,138,Validating Set Loss
-0.011821032,139,Validating Set Loss
-0.011825562,140,Validating Set Loss
-0.011825583,141,Validating Set Loss
-0.011819709,142,Validating Set Loss
-0.011809889,143,Validating Set Loss
-0.011800146,144,Validating Set Loss
-0.011794589,145,Validating Set Loss
-0.011795508,146,Validating Set Loss
-0.011802489,147,Validating Set Loss
-0.011812661,148,Validating Set Loss
-0.011822003,149,Validating Set Loss
-0.265353292,0,Training Set Loss
-0.250514001,1,Training Set Loss
-0.236957923,2,Training Set Loss
-0.224518016,3,Training Set Loss
-0.213106915,4,Training Set Loss
-0.202751487,5,Training Set Loss
-0.193613738,6,Training Set Loss
-0.186001226,7,Training Set Loss
-0.180328697,8,Training Set Loss
-0.176936656,9,Training Set Loss
-0.175584048,10,Training Set Loss
-0.174943864,11,Training Set Loss
-0.173359096,12,Training Set Loss
-0.17010349,13,Training Set Loss
-0.16546315,14,Training Set Loss
-0.160159588,15,Training Set Loss
-0.154865414,16,Training Set Loss
-0.14997977,17,Training Set Loss
-0.145603731,18,Training Set Loss
-0.141619787,19,Training Set Loss
-0.137796402,20,Training Set Loss
-0.133874133,21,Training Set Loss
-0.129624143,22,Training Set Loss
-0.124887578,23,Training Set Loss
-0.119607374,24,Training Set Loss
-0.113856427,25,Training Set Loss
-0.107854053,26,Training Set Loss
-0.101940386,27,Training Set Loss
-0.096458644,28,Training Set Loss
-0.091531657,29,Training Set Loss
-0.086931527,30,Training Set Loss
-0.082370579,31,Training Set Loss
-0.078028731,32,Training Set Loss
-0.074673317,33,Training Set Loss
-0.073051773,34,Training Set Loss
-0.072805628,35,Training Set Loss
-0.072609164,36,Training Set Loss
-0.072071716,37,Training Set Loss
-0.071765915,38,Training Set Loss
-0.071467467,39,Training Set Loss
-0.070136271,40,Training Set Loss
-0.067826085,41,Training Set Loss
-0.065534346,42,Training Set Loss
-0.063671507,43,Training Set Loss
-0.0619222,44,Training Set Loss
-0.060153741,45,Training Set Loss
-0.058644988,46,Training Set Loss
-0.057623923,47,Training Set Loss
-0.056957204,48,Training Set Loss
-0.056348722,49,Training Set Loss
-0.055685621,50,Training Set Loss
-0.055039447,51,Training Set Loss
-0.054441858,52,Training Set Loss
-0.05380195,53,Training Set Loss
-0.053015757,54,Training Set Loss
-0.0520759,55,Training Set Loss
-0.051058639,56,Training Set Loss
-0.050034426,57,Training Set Loss
-0.049011532,58,Training Set Loss
-0.047966734,59,Training Set Loss
-0.046911336,60,Training Set Loss
-0.045902248,61,Training Set Loss
-0.044988398,62,Training Set Loss
-0.044165704,63,Training Set Loss
-0.043391135,64,Training Set Loss
-0.042628381,65,Training Set Loss
-0.041868392,66,Training Set Loss
-0.041110158,67,Training Set Loss
-0.040338021,68,Training Set Loss
-0.039529763,69,Training Set Loss
-0.038683414,70,Training Set Loss
-0.037824903,71,Training Set Loss
-0.036986694,72,Training Set Loss
-0.03618459,73,Training Set Loss
-0.035416178,74,Training Set Loss
-0.034674577,75,Training Set Loss
-0.033957638,76,Training Set Loss
-0.033264279,77,Training Set Loss
-0.032586772,78,Training Set Loss
-0.031911589,79,Training Set Loss
-0.031228878,80,Training Set Loss
-0.030539872,81,Training Set Loss
-0.029854216,82,Training Set Loss
-0.029181534,83,Training Set Loss
-0.028527347,84,Training Set Loss
-0.02789578,85,Training Set Loss
-0.027292795,86,Training Set Loss
-0.026723856,87,Training Set Loss
-0.026188884,88,Training Set Loss
-0.025681915,89,Training Set Loss
-0.025196921,90,Training Set Loss
-0.024732837,91,Training Set Loss
-0.024292342,92,Training Set Loss
-0.023877751,93,Training Set Loss
-0.023489781,94,Training Set Loss
-0.023128917,95,Training Set Loss
-0.022794936,96,Training Set Loss
-0.022484304,97,Training Set Loss
-0.022189921,98,Training Set Loss
-0.021904711,99,Training Set Loss
-0.021625116,100,Training Set Loss
-0.021350704,101,Training Set Loss
-0.021081727,102,Training Set Loss
-0.020818058,103,Training Set Loss
-0.020559516,104,Training Set Loss
-0.020305563,105,Training Set Loss
-0.02005451,106,Training Set Loss
-0.019804053,107,Training Set Loss
-0.019553095,108,Training Set Loss
-0.019302642,109,Training Set Loss
-0.019054851,110,Training Set Loss
-0.018811602,111,Training Set Loss
-0.018574076,112,Training Set Loss
-0.018342994,113,Training Set Loss
-0.018118678,114,Training Set Loss
-0.017900921,115,Training Set Loss
-0.017689288,116,Training Set Loss
-0.01748367,117,Training Set Loss
-0.017284481,118,Training Set Loss
-0.017092269,119,Training Set Loss
-0.016907319,120,Training Set Loss
-0.01672958,121,Training Set Loss
-0.016558841,122,Training Set Loss
-0.016394818,123,Training Set Loss
-0.016237136,124,Training Set Loss
-0.016085392,125,Training Set Loss
-0.015939366,126,Training Set Loss
-0.015799038,127,Training Set Loss
-0.015664481,128,Training Set Loss
-0.015535679,129,Training Set Loss
-0.015412501,130,Training Set Loss
-0.015294779,131,Training Set Loss
-0.015182341,132,Training Set Loss
-0.015074997,133,Training Set Loss
-0.014972556,134,Training Set Loss
-0.014874872,135,Training Set Loss
-0.014781879,136,Training Set Loss
-0.014693537,137,Training Set Loss
-0.01460975,138,Training Set Loss
-0.014530388,139,Training Set Loss
-0.014455289,140,Training Set Loss
-0.014384279,141,Training Set Loss
-0.014317201,142,Training Set Loss
-0.014253877,143,Training Set Loss
-0.014194153,144,Training Set Loss
-0.014137913,145,Training Set Loss
-0.014085039,146,Training Set Loss
-0.014035403,147,Training Set Loss
-0.013988847,148,Training Set Loss
-0.013945217,149,Training Set Loss
-0.55905807,0,Validating Set Loss
-0.520692885,1,Validating Set Loss
-0.483603537,2,Validating Set Loss
-0.447275132,3,Validating Set Loss
-0.41123876,4,Validating Set Loss
-0.375174791,5,Validating Set Loss
-0.338999063,6,Validating Set Loss
-0.302995324,7,Validating Set Loss
-0.268008709,8,Validating Set Loss
-0.235695109,9,Validating Set Loss
-0.208578363,10,Validating Set Loss
-0.188847333,11,Validating Set Loss
-0.176524669,12,Validating Set Loss
-0.170079306,13,Validating Set Loss
-0.167922318,14,Validating Set Loss
-0.168830439,15,Validating Set Loss
-0.171796054,16,Validating Set Loss
-0.175861508,17,Validating Set Loss
-0.180080235,18,Validating Set Loss
-0.183562592,19,Validating Set Loss
-0.185534447,20,Validating Set Loss
-0.185376078,21,Validating Set Loss
-0.182648957,22,Validating Set Loss
-0.177132308,23,Validating Set Loss
-0.168885902,24,Validating Set Loss
-0.158341363,25,Validating Set Loss
-0.146399751,26,Validating Set Loss
-0.134464294,27,Validating Set Loss
-0.124239728,28,Validating Set Loss
-0.117070422,29,Validating Set Loss
-0.113020614,30,Validating Set Loss
-0.110793829,31,Validating Set Loss
-0.108909704,32,Validating Set Loss
-0.106723815,33,Validating Set Loss
-0.10426861,34,Validating Set Loss
-0.101536058,35,Validating Set Loss
-0.09899243,36,Validating Set Loss
-0.098484628,37,Validating Set Loss
-0.100913011,38,Validating Set Loss
-0.102839284,39,Validating Set Loss
-0.099448636,40,Validating Set Loss
-0.091028534,41,Validating Set Loss
-0.081833065,42,Validating Set Loss
-0.074909091,43,Validating Set Loss
-0.070289813,44,Validating Set Loss
-0.066886589,45,Validating Set Loss
-0.064075626,46,Validating Set Loss
-0.061590534,47,Validating Set Loss
-0.059129871,48,Validating Set Loss
-0.056569431,49,Validating Set Loss
-0.054228961,50,Validating Set Loss
-0.052528292,51,Validating Set Loss
-0.051474489,52,Validating Set Loss
-0.050646067,53,Validating Set Loss
-0.049606789,54,Validating Set Loss
-0.048242118,55,Validating Set Loss
-0.046744797,56,Validating Set Loss
-0.045375291,57,Validating Set Loss
-0.044260114,58,Validating Set Loss
-0.04337785,59,Validating Set Loss
-0.04266743,60,Validating Set Loss
-0.042088527,61,Validating Set Loss
-0.0415865,62,Validating Set Loss
-0.041063603,63,Validating Set Loss
-0.040427569,64,Validating Set Loss
-0.039662272,65,Validating Set Loss
-0.038830936,66,Validating Set Loss
-0.038008295,67,Validating Set Loss
-0.03722211,68,Validating Set Loss
-0.036464296,69,Validating Set Loss
-0.035738852,70,Validating Set Loss
-0.035071328,71,Validating Set Loss
-0.034467734,72,Validating Set Loss
-0.033882111,73,Validating Set Loss
-0.033237498,74,Validating Set Loss
-0.032479454,75,Validating Set Loss
-0.031611253,76,Validating Set Loss
-0.030686034,77,Validating Set Loss
-0.029771972,78,Validating Set Loss
-0.028921459,79,Validating Set Loss
-0.028158711,80,Validating Set Loss
-0.027478924,81,Validating Set Loss
-0.02685003,82,Validating Set Loss
-0.026220774,83,Validating Set Loss
-0.025541993,84,Validating Set Loss
-0.024793468,85,Validating Set Loss
-0.023996575,86,Validating Set Loss
-0.023201309,87,Validating Set Loss
-0.022458605,88,Validating Set Loss
-0.021800039,89,Validating Set Loss
-0.021234443,90,Validating Set Loss
-0.020752359,91,Validating Set Loss
-0.020328585,92,Validating Set Loss
-0.019926995,93,Validating Set Loss
-0.01951487,94,Validating Set Loss
-0.01908027,95,Validating Set Loss
-0.018637575,96,Validating Set Loss
-0.018216232,97,Validating Set Loss
-0.017842483,98,Validating Set Loss
-0.017526239,99,Validating Set Loss
-0.017257143,100,Validating Set Loss
-0.017009089,101,Validating Set Loss
-0.016752282,102,Validating Set Loss
-0.016468778,103,Validating Set Loss
-0.01616182,104,Validating Set Loss
-0.015852263,105,Validating Set Loss
-0.015565715,106,Validating Set Loss
-0.015320208,107,Validating Set Loss
-0.015120453,108,Validating Set Loss
-0.014957855,109,Validating Set Loss
-0.014814265,110,Validating Set Loss
-0.014669224,111,Validating Set Loss
-0.014508745,112,Validating Set Loss
-0.014331092,113,Validating Set Loss
-0.014145731,114,Validating Set Loss
-0.013966761,115,Validating Set Loss
-0.013805229,116,Validating Set Loss
-0.013664423,117,Validating Set Loss
-0.013539302,118,Validating Set Loss
-0.013419654,119,Validating Set Loss
-0.013295327,120,Validating Set Loss
-0.013161211,121,Validating Set Loss
-0.013019484,122,Validating Set Loss
-0.012878147,123,Validating Set Loss
-0.012747017,124,Validating Set Loss
-0.012633416,125,Validating Set Loss
-0.01253958,126,Validating Set Loss
-0.012462234,127,Validating Set Loss
-0.012394358,128,Validating Set Loss
-0.012328248,129,Validating Set Loss
-0.01225874,130,Validating Set Loss
-0.012185125,131,Validating Set Loss
-0.012110859,132,Validating Set Loss
-0.012041434,133,Validating Set Loss
-0.011981554,134,Validating Set Loss
-0.011933088,135,Validating Set Loss
-0.011894513,136,Validating Set Loss
-0.011861912,137,Validating Set Loss
-0.01183096,138,Validating Set Loss
-0.011798966,139,Validating Set Loss
-0.011765959,140,Validating Set Loss
-0.011734457,141,Validating Set Loss
-0.011707991,142,Validating Set Loss
-0.011689346,143,Validating Set Loss
-0.011679229,144,Validating Set Loss
-0.011676007,145,Validating Set Loss
-0.011676388,146,Validating Set Loss
-0.01167685,147,Validating Set Loss
-0.011674983,148,Validating Set Loss
-0.011670309,149,Validating Set Loss
+0.296964109,0,训练集Loss
+0.279712021,1,训练集Loss
+0.263657659,2,训练集Loss
+0.248584732,3,训练集Loss
+0.234359562,4,训练集Loss
+0.220951647,5,训练集Loss
+0.208493739,6,训练集Loss
+0.197334483,7,训练集Loss
+0.188085154,8,训练集Loss
+0.181603089,9,训练集Loss
+0.178652421,10,训练集Loss
+0.178799182,11,训练集Loss
+0.179541379,12,训练集Loss
+0.178322509,13,训练集Loss
+0.174551338,14,训练集Loss
+0.169111118,15,训练集Loss
+0.163227707,16,训练集Loss
+0.157799467,17,训练集Loss
+0.153213799,18,训练集Loss
+0.149441004,19,训练集Loss
+0.14621824,20,训练集Loss
+0.1432105,21,训练集Loss
+0.140109718,22,训练集Loss
+0.136681408,23,训练集Loss
+0.132781282,24,训练集Loss
+0.128362477,25,训练集Loss
+0.12348,26,训练集Loss
+0.118291341,27,训练集Loss
+0.113039568,28,训练集Loss
+0.107995383,29,训练集Loss
+0.103337951,30,训练集Loss
+0.099013232,31,训练集Loss
+0.094719574,32,训练集Loss
+0.090150625,33,训练集Loss
+0.085336238,34,训练集Loss
+0.080736175,35,训练集Loss
+0.076976962,36,训练集Loss
+0.074395165,37,训练集Loss
+0.07268741,38,训练集Loss
+0.071159199,39,训练集Loss
+0.06958013,40,训练集Loss
+0.068489544,41,训练集Loss
+0.068298839,42,训练集Loss
+0.068263158,43,训练集Loss
+0.067351341,44,训练集Loss
+0.065731622,45,训练集Loss
+0.064169236,46,训练集Loss
+0.06278231,47,训练集Loss
+0.061188847,48,训练集Loss
+0.059360635,49,训练集Loss
+0.057693273,50,训练集Loss
+0.056472033,51,训练集Loss
+0.0555779,52,训练集Loss
+0.054744855,53,训练集Loss
+0.05391458,54,训练集Loss
+0.053191122,55,训练集Loss
+0.052595861,56,训练集Loss
+0.05201228,57,训练集Loss
+0.051321607,58,训练集Loss
+0.050508868,59,训练集Loss
+0.04963804,60,训练集Loss
+0.048763312,61,训练集Loss
+0.047879994,62,训练集Loss
+0.046954267,63,训练集Loss
+0.04598321,64,训练集Loss
+0.045011442,65,训练集Loss
+0.044092793,66,训练集Loss
+0.043248147,67,训练集Loss
+0.042462029,68,训练集Loss
+0.041710664,69,训练集Loss
+0.040985454,70,训练集Loss
+0.040289909,71,训练集Loss
+0.039620075,72,训练集Loss
+0.038954508,73,训练集Loss
+0.038266782,74,训练集Loss
+0.037546303,75,训练集Loss
+0.03680443,76,训练集Loss
+0.036061436,77,训练集Loss
+0.035330661,78,训练集Loss
+0.034615032,79,训练集Loss
+0.033914499,80,训练集Loss
+0.033232633,81,训练集Loss
+0.03257519,82,训练集Loss
+0.03194353,83,训练集Loss
+0.031331483,84,训练集Loss
+0.030729266,85,训练集Loss
+0.030130466,86,训练集Loss
+0.02953496,87,训练集Loss
+0.028946018,88,训练集Loss
+0.02836596,89,训练集Loss
+0.027795356,90,训练集Loss
+0.027235465,91,训练集Loss
+0.026690168,92,训练集Loss
+0.026164463,93,训练集Loss
+0.025661191,94,训练集Loss
+0.025179558,95,训练集Loss
+0.024716875,96,训练集Loss
+0.024271278,97,训练集Loss
+0.02384242,98,训练集Loss
+0.02343018,99,训练集Loss
+0.023033701,100,训练集Loss
+0.022652198,101,训练集Loss
+0.02228618,102,训练集Loss
+0.021937266,103,训练集Loss
+0.021606633,104,训练集Loss
+0.02129386,105,训练集Loss
+0.02099728,106,训练集Loss
+0.020715097,107,训练集Loss
+0.020445922,108,训练集Loss
+0.020188425,109,训练集Loss
+0.019941062,110,训练集Loss
+0.019702492,111,训练集Loss
+0.019472154,112,训练集Loss
+0.019250199,113,训练集Loss
+0.01903682,114,训练集Loss
+0.018831694,115,训练集Loss
+0.018634021,116,训练集Loss
+0.018442936,117,训练集Loss
+0.018257702,118,训练集Loss
+0.018077618,119,训练集Loss
+0.017901996,120,训练集Loss
+0.017730376,121,训练集Loss
+0.017562708,122,训练集Loss
+0.017399264,123,训练集Loss
+0.017240342,124,训练集Loss
+0.017086048,125,训练集Loss
+0.016936321,126,训练集Loss
+0.016791068,127,训练集Loss
+0.016650243,128,训练集Loss
+0.016513765,129,训练集Loss
+0.01638156,130,训练集Loss
+0.016253596,131,训练集Loss
+0.016129933,132,训练集Loss
+0.016010683,133,训练集Loss
+0.015895901,134,训练集Loss
+0.015785538,135,训练集Loss
+0.015679456,136,训练集Loss
+0.015577503,137,训练集Loss
+0.015479529,138,训练集Loss
+0.015385364,139,训练集Loss
+0.015294852,140,训练集Loss
+0.015207852,141,训练集Loss
+0.01512426,142,训练集Loss
+0.015043996,143,训练集Loss
+0.01496697,144,训练集Loss
+0.014893061,145,训练集Loss
+0.014822135,146,训练集Loss
+0.014754063,147,训练集Loss
+0.014688725,148,训练集Loss
+0.014626016,149,训练集Loss
+0.636442661,0,验证集Loss
+0.595723629,1,验证集Loss
+0.556159616,2,验证集Loss
+0.517121613,3,验证集Loss
+0.478042752,4,验证集Loss
+0.438438714,5,验证集Loss
+0.398024201,6,验证集Loss
+0.356825471,7,验证集Loss
+0.315359086,8,验证集Loss
+0.274983555,9,验证集Loss
+0.238383606,10,验证集Loss
+0.209385335,11,验证集Loss
+0.190271139,12,验证集Loss
+0.17966485,13,验证集Loss
+0.175050721,14,验证集Loss
+0.174666628,15,验证集Loss
+0.17737779,16,验证集Loss
+0.182183236,17,验证集Loss
+0.188009456,18,验证集Loss
+0.193764046,19,验证集Loss
+0.198470026,20,验证集Loss
+0.201360449,21,验证集Loss
+0.201904699,22,验证集Loss
+0.199794695,23,验证集Loss
+0.194929361,24,验证集Loss
+0.187419221,25,验证集Loss
+0.177615955,26,验证集Loss
+0.166157141,27,验证集Loss
+0.153996855,28,验证集Loss
+0.142355859,29,验证集Loss
+0.132483482,30,验证集Loss
+0.125183612,31,验证集Loss
+0.120370068,32,验证集Loss
+0.117176831,33,验证集Loss
+0.114656955,34,验证集Loss
+0.112340361,35,验证集Loss
+0.110137843,36,验证集Loss
+0.107829049,37,验证集Loss
+0.104815565,38,验证集Loss
+0.100837782,39,验证集Loss
+0.097077407,40,验证集Loss
+0.095646016,41,验证集Loss
+0.096876152,42,验证集Loss
+0.09735693,43,验证集Loss
+0.093537629,44,验证集Loss
+0.086164013,45,验证集Loss
+0.078597754,46,验证集Loss
+0.072930552,47,验证集Loss
+0.068995714,48,验证集Loss
+0.066004112,49,验证集Loss
+0.063580364,50,验证集Loss
+0.061457474,51,验证集Loss
+0.059209358,52,验证集Loss
+0.056681249,53,验证集Loss
+0.054301795,54,验证集Loss
+0.052604426,55,验证集Loss
+0.051621594,56,验证集Loss
+0.050901826,57,验证集Loss
+0.049979907,58,验证集Loss
+0.048719056,59,验证集Loss
+0.04728578,60,验证集Loss
+0.045923352,61,验证集Loss
+0.044771571,62,验证集Loss
+0.04384682,63,验证集Loss
+0.043119192,64,验证集Loss
+0.042556502,65,验证集Loss
+0.042099267,66,验证集Loss
+0.04163808,67,验证集Loss
+0.041050948,68,验证集Loss
+0.040273651,69,验证集Loss
+0.039335165,70,验证集Loss
+0.038326915,71,验证集Loss
+0.037336964,72,验证集Loss
+0.036406916,73,验证集Loss
+0.035539322,74,验证集Loss
+0.034729358,75,验证集Loss
+0.033976603,76,验证集Loss
+0.033267971,77,验证集Loss
+0.032562166,78,验证集Loss
+0.031801905,79,验证集Loss
+0.030946497,80,验证集Loss
+0.029996768,81,验证集Loss
+0.028993644,82,验证集Loss
+0.027995434,83,验证集Loss
+0.027052937,84,验证集Loss
+0.026196422,85,验证集Loss
+0.025434092,86,验证集Loss
+0.024753992,87,验证集Loss
+0.024126312,88,验证集Loss
+0.023510596,89,验证集Loss
+0.022870617,90,验证集Loss
+0.022190828,91,验证集Loss
+0.021483228,92,验证集Loss
+0.020779546,93,验证集Loss
+0.020114642,94,验证集Loss
+0.01951238,95,验证集Loss
+0.018980933,96,验证集Loss
+0.018515138,97,验证集Loss
+0.01810023,98,验证集Loss
+0.01771524,99,验证集Loss
+0.017338281,100,验证集Loss
+0.016954284,101,验证集Loss
+0.016560985,102,验证集Loss
+0.016168747,103,验证集Loss
+0.01579424,104,验证集Loss
+0.015452567,105,验证集Loss
+0.015151978,106,验证集Loss
+0.014892002,107,验证集Loss
+0.014663918,108,验证集Loss
+0.014453317,109,验证集Loss
+0.014244863,110,验证集Loss
+0.014028284,111,验证集Loss
+0.013802424,112,验证集Loss
+0.013574739,113,验证集Loss
+0.013356949,114,验证集Loss
+0.013159635,115,验证集Loss
+0.012988604,116,验证集Loss
+0.012843743,117,验证集Loss
+0.012719818,118,验证集Loss
+0.01260846,119,验证集Loss
+0.012501191,120,验证集Loss
+0.012392498,121,验证集Loss
+0.012281762,122,验证集Loss
+0.012172937,123,验证集Loss
+0.012072319,124,验证集Loss
+0.01198571,125,验证集Loss
+0.011916106,126,验证集Loss
+0.011862732,127,验证集Loss
+0.011821373,128,验证集Loss
+0.011785899,129,验证集Loss
+0.011750495,130,验证集Loss
+0.011711734,131,验证集Loss
+0.011669591,132,验证集Loss
+0.011627006,133,验证集Loss
+0.011588325,134,验证集Loss
+0.011557409,135,验证集Loss
+0.011536203,136,验证集Loss
+0.011524194,137,验证集Loss
+0.011518747,138,验证集Loss
+0.011516179,139,验证集Loss
+0.011513087,140,验证集Loss
+0.011507552,141,验证集Loss
+0.011499649,142,验证集Loss
+0.011491165,143,验证集Loss
+0.011484647,144,验证集Loss
+0.011482316,145,验证集Loss
+0.011485162,146,验证集Loss
+0.011492616,147,验证集Loss
+0.011502821,148,验证集Loss
+0.01151333,149,验证集Loss
+0.261041462,0,训练集Loss
+0.246184632,1,训练集Loss
+0.232508898,2,训练集Loss
+0.219933823,3,训练集Loss
+0.208457708,4,训练集Loss
+0.198189929,5,训练集Loss
+0.189374492,6,训练集Loss
+0.182388201,7,训练集Loss
+0.177646816,8,训练集Loss
+0.175264806,9,训练集Loss
+0.174455181,10,训练集Loss
+0.173530355,11,训练集Loss
+0.171183541,12,训练集Loss
+0.167250037,13,训练集Loss
+0.162322134,14,训练集Loss
+0.157148212,15,训练集Loss
+0.152268738,16,训练集Loss
+0.147906363,17,训练集Loss
+0.144016862,18,训练集Loss
+0.140401199,19,训练集Loss
+0.136808619,20,训练集Loss
+0.133005142,21,训练集Loss
+0.128813401,22,训练集Loss
+0.124138169,23,训练集Loss
+0.118986376,24,训练集Loss
+0.113481857,25,训练集Loss
+0.107860453,26,训练集Loss
+0.102415644,27,训练集Loss
+0.097361967,28,训练集Loss
+0.092662334,29,训练集Loss
+0.088037841,30,训练集Loss
+0.083325915,31,训练集Loss
+0.078865245,32,训练集Loss
+0.075409651,33,训练集Loss
+0.073471539,34,训练集Loss
+0.072566018,35,训练集Loss
+0.071736827,36,训练集Loss
+0.071024127,37,训练集Loss
+0.071024619,38,训练集Loss
+0.071117803,39,训练集Loss
+0.070086233,40,训练集Loss
+0.068172336,41,训练集Loss
+0.066284813,42,训练集Loss
+0.064509809,43,训练集Loss
+0.06254191,44,训练集Loss
+0.060553361,45,训练集Loss
+0.058968086,46,训练集Loss
+0.057888944,47,训练集Loss
+0.057060245,48,训练集Loss
+0.056280706,49,训练集Loss
+0.055578813,50,训练集Loss
+0.055002667,51,训练集Loss
+0.054463159,52,训练集Loss
+0.053820644,53,训练集Loss
+0.053024154,54,训练集Loss
+0.052124389,55,训练集Loss
+0.051185835,56,训练集Loss
+0.050218329,57,训练集Loss
+0.049196411,58,训练集Loss
+0.048125092,59,训练集Loss
+0.047061581,60,训练集Loss
+0.046070002,61,训练集Loss
+0.045171339,62,训练集Loss
+0.044343695,63,训练集Loss
+0.043559477,64,训练集Loss
+0.042808961,65,训练集Loss
+0.042087618,66,训练集Loss
+0.041373312,67,训练集Loss
+0.040630095,68,训练集Loss
+0.039837122,69,训练集Loss
+0.039006278,70,训练集Loss
+0.038168252,71,训练集Loss
+0.037346903,72,训练集Loss
+0.036550052,73,训练集Loss
+0.035778522,74,训练集Loss
+0.035035495,75,训练集Loss
+0.034324296,76,训练集Loss
+0.033640426,77,训练集Loss
+0.032970183,78,训练集Loss
+0.03229918,79,训练集Loss
+0.031621568,80,训练集Loss
+0.030940738,81,训练集Loss
+0.030262858,82,训练集Loss
+0.029592229,83,训练集Loss
+0.028932763,84,训练集Loss
+0.028291186,85,训练集Loss
+0.027675759,86,训练集Loss
+0.027091069,87,训练集Loss
+0.026535237,88,训练集Loss
+0.026003081,89,训练集Loss
+0.025491213,90,训练集Loss
+0.024999322,91,训练集Loss
+0.024527907,92,训练集Loss
+0.024077334,93,训练集Loss
+0.023649281,94,训练集Loss
+0.023247194,95,训练集Loss
+0.022873536,96,训练集Loss
+0.022526924,97,训练集Loss
+0.022202652,98,训练集Loss
+0.021895653,99,训练集Loss
+0.021602208,100,训练集Loss
+0.021319482,101,训练集Loss
+0.021045253,102,训练集Loss
+0.020778667,103,训练集Loss
+0.020520357,104,训练集Loss
+0.020270828,105,训练集Loss
+0.0200289,106,训练集Loss
+0.019792015,107,训练集Loss
+0.019557802,108,训练集Loss
+0.019324964,109,训练集Loss
+0.01909312,110,训练集Loss
+0.018862616,111,训练集Loss
+0.018634601,112,训练集Loss
+0.018410677,113,训练集Loss
+0.018192073,114,训练集Loss
+0.017979126,115,训练集Loss
+0.017771602,116,训练集Loss
+0.017569304,117,训练集Loss
+0.017372334,118,训练集Loss
+0.017180931,119,训练集Loss
+0.016995423,120,训练集Loss
+0.016816217,121,训练集Loss
+0.016643718,122,训练集Loss
+0.01647808,123,训练集Loss
+0.016319104,124,训练集Loss
+0.016166387,125,训练集Loss
+0.016019583,126,训练集Loss
+0.015878474,127,训练集Loss
+0.015742928,128,训练集Loss
+0.015612854,129,训练集Loss
+0.015488216,130,训练集Loss
+0.015368998,131,训练集Loss
+0.015255117,132,训练集Loss
+0.015146379,133,训练集Loss
+0.015042544,134,训练集Loss
+0.014943405,135,训练集Loss
+0.014848809,136,训练集Loss
+0.014758638,137,训练集Loss
+0.014672797,138,训练集Loss
+0.014591199,139,训练集Loss
+0.014513767,140,训练集Loss
+0.014440398,141,训练集Loss
+0.014370936,142,训练集Loss
+0.014305213,143,训练集Loss
+0.014243066,144,训练集Loss
+0.01418436,145,训练集Loss
+0.014128976,146,训练集Loss
+0.01407679,147,训练集Loss
+0.014027697,148,训练集Loss
+0.013981585,149,训练集Loss
+0.548279226,0,验证集Loss
+0.5093292,1,验证集Loss
+0.471292615,2,验证集Loss
+0.43379125,3,验证集Loss
+0.396509737,4,验证集Loss
+0.359271526,5,验证集Loss
+0.322165906,6,验证集Loss
+0.28573522,7,验证集Loss
+0.251236469,8,验证集Loss
+0.220822737,9,验证集Loss
+0.19704248,10,验证集Loss
+0.181078315,11,验证集Loss
+0.171933681,12,验证集Loss
+0.16789481,13,验证集Loss
+0.167530283,14,验证集Loss
+0.169720277,15,验证集Loss
+0.173454404,16,验证集Loss
+0.177738115,17,验证集Loss
+0.181627437,18,验证集Loss
+0.184304386,19,验证集Loss
+0.185124353,20,验证集Loss
+0.183630794,21,验证集Loss
+0.179565042,22,验证集Loss
+0.172893062,23,验证集Loss
+0.163859576,24,验证集Loss
+0.153062344,25,验证集Loss
+0.141512454,26,验证集Loss
+0.130591497,27,验证集Loss
+0.121742487,28,验证集Loss
+0.115801573,29,验证集Loss
+0.112394542,30,验证集Loss
+0.110252328,31,验证集Loss
+0.108279698,32,验证集Loss
+0.106115639,33,验证集Loss
+0.10372448,34,验证集Loss
+0.100973301,35,验证集Loss
+0.098608978,36,验证集Loss
+0.098880924,37,验证集Loss
+0.102444321,38,验证集Loss
+0.104687244,39,验证集Loss
+0.100571252,40,验证集Loss
+0.091474473,41,验证集Loss
+0.082226478,42,验证集Loss
+0.075509869,43,验证集Loss
+0.071014158,44,验证集Loss
+0.067747414,45,验证集Loss
+0.065077238,46,验证集Loss
+0.062457077,47,验证集Loss
+0.059519317,48,验证集Loss
+0.056519076,49,验证集Loss
+0.054098714,50,验证集Loss
+0.052548639,51,验证集Loss
+0.051545102,52,验证集Loss
+0.050551653,53,验证集Loss
+0.04929404,54,验证集Loss
+0.047858231,55,验证集Loss
+0.046479478,56,验证集Loss
+0.045314506,57,验证集Loss
+0.044383757,58,验证集Loss
+0.043649245,59,验证集Loss
+0.043073043,60,验证集Loss
+0.042594276,61,验证集Loss
+0.042105254,62,验证集Loss
+0.041498113,63,验证集Loss
+0.040740769,64,验证集Loss
+0.039893713,65,验证集Loss
+0.039047103,66,验证集Loss
+0.038246904,67,验证集Loss
+0.03748554,68,验证集Loss
+0.036749858,69,验证集Loss
+0.036051657,70,验证集Loss
+0.035402332,71,验证集Loss
+0.034774054,72,验证集Loss
+0.034103096,73,验证集Loss
+0.033334039,74,验证集Loss
+0.032459423,75,验证集Loss
+0.031521823,76,验证集Loss
+0.030585032,77,验证集Loss
+0.029703101,78,验证集Loss
+0.028905466,79,验证集Loss
+0.028194537,80,验证集Loss
+0.027546275,81,验证集Loss
+0.02691504,82,验证集Loss
+0.026250439,83,验证集Loss
+0.025522918,84,验证集Loss
+0.024740687,85,验证集Loss
+0.023943903,86,验证集Loss
+0.023180891,87,验证集Loss
+0.022485543,88,验证集Loss
+0.021869907,89,验证集Loss
+0.021328244,90,验证集Loss
+0.020841746,91,验证集Loss
+0.020382401,92,验证集Loss
+0.019922191,93,验证集Loss
+0.019446855,94,验证集Loss
+0.01896379,95,验证集Loss
+0.018496728,96,验证集Loss
+0.018071814,97,验证集Loss
+0.017705033,98,验证集Loss
+0.017395876,99,验证集Loss
+0.017127007,100,验证集Loss
+0.016870389,101,验证集Loss
+0.016599981,102,验证集Loss
+0.016305236,103,验证集Loss
+0.015995724,104,验证集Loss
+0.015693648,105,验证集Loss
+0.015420863,106,验证集Loss
+0.015189289,107,验证集Loss
+0.014998097,108,验证集Loss
+0.014835685,109,验证集Loss
+0.014684782,110,验证集Loss
+0.014529929,111,验证集Loss
+0.014364354,112,验证集Loss
+0.014192214,113,验证集Loss
+0.0140248,114,验证集Loss
+0.013873613,115,验证集Loss
+0.013744409,116,验证集Loss
+0.013634631,117,验证集Loss
+0.013534792,118,验证集Loss
+0.013432963,119,验证集Loss
+0.01332042,120,验证集Loss
+0.01319561,121,验证集Loss
+0.013064335,122,验证集Loss
+0.012936348,123,验证集Loss
+0.012820651,124,验证集Loss
+0.012721914,125,验证集Loss
+0.01263921,126,验证集Loss
+0.012567097,127,验证集Loss
+0.012498381,128,验证集Loss
+0.012427362,129,验证集Loss
+0.012352181,130,验证集Loss
+0.012275192,131,验证集Loss
+0.012201327,132,验证集Loss
+0.01213544,133,验证集Loss
+0.012080027,134,验证集Loss
+0.012034231,135,验证集Loss
+0.01199445,136,验证集Loss
+0.011956128,137,验证集Loss
+0.011915899,138,验证集Loss
+0.011873041,139,验证集Loss
+0.011829624,140,验证集Loss
+0.011789319,141,验证集Loss
+0.011755619,142,验证集Loss
+0.011730293,143,验证集Loss
+0.011712793,144,验证集Loss
+0.011700655,145,验证集Loss
+0.011690698,146,验证集Loss
+0.011680386,147,验证集Loss
+0.011668775,148,验证集Loss
+0.011656614,149,验证集Loss
+0.337789237,0,训练集Loss
+0.321435034,1,训练集Loss
+0.30586347,2,训练集Loss
+0.290769964,3,训练集Loss
+0.275965989,4,训练集Loss
+0.261352628,5,训练集Loss
+0.246929809,6,训练集Loss
+0.232824117,7,训练集Loss
+0.21934332,8,训练集Loss
+0.207061306,9,训练集Loss
+0.196906835,10,训练集Loss
+0.190114498,11,训练集Loss
+0.187617928,12,训练集Loss
+0.188334987,13,训练集Loss
+0.188677639,14,训练集Loss
+0.186008096,15,训练集Loss
+0.180379614,16,训练集Loss
+0.17329523,17,训练集Loss
+0.166303366,18,训练集Loss
+0.160333693,19,训练集Loss
+0.155621827,20,训练集Loss
+0.151923314,21,训练集Loss
+0.148780227,22,训练集Loss
+0.145718321,23,训练集Loss
+0.142353654,24,训练集Loss
+0.138437033,25,训练集Loss
+0.133869275,26,训练集Loss
+0.128705442,27,训练集Loss
+0.123151697,28,训练集Loss
+0.117541909,29,训练集Loss
+0.112263188,30,训练集Loss
+0.107592225,31,训练集Loss
+0.103472359,32,训练集Loss
+0.099449724,33,训练集Loss
+0.095010422,34,训练集Loss
+0.090089269,35,训练集Loss
+0.085211806,36,训练集Loss
+0.081134737,37,训练集Loss
+0.078278616,38,训练集Loss
+0.076337293,39,训练集Loss
+0.074506745,40,训练集Loss
+0.072382472,41,训练集Loss
+0.070508704,42,训练集Loss
+0.069733977,43,训练集Loss
+0.069830075,44,训练集Loss
+0.06947349,45,训练集Loss
+0.068267398,46,训练集Loss
+0.067048699,47,训练集Loss
+0.066196978,48,训练集Loss
+0.065145582,49,训练集Loss
+0.06352549,50,训练集Loss
+0.061697427,51,训练集Loss
+0.060161214,52,训练集Loss
+0.058966473,53,训练集Loss
+0.057825208,54,训练集Loss
+0.056616139,55,训练集Loss
+0.055497546,56,训练集Loss
+0.054605272,57,训练集Loss
+0.053871784,58,训练集Loss
+0.053136617,59,训练集Loss
+0.052317534,60,训练集Loss
+0.051448591,61,训练集Loss
+0.050599597,62,训练集Loss
+0.049788833,63,训练集Loss
+0.048970308,64,训练集Loss
+0.048092075,65,训练集Loss
+0.047153145,66,训练集Loss
+0.046200484,67,训练集Loss
+0.045281451,68,训练集Loss
+0.044407919,69,训练集Loss
+0.043561935,70,训练集Loss
+0.042725861,71,训练集Loss
+0.041902743,72,训练集Loss
+0.041109625,73,训练集Loss
+0.040354855,74,训练集Loss
+0.039624393,75,训练集Loss
+0.038891491,76,训练集Loss
+0.038138758,77,训练集Loss
+0.037369244,78,训练集Loss
+0.036597282,79,训练集Loss
+0.035832565,80,训练集Loss
+0.035075001,81,训练集Loss
+0.034322474,82,训练集Loss
+0.03357983,83,训练集Loss
+0.032858323,84,训练集Loss
+0.032166865,85,训练集Loss
+0.031505007,86,训练集Loss
+0.030864943,87,训练集Loss
+0.030239625,88,训练集Loss
+0.029627943,89,训练集Loss
+0.029032355,90,训练集Loss
+0.028453531,91,训练集Loss
+0.027889004,92,训练集Loss
+0.02733691,93,训练集Loss
+0.026799593,94,训练集Loss
+0.02628256,95,训练集Loss
+0.025790043,96,训练集Loss
+0.025322376,97,训练集Loss
+0.024877625,98,训练集Loss
+0.024454663,99,训练集Loss
+0.024053534,100,训练集Loss
+0.023673244,101,训练集Loss
+0.023310581,102,训练集Loss
+0.022961924,103,训练集Loss
+0.022625627,104,训练集Loss
+0.022302059,105,训练集Loss
+0.021991575,106,训练集Loss
+0.021693196,107,训练集Loss
+0.021405313,108,训练集Loss
+0.021126911,109,训练集Loss
+0.020857453,110,训练集Loss
+0.020595931,111,训练集Loss
+0.020340743,112,训练集Loss
+0.020090673,113,训练集Loss
+0.019845659,114,训练集Loss
+0.019606385,115,训练集Loss
+0.019373368,116,训练集Loss
+0.019146631,117,训练集Loss
+0.018926106,118,训练集Loss
+0.018711962,119,训练集Loss
+0.018504363,120,训练集Loss
+0.018303169,121,训练集Loss
+0.018108083,122,训练集Loss
+0.017919045,123,训练集Loss
+0.01773637,124,训练集Loss
+0.017560441,125,训练集Loss
+0.017391404,126,训练集Loss
+0.017229166,127,训练集Loss
+0.017073568,128,训练集Loss
+0.016924463,129,训练集Loss
+0.01678158,130,训练集Loss
+0.016644511,131,训练集Loss
+0.016512826,132,训练集Loss
+0.016386222,133,训练集Loss
+0.016264502,134,训练集Loss
+0.016147459,135,训练集Loss
+0.016034815,136,训练集Loss
+0.015926281,137,训练集Loss
+0.015821606,138,训练集Loss
+0.015720576,139,训练集Loss
+0.015622959,140,训练集Loss
+0.015528527,141,训练集Loss
+0.015437111,142,训练集Loss
+0.015348635,143,训练集Loss
+0.01526305,144,训练集Loss
+0.015180314,145,训练集Loss
+0.015100364,146,训练集Loss
+0.015023164,147,训练集Loss
+0.014948695,148,训练集Loss
+0.014876927,149,训练集Loss
+0.727574289,0,验证集Loss
+0.691773176,1,验证集Loss
+0.656681597,2,验证集Loss
+0.621532619,3,验证集Loss
+0.585736871,4,验证集Loss
+0.548805594,5,验证集Loss
+0.510339797,6,验证集Loss
+0.470053136,7,验证集Loss
+0.427848965,8,验证集Loss
+0.383992434,9,验证集Loss
+0.339438796,10,验证集Loss
+0.296364486,11,验证集Loss
+0.258592457,12,验证集Loss
+0.230566755,13,验证集Loss
+0.213351101,14,验证集Loss
+0.204188079,15,验证集Loss
+0.200403214,16,验证集Loss
+0.20057635,17,验证集Loss
+0.203816324,18,验证集Loss
+0.209124029,19,验证集Loss
+0.215260297,20,验证集Loss
+0.220918715,21,验证集Loss
+0.224941313,22,验证集Loss
+0.226446122,23,验证集Loss
+0.224864617,24,验证集Loss
+0.219940141,25,验证集Loss
+0.211728394,26,验证集Loss
+0.20061627,27,验证集Loss
+0.187357381,28,验证集Loss
+0.173096552,29,验证集Loss
+0.159310669,30,验证集Loss
+0.147533819,31,验证集Loss
+0.138769597,32,验证集Loss
+0.132888108,33,验证集Loss
+0.12876828,34,验证集Loss
+0.12527217,35,验证集Loss
+0.121983945,36,验证集Loss
+0.119017005,37,验证集Loss
+0.116280891,38,验证集Loss
+0.113050714,39,验证集Loss
+0.108613342,40,验证集Loss
+0.10366381,41,验证集Loss
+0.100519866,42,验证集Loss
+0.100929812,43,验证集Loss
+0.102788582,44,验证集Loss
+0.101249196,45,验证集Loss
+0.095008828,46,验证集Loss
+0.087320551,47,验证集Loss
+0.081348598,48,验证集Loss
+0.077476047,49,验证集Loss
+0.07476864,50,验证集Loss
+0.072732419,51,验证集Loss
+0.071126603,52,验证集Loss
+0.069381908,53,验证集Loss
+0.067003526,54,验证集Loss
+0.064288288,55,验证集Loss
+0.062042691,56,验证集Loss
+0.060685929,57,验证集Loss
+0.059920657,58,验证集Loss
+0.059152093,59,验证集Loss
+0.058013298,60,验证集Loss
+0.056524798,61,验证集Loss
+0.054927148,62,验证集Loss
+0.053445049,63,验证集Loss
+0.052174911,64,验证集Loss
+0.051120229,65,验证集Loss
+0.050264701,66,验证集Loss
+0.049580839,67,验证集Loss
+0.048989352,68,验证集Loss
+0.048350286,69,验证集Loss
+0.047520008,70,验证集Loss
+0.046429954,71,验证集Loss
+0.045121595,72,验证集Loss
+0.043712687,73,验证集Loss
+0.042325404,74,验证集Loss
+0.0410318,75,验证集Loss
+0.039849665,76,验证集Loss
+0.038772229,77,验证集Loss
+0.037788671,78,验证集Loss
+0.036876146,79,验证集Loss
+0.035985567,80,验证集Loss
+0.03505053,81,验证集Loss
+0.034019962,82,验证集Loss
+0.032887958,83,验证集Loss
+0.031696603,84,验证集Loss
+0.030512312,85,验证集Loss
+0.0293957,86,验证集Loss
+0.028384384,87,验证集Loss
+0.027490623,88,验证集Loss
+0.026703753,89,验证集Loss
+0.025991285,90,验证集Loss
+0.02530456,91,验证集Loss
+0.024595354,92,验证集Loss
+0.023838051,93,验证集Loss
+0.023041958,94,验证集Loss
+0.022244215,95,验证集Loss
+0.0214887,96,验证集Loss
+0.020806395,97,验证集Loss
+0.020207759,98,验证集Loss
+0.019685518,99,验证集Loss
+0.01921989,100,验证集Loss
+0.018783608,101,验证集Loss
+0.018349472,102,验证集Loss
+0.017900662,103,验证集Loss
+0.017437572,104,验证集Loss
+0.016975651,105,验证集Loss
+0.01653577,106,验证集Loss
+0.016134491,107,验证集Loss
+0.015779132,108,验证集Loss
+0.015466936,109,验证集Loss
+0.015186214,110,验证集Loss
+0.014919734,111,验证集Loss
+0.014651345,112,验证集Loss
+0.014373303,113,验证集Loss
+0.014089668,114,验证集Loss
+0.013813321,115,验证集Loss
+0.013559141,116,验证集Loss
+0.013337765,117,验证集Loss
+0.013152546,118,验证集Loss
+0.012999387,119,验证集Loss
+0.012868596,120,验证集Loss
+0.012748389,121,验证集Loss
+0.012629462,122,验证集Loss
+0.01250858,123,验证集Loss
+0.012389272,124,验证集Loss
+0.012279394,125,验证集Loss
+0.012187062,126,验证集Loss
+0.012117127,127,验证集Loss
+0.012069246,128,验证集Loss
+0.012037969,129,验证集Loss
+0.012014645,130,验证集Loss
+0.011990638,131,验证集Loss
+0.011960632,132,验证集Loss
+0.01192441,133,验证集Loss
+0.011886314,134,验证集Loss
+0.011852722,135,验证集Loss
+0.011829049,136,验证集Loss
+0.011817518,137,验证集Loss
+0.011816425,138,验证集Loss
+0.011821032,139,验证集Loss
+0.011825562,140,验证集Loss
+0.011825583,141,验证集Loss
+0.011819709,142,验证集Loss
+0.011809889,143,验证集Loss
+0.011800146,144,验证集Loss
+0.011794589,145,验证集Loss
+0.011795508,146,验证集Loss
+0.011802489,147,验证集Loss
+0.011812661,148,验证集Loss
+0.011822003,149,验证集Loss
+0.265353292,0,训练集Loss
+0.250514001,1,训练集Loss
+0.236957923,2,训练集Loss
+0.224518016,3,训练集Loss
+0.213106915,4,训练集Loss
+0.202751487,5,训练集Loss
+0.193613738,6,训练集Loss
+0.186001226,7,训练集Loss
+0.180328697,8,训练集Loss
+0.176936656,9,训练集Loss
+0.175584048,10,训练集Loss
+0.174943864,11,训练集Loss
+0.173359096,12,训练集Loss
+0.17010349,13,训练集Loss
+0.16546315,14,训练集Loss
+0.160159588,15,训练集Loss
+0.154865414,16,训练集Loss
+0.14997977,17,训练集Loss
+0.145603731,18,训练集Loss
+0.141619787,19,训练集Loss
+0.137796402,20,训练集Loss
+0.133874133,21,训练集Loss
+0.129624143,22,训练集Loss
+0.124887578,23,训练集Loss
+0.119607374,24,训练集Loss
+0.113856427,25,训练集Loss
+0.107854053,26,训练集Loss
+0.101940386,27,训练集Loss
+0.096458644,28,训练集Loss
+0.091531657,29,训练集Loss
+0.086931527,30,训练集Loss
+0.082370579,31,训练集Loss
+0.078028731,32,训练集Loss
+0.074673317,33,训练集Loss
+0.073051773,34,训练集Loss
+0.072805628,35,训练集Loss
+0.072609164,36,训练集Loss
+0.072071716,37,训练集Loss
+0.071765915,38,训练集Loss
+0.071467467,39,训练集Loss
+0.070136271,40,训练集Loss
+0.067826085,41,训练集Loss
+0.065534346,42,训练集Loss
+0.063671507,43,训练集Loss
+0.0619222,44,训练集Loss
+0.060153741,45,训练集Loss
+0.058644988,46,训练集Loss
+0.057623923,47,训练集Loss
+0.056957204,48,训练集Loss
+0.056348722,49,训练集Loss
+0.055685621,50,训练集Loss
+0.055039447,51,训练集Loss
+0.054441858,52,训练集Loss
+0.05380195,53,训练集Loss
+0.053015757,54,训练集Loss
+0.0520759,55,训练集Loss
+0.051058639,56,训练集Loss
+0.050034426,57,训练集Loss
+0.049011532,58,训练集Loss
+0.047966734,59,训练集Loss
+0.046911336,60,训练集Loss
+0.045902248,61,训练集Loss
+0.044988398,62,训练集Loss
+0.044165704,63,训练集Loss
+0.043391135,64,训练集Loss
+0.042628381,65,训练集Loss
+0.041868392,66,训练集Loss
+0.041110158,67,训练集Loss
+0.040338021,68,训练集Loss
+0.039529763,69,训练集Loss
+0.038683414,70,训练集Loss
+0.037824903,71,训练集Loss
+0.036986694,72,训练集Loss
+0.03618459,73,训练集Loss
+0.035416178,74,训练集Loss
+0.034674577,75,训练集Loss
+0.033957638,76,训练集Loss
+0.033264279,77,训练集Loss
+0.032586772,78,训练集Loss
+0.031911589,79,训练集Loss
+0.031228878,80,训练集Loss
+0.030539872,81,训练集Loss
+0.029854216,82,训练集Loss
+0.029181534,83,训练集Loss
+0.028527347,84,训练集Loss
+0.02789578,85,训练集Loss
+0.027292795,86,训练集Loss
+0.026723856,87,训练集Loss
+0.026188884,88,训练集Loss
+0.025681915,89,训练集Loss
+0.025196921,90,训练集Loss
+0.024732837,91,训练集Loss
+0.024292342,92,训练集Loss
+0.023877751,93,训练集Loss
+0.023489781,94,训练集Loss
+0.023128917,95,训练集Loss
+0.022794936,96,训练集Loss
+0.022484304,97,训练集Loss
+0.022189921,98,训练集Loss
+0.021904711,99,训练集Loss
+0.021625116,100,训练集Loss
+0.021350704,101,训练集Loss
+0.021081727,102,训练集Loss
+0.020818058,103,训练集Loss
+0.020559516,104,训练集Loss
+0.020305563,105,训练集Loss
+0.02005451,106,训练集Loss
+0.019804053,107,训练集Loss
+0.019553095,108,训练集Loss
+0.019302642,109,训练集Loss
+0.019054851,110,训练集Loss
+0.018811602,111,训练集Loss
+0.018574076,112,训练集Loss
+0.018342994,113,训练集Loss
+0.018118678,114,训练集Loss
+0.017900921,115,训练集Loss
+0.017689288,116,训练集Loss
+0.01748367,117,训练集Loss
+0.017284481,118,训练集Loss
+0.017092269,119,训练集Loss
+0.016907319,120,训练集Loss
+0.01672958,121,训练集Loss
+0.016558841,122,训练集Loss
+0.016394818,123,训练集Loss
+0.016237136,124,训练集Loss
+0.016085392,125,训练集Loss
+0.015939366,126,训练集Loss
+0.015799038,127,训练集Loss
+0.015664481,128,训练集Loss
+0.015535679,129,训练集Loss
+0.015412501,130,训练集Loss
+0.015294779,131,训练集Loss
+0.015182341,132,训练集Loss
+0.015074997,133,训练集Loss
+0.014972556,134,训练集Loss
+0.014874872,135,训练集Loss
+0.014781879,136,训练集Loss
+0.014693537,137,训练集Loss
+0.01460975,138,训练集Loss
+0.014530388,139,训练集Loss
+0.014455289,140,训练集Loss
+0.014384279,141,训练集Loss
+0.014317201,142,训练集Loss
+0.014253877,143,训练集Loss
+0.014194153,144,训练集Loss
+0.014137913,145,训练集Loss
+0.014085039,146,训练集Loss
+0.014035403,147,训练集Loss
+0.013988847,148,训练集Loss
+0.013945217,149,训练集Loss
+0.55905807,0,验证集Loss
+0.520692885,1,验证集Loss
+0.483603537,2,验证集Loss
+0.447275132,3,验证集Loss
+0.41123876,4,验证集Loss
+0.375174791,5,验证集Loss
+0.338999063,6,验证集Loss
+0.302995324,7,验证集Loss
+0.268008709,8,验证集Loss
+0.235695109,9,验证集Loss
+0.208578363,10,验证集Loss
+0.188847333,11,验证集Loss
+0.176524669,12,验证集Loss
+0.170079306,13,验证集Loss
+0.167922318,14,验证集Loss
+0.168830439,15,验证集Loss
+0.171796054,16,验证集Loss
+0.175861508,17,验证集Loss
+0.180080235,18,验证集Loss
+0.183562592,19,验证集Loss
+0.185534447,20,验证集Loss
+0.185376078,21,验证集Loss
+0.182648957,22,验证集Loss
+0.177132308,23,验证集Loss
+0.168885902,24,验证集Loss
+0.158341363,25,验证集Loss
+0.146399751,26,验证集Loss
+0.134464294,27,验证集Loss
+0.124239728,28,验证集Loss
+0.117070422,29,验证集Loss
+0.113020614,30,验证集Loss
+0.110793829,31,验证集Loss
+0.108909704,32,验证集Loss
+0.106723815,33,验证集Loss
+0.10426861,34,验证集Loss
+0.101536058,35,验证集Loss
+0.09899243,36,验证集Loss
+0.098484628,37,验证集Loss
+0.100913011,38,验证集Loss
+0.102839284,39,验证集Loss
+0.099448636,40,验证集Loss
+0.091028534,41,验证集Loss
+0.081833065,42,验证集Loss
+0.074909091,43,验证集Loss
+0.070289813,44,验证集Loss
+0.066886589,45,验证集Loss
+0.064075626,46,验证集Loss
+0.061590534,47,验证集Loss
+0.059129871,48,验证集Loss
+0.056569431,49,验证集Loss
+0.054228961,50,验证集Loss
+0.052528292,51,验证集Loss
+0.051474489,52,验证集Loss
+0.050646067,53,验证集Loss
+0.049606789,54,验证集Loss
+0.048242118,55,验证集Loss
+0.046744797,56,验证集Loss
+0.045375291,57,验证集Loss
+0.044260114,58,验证集Loss
+0.04337785,59,验证集Loss
+0.04266743,60,验证集Loss
+0.042088527,61,验证集Loss
+0.0415865,62,验证集Loss
+0.041063603,63,验证集Loss
+0.040427569,64,验证集Loss
+0.039662272,65,验证集Loss
+0.038830936,66,验证集Loss
+0.038008295,67,验证集Loss
+0.03722211,68,验证集Loss
+0.036464296,69,验证集Loss
+0.035738852,70,验证集Loss
+0.035071328,71,验证集Loss
+0.034467734,72,验证集Loss
+0.033882111,73,验证集Loss
+0.033237498,74,验证集Loss
+0.032479454,75,验证集Loss
+0.031611253,76,验证集Loss
+0.030686034,77,验证集Loss
+0.029771972,78,验证集Loss
+0.028921459,79,验证集Loss
+0.028158711,80,验证集Loss
+0.027478924,81,验证集Loss
+0.02685003,82,验证集Loss
+0.026220774,83,验证集Loss
+0.025541993,84,验证集Loss
+0.024793468,85,验证集Loss
+0.023996575,86,验证集Loss
+0.023201309,87,验证集Loss
+0.022458605,88,验证集Loss
+0.021800039,89,验证集Loss
+0.021234443,90,验证集Loss
+0.020752359,91,验证集Loss
+0.020328585,92,验证集Loss
+0.019926995,93,验证集Loss
+0.01951487,94,验证集Loss
+0.01908027,95,验证集Loss
+0.018637575,96,验证集Loss
+0.018216232,97,验证集Loss
+0.017842483,98,验证集Loss
+0.017526239,99,验证集Loss
+0.017257143,100,验证集Loss
+0.017009089,101,验证集Loss
+0.016752282,102,验证集Loss
+0.016468778,103,验证集Loss
+0.01616182,104,验证集Loss
+0.015852263,105,验证集Loss
+0.015565715,106,验证集Loss
+0.015320208,107,验证集Loss
+0.015120453,108,验证集Loss
+0.014957855,109,验证集Loss
+0.014814265,110,验证集Loss
+0.014669224,111,验证集Loss
+0.014508745,112,验证集Loss
+0.014331092,113,验证集Loss
+0.014145731,114,验证集Loss
+0.013966761,115,验证集Loss
+0.013805229,116,验证集Loss
+0.013664423,117,验证集Loss
+0.013539302,118,验证集Loss
+0.013419654,119,验证集Loss
+0.013295327,120,验证集Loss
+0.013161211,121,验证集Loss
+0.013019484,122,验证集Loss
+0.012878147,123,验证集Loss
+0.012747017,124,验证集Loss
+0.012633416,125,验证集Loss
+0.01253958,126,验证集Loss
+0.012462234,127,验证集Loss
+0.012394358,128,验证集Loss
+0.012328248,129,验证集Loss
+0.01225874,130,验证集Loss
+0.012185125,131,验证集Loss
+0.012110859,132,验证集Loss
+0.012041434,133,验证集Loss
+0.011981554,134,验证集Loss
+0.011933088,135,验证集Loss
+0.011894513,136,验证集Loss
+0.011861912,137,验证集Loss
+0.01183096,138,验证集Loss
+0.011798966,139,验证集Loss
+0.011765959,140,验证集Loss
+0.011734457,141,验证集Loss
+0.011707991,142,验证集Loss
+0.011689346,143,验证集Loss
+0.011679229,144,验证集Loss
+0.011676007,145,验证集Loss
+0.011676388,146,验证集Loss
+0.01167685,147,验证集Loss
+0.011674983,148,验证集Loss
+0.011670309,149,验证集Loss
